@@ -1,0 +1,481 @@
+﻿<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" href="favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png"><link rel="icon" type="image/png" sizes="192x192" href="favicon-192x192.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Areas We Service | Pip Electrics — Sunshine Coast Electrician</title>
+<meta name="description" content="Pip Electrics services the entire Sunshine Coast — Caloundra, Nambour, Maroochydore, Buderim, Mooloolaba, Noosa and everywhere in between. Licensed QLD electrician. Call 0433 828 901.">
+<link rel="canonical" href="https://pipelectrics.com.au/areas-we-service">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --ivory: #F6F0DE; --charcoal: #1F1F1B; --charcoal-light: #2E2E28;
+    --charcoal-muted: #6B6B60; --gold: #C7A62B; --gold-light: #D4B84A;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', system-ui, sans-serif; background: var(--ivory); color: var(--charcoal); -webkit-font-smoothing: antialiased; }
+  ::selection { background: var(--gold); color: var(--charcoal); }
+
+  /* ── HEADER ── */
+  header {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(31,31,27,0.95); backdrop-filter: blur(12px);
+    padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+  .header-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+  .logo { height: 56px; width: auto; }
+  nav { display: flex; gap: 4px; }
+  nav a { color: rgba(246,240,222,0.8); text-decoration: none; font-size: 14px; font-weight: 500; padding: 7px 14px; border-radius: 100px; transition: color 0.2s, background 0.2s; }
+  nav a:hover { color: var(--gold); }
+  nav a.active { color: var(--gold); }
+  .header-cta { display: flex; align-items: center; gap: 8px; background: var(--gold); color: var(--charcoal); font-weight: 700; font-size: 14px; padding: 10px 20px; border-radius: 100px; text-decoration: none; transition: background 0.2s, transform 0.2s; }
+  .header-cta:hover { background: var(--gold-light); transform: translateY(-1px); }
+
+  /* ── HERO ── */
+  .hero {
+    position: relative; height: 52vh; min-height: 380px; max-height: 520px;
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden; text-align: center;
+  }
+  .hero video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
+  .hero-overlay {
+    position: absolute; inset: 0; z-index: 1;
+    background: linear-gradient(to bottom, rgba(31,31,27,0.65) 0%, rgba(31,31,27,0.45) 40%, rgba(31,31,27,0.80) 100%);
+  }
+  .hero-gold-line { position: absolute; bottom: 0; left: 0; right: 0; height: 2px; z-index: 2; background: linear-gradient(to right, transparent, var(--gold), transparent); opacity: 0.6; }
+  .hero-content { position: relative; z-index: 3; padding: 0 20px; max-width: 780px; }
+  .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(199,166,43,0.18); border: 1px solid rgba(199,166,43,0.4); backdrop-filter: blur(8px); color: var(--gold); font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 8px 18px; border-radius: 100px; margin-bottom: 20px; }
+  .hero-badge span { width: 6px; height: 6px; border-radius: 50%; background: var(--gold); animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+  .hero h1 { font-size: clamp(32px, 5.5vw, 58px); font-weight: 900; color: #F6F0DE; line-height: 1.05; margin-bottom: 16px; }
+  .hero h1 em { font-style: normal; color: var(--gold); }
+  .hero p { color: rgba(246,240,222,0.75); font-size: clamp(15px,2vw,18px); }
+
+  /* ── SECTION UTILITIES ── */
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+  .section-label { display: inline-block; color: var(--gold); font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 10px; }
+  .gold-line { width: 44px; height: 3px; background: var(--gold); border-radius: 10px; margin-bottom: 16px; }
+  .section-title { font-size: clamp(26px,3.8vw,42px); font-weight: 800; color: var(--charcoal); line-height: 1.1; }
+  .section-sub { color: var(--charcoal-muted); font-size: 17px; line-height: 1.7; margin-top: 12px; }
+
+  /* ── FEATURED AREAS GRID ── */
+  .areas-section { padding: 80px 0; background: var(--ivory); }
+  .areas-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 52px; }
+  @media(min-width:900px){ .areas-grid { grid-template-columns: repeat(3, 1fr); } }
+  @media(max-width:540px){ .areas-grid { grid-template-columns: 1fr; } }
+  @media(max-width:540px){ .areas-grid + div + div { grid-template-columns: 1fr !important; } }
+
+  .area-card {
+    background: #fff; border-radius: 24px; overflow: hidden;
+    border: 1.5px solid transparent;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    transition: box-shadow 0.25s, border-color 0.25s, transform 0.25s;
+    text-decoration: none; display: flex; flex-direction: column;
+  }
+  .area-card:hover { box-shadow: 0 12px 36px rgba(0,0,0,0.12); border-color: var(--gold); transform: translateY(-3px); }
+  .area-card-top { background: var(--charcoal); padding: 28px 24px 22px; position: relative; overflow: hidden; }
+  .area-card-top::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 80% 20%, rgba(199,166,43,0.14) 0%, transparent 65%); }
+  .area-card-suburb { color: #F6F0DE; font-size: 26px; font-weight: 900; letter-spacing: -0.02em; line-height: 1.1; margin-bottom: 6px; position: relative; z-index: 1; }
+  .area-card-title { color: rgba(246,240,222,0.55); font-weight: 500; font-size: 13px; line-height: 1.4; position: relative; z-index: 1; }
+  .area-card-emoji { font-size: 32px; margin-bottom: 10px; display: block; position: relative; z-index: 1; }
+  .area-card-body { padding: 20px 24px; flex: 1; display: flex; flex-direction: column; gap: 14px; }
+  .area-card-desc { color: var(--charcoal-muted); font-size: 13px; line-height: 1.7; flex: 1; }
+  .area-card-tag { display: inline-flex; align-items: center; gap: 6px; background: rgba(199,166,43,0.1); color: var(--gold); font-size: 11px; font-weight: 700; padding: 5px 12px; border-radius: 100px; align-self: flex-start; }
+  .area-card-link { color: var(--charcoal); font-weight: 700; font-size: 13px; display: flex; align-items: center; gap: 6px; padding-top: 14px; border-top: 1px solid rgba(31,31,27,0.07); }
+  .area-card:hover .area-card-link { color: var(--gold); }
+
+  /* ── FULL COVERAGE ── */
+  .coverage-section { background: var(--charcoal); padding: 72px 0; }
+  .coverage-section .section-title { color: #F6F0DE; }
+  .coverage-section .section-sub { color: rgba(246,240,222,0.5); }
+  .suburb-cloud { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 36px; }
+  .suburb-chip { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); color: rgba(246,240,222,0.7); font-size: 13px; font-weight: 500; padding: 8px 16px; border-radius: 100px; }
+  .suburb-chip.featured { background: rgba(199,166,43,0.15); border-color: rgba(199,166,43,0.35); color: var(--gold); font-weight: 700; }
+
+  /* ── CTA ── */
+  .cta-section { background: var(--ivory); padding: 80px 0; text-align: center; }
+  .cta-section h2 { font-size: clamp(26px,4vw,42px); font-weight: 900; color: var(--charcoal); margin-bottom: 12px; }
+  .cta-section p { color: var(--charcoal-muted); font-size: 17px; margin-bottom: 36px; }
+  .cta-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  .btn-gold { display: inline-flex; align-items: center; gap: 10px; background: var(--gold); color: var(--charcoal); font-weight: 800; font-size: 16px; padding: 16px 32px; border-radius: 100px; text-decoration: none; transition: background 0.2s, transform 0.2s; }
+  .btn-gold:hover { background: var(--gold-light); transform: translateY(-2px); }
+  .btn-outline { display: inline-flex; align-items: center; gap: 10px; border: 2px solid var(--charcoal); color: var(--charcoal); font-weight: 700; font-size: 16px; padding: 16px 32px; border-radius: 100px; text-decoration: none; transition: background 0.2s, color 0.2s; }
+  .btn-outline:hover { background: var(--charcoal); color: #F6F0DE; }
+
+  /* ── FOOTER ── */
+  footer { background: var(--charcoal); padding: 48px 0 0; }
+  .footer-grid { display: grid; gap: 40px; }
+  @media(min-width:640px){ .footer-grid { grid-template-columns: repeat(2,1fr); } }
+  @media(min-width:900px){ .footer-grid { grid-template-columns: 2fr 1.5fr 1.5fr 1.5fr; } }
+  .footer-logo { height: 52px; width: auto; border-radius: 10px; margin-bottom: 14px; }
+  .footer-desc { color: rgba(246,240,222,0.45); font-size: 13px; line-height: 1.7; margin-bottom: 18px; }
+  .footer-heading { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: var(--gold); margin-bottom: 16px; }
+  .footer-links { list-style: none; }
+  .footer-links li { margin-bottom: 8px; }
+  .footer-links a { color: rgba(246,240,222,0.5); font-size: 13px; text-decoration: none; transition: color 0.2s; }
+  .footer-links a:hover { color: var(--gold); }
+
+  /* CREDENTIALS BAR */
+  .creds-bar { border-top: 1px solid rgba(255,255,255,0.08); padding: 28px 0; }
+  .creds-inner { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; justify-content: center; }
+  .cred-neca { display: flex; align-items: center; gap: 10px; background: #1B3D6B; border-radius: 12px; padding: 12px 18px; border: 1px solid #2a5298; }
+  .cred-neca-name { color: #fff; font-weight: 900; font-size: 18px; letter-spacing: 0.08em; line-height: 1; }
+  .cred-neca-sub { color: rgba(255,255,255,0.6); font-size: 9px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; margin-top: 2px; }
+  .cred-neca-divider { width: 1px; height: 32px; background: rgba(255,255,255,0.15); }
+  .cred-neca-full { color: rgba(255,255,255,0.65); font-size: 10px; line-height: 1.45; }
+  .cred-licence { display: flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 12px 18px; }
+  .cred-licence-label { color: rgba(246,240,222,0.4); font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; }
+  .cred-licence-num { color: #F6F0DE; font-weight: 800; font-size: 15px; }
+  .cred-google { display: flex; align-items: center; gap: 12px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 12px 18px; text-decoration: none; transition: background 0.2s, border-color 0.2s; }
+  .cred-google:hover { background: rgba(255,255,255,0.1); border-color: rgba(199,166,43,0.4); }
+  .cred-google-g { width: 32px; height: 32px; border-radius: 50%; background: #fff; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 16px; color: #4285F4; flex-shrink: 0; }
+  .cred-google-stars { color: #C7A62B; font-size: 16px; letter-spacing: 3px; line-height: 1; }
+  .cred-google-label { color: rgba(246,240,222,0.45); font-size: 10px; font-weight: 600; margin-top: 2px; }
+
+  .footer-bottom { border-top: 1px solid rgba(255,255,255,0.07); margin-top: 48px; padding: 20px 0; text-align: center; color: rgba(246,240,222,0.3); font-size: 12px; }
+
+  /* ── FLOAT CTA ── */
+  .float-cta { position: fixed; bottom: 20px; right: 20px; z-index: 200; display: flex; align-items: center; gap: 8px; background: var(--gold); color: var(--charcoal); font-weight: 800; font-size: 14px; padding: 13px 22px; border-radius: 100px; box-shadow: 0 8px 32px rgba(199,166,43,0.35); text-decoration: none; transition: transform 0.2s; }
+  .float-cta:hover { transform: translateY(-3px); }
+  @media(min-width:700px){ .float-cta { display: none; } }
+  @media(max-width:760px){ nav { display: none; } }
+</style>
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NSDFDK1NYD"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-NSDFDK1NYD");</script>
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://pipelectrics.com.au/og-share-image.png">
+<meta property="og:title" content="Areas We Service | Pip Electrics — Sunshine Coast Electrician">
+<meta property="og:description" content="Pip Electrics services the entire Sunshine Coast — Caloundra, Nambour, Maroochydore, Buderim, Mooloolaba, Noosa and everywhere in between. Licensed QLD electrician. Call 0433 828 901.">
+<meta property="og:url" content="https://pipelectrics.com.au/areas-we-service">
+</head>
+<body>
+
+<a href="tel:0433828901" class="float-cta">📞 Call Now</a>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="index.html"><img src="pip-electrics-logo-transparent.png" alt="Pip Electrics" class="logo"></a>
+    <nav>
+      <a href="index.html#about">About</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#reviews">Reviews</a>
+      <a href="areas-we-service.html" class="active">Areas</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <a href="tel:0433828901" class="header-cta">📞 0433 828 901</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <video autoplay muted loop playsinline>
+    <source src="hero%20banner.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay"></div>
+  <div class="hero-gold-line"></div>
+  <div class="hero-content">
+    <div class="hero-badge"><span></span> Sunshine Coast Electrician</div>
+    <h1>Areas We <em>Service</em></h1>
+    <p>From Caloundra to Noosa — your local electrician across the entire Sunshine Coast</p>
+  </div>
+</section>
+
+<!-- FEATURED AREAS -->
+<section class="areas-section">
+  <div class="container">
+    <span class="section-label">Local Area Guides</span>
+    <div class="gold-line"></div>
+    <h2 class="section-title">Your Suburb,<br>Our Local Knowledge</h2>
+    <p class="section-sub" style="max-width:580px">Every suburb on the Sunshine Coast has its own common electrical issues. Click your area to see what we typically find — and how we fix it.</p>
+
+    <div class="areas-grid">
+
+      <!-- Caloundra -->
+      <a href="caloundra-fire-safety.html" class="area-card">
+        <div class="area-card-top">
+          <span class="area-card-emoji">🔥</span>
+          <div class="area-card-suburb">Caloundra</div>
+          <div class="area-card-title">Halogen Downlights &amp; Smoke Alarm Upgrades</div>
+        </div>
+        <div class="area-card-body">
+          <p class="area-card-desc">Old halogen downlights and non-compliant smoke alarms are the most common issue we find in Caloundra homes. Most properties built before 2010 still have them — and many owners don't realise the fire risk.</p>
+          <div class="area-card-tag">🏠 Residential · Fire Safety</div>
+          <div class="area-card-link">View Caloundra guide →</div>
+        </div>
+      </a>
+
+      <!-- Nambour -->
+      <a href="nambour-electrician.html" class="area-card">
+        <div class="area-card-top">
+          <span class="area-card-emoji">⚡</span>
+          <div class="area-card-suburb">Nambour</div>
+          <div class="area-card-title">Ceramic Fuse Box &amp; Switchboard Upgrades</div>
+        </div>
+        <div class="area-card-body">
+          <p class="area-card-desc">Nambour is one of the Coast's oldest towns and its housing stock shows it. Ceramic fuse boxes are common — they're a fire hazard with no RCD protection, and banks and insurers are increasingly flagging them at sale.</p>
+          <div class="area-card-tag">🏚️ Older Homes · Switchboards</div>
+          <div class="area-card-link">View Nambour guide →</div>
+        </div>
+      </a>
+
+      <!-- Maroochydore -->
+      <a href="maroochydore-electrician.html" class="area-card">
+        <div class="area-card-top">
+          <span class="area-card-emoji">🏢</span>
+          <div class="area-card-suburb">Maroochydore</div>
+          <div class="area-card-title">Commercial Electrical &amp; 3-Phase Power</div>
+        </div>
+        <div class="area-card-body">
+          <p class="area-card-desc">Maroochydore is the Sunshine Coast's business hub. Fit-outs, switchboard capacity upgrades, 3-phase power installs and commercial compliance work — we handle it all for businesses across the precinct.</p>
+          <div class="area-card-tag">🏢 Commercial · 3-Phase Power</div>
+          <div class="area-card-link">View Maroochydore guide →</div>
+        </div>
+      </a>
+
+      <!-- Buderim -->
+      <a href="buderim-electrician.html" class="area-card">
+        <div class="area-card-top">
+          <span class="area-card-emoji">🔨</span>
+          <div class="area-card-suburb">Buderim</div>
+          <div class="area-card-title">Renovation &amp; Extension Wiring</div>
+        </div>
+        <div class="area-card-body">
+          <p class="area-card-desc">Buderim's established homes from the 70s, 80s and 90s are being heavily renovated. Old wiring that can't handle modern loads, non-compliant bathroom zones, and outdated sub-circuits are what we find most often.</p>
+          <div class="area-card-tag">🔨 Renovations · Extensions</div>
+          <div class="area-card-link">View Buderim guide →</div>
+        </div>
+      </a>
+
+      <!-- Mooloolaba -->
+      <a href="mooloolaba-electrician.html" class="area-card">
+        <div class="area-card-top">
+          <span class="area-card-emoji">🌊</span>
+          <div class="area-card-suburb">Mooloolaba</div>
+          <div class="area-card-title">Outdoor, Pool &amp; Coastal Electrical</div>
+        </div>
+        <div class="area-card-body">
+          <p class="area-card-desc">Salt air destroys standard fittings fast. We install IP-rated outdoor GPOs, pool-zone compliant circuits, and outdoor entertainment electrical — and carry out safety checks for Mooloolaba's holiday let properties.</p>
+          <div class="area-card-tag">🌊 Coastal · Pool &amp; Outdoor</div>
+          <div class="area-card-link">View Mooloolaba guide →</div>
+        </div>
+      </a>
+
+      <!-- Noosa -->
+      <a href="noosa-electrician.html" class="area-card">
+        <div class="area-card-top">
+          <span class="area-card-emoji">🚗</span>
+          <div class="area-card-suburb">Noosa</div>
+          <div class="area-card-title">EV Charging &amp; Prestige Home Electrical</div>
+        </div>
+        <div class="area-card-body">
+          <p class="area-card-desc">Noosa's high-value homes are upgrading fast. EV charger installations, prestige lighting design, solar-ready switchboards and high-end renovation wiring — done to the standard Noosa homes expect.</p>
+          <div class="area-card-tag">🚗 EV Charging · Prestige Homes</div>
+          <div class="area-card-link">View Noosa guide →</div>
+        </div>
+      </a>
+
+    </div>
+
+    <h3 style="font-size:16px;font-weight:700;color:var(--charcoal-muted);text-transform:uppercase;letter-spacing:0.12em;margin:56px 0 24px;text-align:center;">More Sunshine Coast Areas</h3>
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:14px;">
+      <a href="bli-bli-electrician.html" class="area-card">
+        <div class="area-card-top"><span class="area-card-emoji">🚜</span><div class="area-card-suburb">Bli Bli</div><div class="area-card-title">Acreage & Rural Electrical</div></div>
+        <div class="area-card-body"><p class="area-card-desc">Shed sub-boards, bore pump wiring, paddock lighting and rural meter upgrades. We know Bli Bli's acreage properties and the single-wire earth systems still common on older rural supply.</p><div class="area-card-tag">🌾 Acreage · Rural Power</div><div class="area-card-link">View Bli Bli guide →</div></div>
+      </a>
+      <a href="kawana-electrician.html" class="area-card">
+        <div class="area-card-top"><span class="area-card-emoji">💻</span><div class="area-card-suburb">Kawana</div><div class="area-card-title">Home Network & Data Cabling</div></div>
+        <div class="area-card-body"><p class="area-card-desc">Structured data cabling, NBN wiring, CCTV power, home office circuits and USB power points. Kawana's 90s–2000s homes have minimal data infrastructure — we retrofit it properly.</p><div class="area-card-tag">💻 Data Cabling · Smart Home</div><div class="area-card-link">View Kawana guide →</div></div>
+      </a>
+      <a href="peregian-coolum-electrician.html" class="area-card">
+        <div class="area-card-top"><span class="area-card-emoji">❄️</span><div class="area-card-suburb">Peregian Springs & Coolum Beach</div><div class="area-card-title">Split System & Ducted A/C Installation</div></div>
+        <div class="area-card-body"><p class="area-card-desc">Supply and install of split systems, multi-head systems and ducted A/C wiring. Peregian's newer homes and Coolum's beach houses are our most common A/C jobs on the northern Coast.</p><div class="area-card-tag">❄️ A/C Installation</div><div class="area-card-link">View Peregian & Coolum guide →</div></div>
+      </a>
+      <a href="doonan-eumundi-electrician.html" class="area-card">
+        <div class="area-card-top"><span class="area-card-emoji">☀️</span><div class="area-card-suburb">Doonan & Eumundi</div><div class="area-card-title">Solar-Ready Switchboards & Battery Storage</div></div>
+        <div class="area-card-body"><p class="area-card-desc">Solar isolators, battery storage wiring (Powerwall, Sungrow, Alpha-ESS), EV + solar integration and off-grid backup circuits for the hinterland's sustainability-minded homeowners.</p><div class="area-card-tag">☀️ Solar · Battery Storage</div><div class="area-card-link">View Doonan & Eumundi guide →</div></div>
+      </a>
+      <a href="landsborough-electrician.html" class="area-card">
+        <div class="area-card-top"><span class="area-card-emoji">🏚️</span><div class="area-card-suburb">Landsborough</div><div class="area-card-title">Full Home Rewiring</div></div>
+        <div class="area-card-body"><p class="area-card-desc">One of the Coast's oldest towns — homes from the 1940s–70s with rubber and cloth wiring still in the walls. We do full and partial rewires in Landsborough regularly.</p><div class="area-card-tag">🔌 Rewiring · Old Homes</div><div class="area-card-link">View Landsborough guide →</div></div>
+      </a>
+      <a href="yandina-electrician.html" class="area-card">
+        <div class="area-card-top"><span class="area-card-emoji">⚡</span><div class="area-card-suburb">Yandina</div><div class="area-card-title">Backup Power & Generator Connections</div></div>
+        <div class="area-card-body"><p class="area-card-desc">Hinterland power outages hit Yandina hardest. We install changeover switches, automatic transfer switches and generator-ready switchboards so the lights stay on when the grid goes down.</p><div class="area-card-tag">🔋 Generators · Backup Power</div><div class="area-card-link">View Yandina guide →</div></div>
+      </a>
+      <a href="mudjimba-electrician.html" class="area-card">
+        <div class="area-card-top"><span class="area-card-emoji">🏠</span><div class="area-card-suburb">Mudjimba</div><div class="area-card-title">Granny Flat & Secondary Dwelling Wiring</div></div>
+        <div class="area-card-body"><p class="area-card-desc">Full electrical fit-out for granny flats and secondary dwellings — sub-board, dedicated circuits, smoke alarms, data points, and separate metering for rental properties.</p><div class="area-card-tag">🏠 Granny Flats · Sub-Boards</div><div class="area-card-link">View Mudjimba guide →</div></div>
+      </a>
+      <a href="little-mountain-electrician.html" class="area-card">
+        <div class="area-card-top"><span class="area-card-emoji">🛡️</span><div class="area-card-suburb">Little Mountain</div><div class="area-card-title">Safety Switch & RCD Upgrades</div></div>
+        <div class="area-card-body"><p class="area-card-desc">Many Little Mountain homes have RCDs only on power circuits — not lighting. We upgrade to individual RCD protection per circuit and add dedicated circuits for high-demand appliances.</p><div class="area-card-tag">🛡️ RCD · Circuit Protection</div><div class="area-card-link">View Little Mountain guide →</div></div>
+      </a>
+      <a href="bokarina-electrician.html" class="area-card">
+        <div class="area-card-top"><span class="area-card-emoji">🏗️</span><div class="area-card-suburb">Bokarina</div><div class="area-card-title">New Home Complete Electrical Packages</div></div>
+        <div class="area-card-body"><p class="area-card-desc">Bokarina Beach is one of the Coast's fastest-growing new developments. We deliver complete new home electrical packages — pre-wire, solar-ready switchboards, EV provision, data cabling and more.</p><div class="area-card-tag">🏗️ New Homes · Pre-Wire</div><div class="area-card-link">View Bokarina guide →</div></div>
+      </a>
+      <a href="wurtulla-electrician.html" class="area-card">
+        <div class="area-card-top"><span class="area-card-emoji">💡</span><div class="area-card-suburb">Wurtulla</div><div class="area-card-title">LED Lighting Upgrades & Sensor Lighting</div></div>
+        <div class="area-card-body"><p class="area-card-desc">Replacing old fluorescent and incandescent lighting with modern LED, adding exterior sensor lights for security, dimmer switches and bathroom fan/light combos throughout Wurtulla homes.</p><div class="area-card-tag">💡 LED · Sensor Lighting</div><div class="area-card-link">View Wurtulla guide →</div></div>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- FULL COVERAGE -->
+<section class="coverage-section">
+  <div class="container">
+    <span class="section-label" style="color:var(--gold)">Full Coverage</span>
+    <div class="gold-line"></div>
+    <h2 class="section-title">We Service Every Corner<br>of the Sunshine Coast</h2>
+    <p class="section-sub">Don't see your suburb above? We cover the entire Sunshine Coast region. Call us — if you're on the Coast, we'll come to you.</p>
+    <div class="suburb-cloud">
+      <span class="suburb-chip featured">Caloundra</span>
+      <span class="suburb-chip featured">Nambour</span>
+      <span class="suburb-chip featured">Maroochydore</span>
+      <span class="suburb-chip featured">Buderim</span>
+      <span class="suburb-chip featured">Mooloolaba</span>
+      <span class="suburb-chip featured">Noosa</span>
+      <span class="suburb-chip">Aura</span>
+      <span class="suburb-chip">Little Mountain</span>
+      <span class="suburb-chip">Bells Creek</span>
+      <span class="suburb-chip">Pelican Waters</span>
+      <span class="suburb-chip">Golden Beach</span>
+      <span class="suburb-chip">Aroha Island</span>
+      <span class="suburb-chip">Sippy Downs</span>
+      <span class="suburb-chip">Palmview</span>
+      <span class="suburb-chip">Mountain Creek</span>
+      <span class="suburb-chip">Bokarina</span>
+      <span class="suburb-chip">Wurtulla</span>
+      <span class="suburb-chip">Birtinya</span>
+      <span class="suburb-chip">Kawana Waters</span>
+      <span class="suburb-chip">Alexandra Headland</span>
+      <span class="suburb-chip">Cotton Tree</span>
+      <span class="suburb-chip">Kuluin</span>
+      <span class="suburb-chip">Forest Glen</span>
+      <span class="suburb-chip">Eudlo</span>
+      <span class="suburb-chip">Woombye</span>
+      <span class="suburb-chip">Yandina</span>
+      <span class="suburb-chip">Eumundi</span>
+      <span class="suburb-chip">Bli Bli</span>
+      <span class="suburb-chip">Coolum Beach</span>
+      <span class="suburb-chip">Peregian Beach</span>
+      <span class="suburb-chip">Sunshine Beach</span>
+      <span class="suburb-chip">Noosaville</span>
+      <span class="suburb-chip">Tewantin</span>
+      <span class="suburb-chip">Doonan</span>
+      <span class="suburb-chip">Landsborough</span>
+      <span class="suburb-chip">Currimundi</span>
+      <span class="suburb-chip">Dicky Beach</span>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <h2>Not Sure? Just Call Us.</h2>
+    <p>We'll let you know straight away if we cover your area — and get you booked in fast.</p>
+    <div class="cta-btns">
+      <a href="tel:0433828901" class="btn-gold">📞 Call 0433 828 901</a>
+      <a href="index.html#contact" class="btn-outline">Request a Quote →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <img src="pip-electrics-logo-transparent.png" alt="Pip Electrics" class="footer-logo">
+        <p class="footer-desc">Sunshine Coast's trusted local electricians. Residential, commercial and air conditioning services — done right.</p>
+      </div>
+      <div>
+        <div class="footer-heading">Services</div>
+        <ul class="footer-links">
+          <li><a href="index.html#services">Electrical Repairs</a></li>
+          <li><a href="index.html#services">New Homes</a></li>
+          <li><a href="index.html#services">Renovations</a></li>
+          <li><a href="index.html#services">Switchboards</a></li>
+          <li><a href="index.html#services">Smoke Alarms</a></li>
+          <li><a href="index.html#services">Split System A/C</a></li>
+          <li><a href="index.html#services">Emergency Electrical</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Area Guides</div>
+        <ul class="footer-links">
+          <li><a href="caloundra-fire-safety.html">Caloundra</a></li>
+          <li><a href="nambour-electrician.html">Nambour</a></li>
+          <li><a href="maroochydore-electrician.html">Maroochydore</a></li>
+          <li><a href="buderim-electrician.html">Buderim</a></li>
+          <li><a href="mooloolaba-electrician.html">Mooloolaba</a></li>
+          <li><a href="noosa-electrician.html">Noosa</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Contact</div>
+        <ul class="footer-links">
+          <li><a href="tel:0433828901">📞 0433 828 901</a></li>
+          <li><a href="mailto:pipelectrics1@gmail.com">✉️ pipelectrics1@gmail.com</a></li>
+          <li><a href="areas-we-service.html">Sunshine Coast, QLD</a></li>
+        </ul>
+        <div style="margin-top:20px;">
+          <a href="tel:0433828901" class="btn-gold" style="font-size:13px;padding:11px 20px;">📞 Call Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CREDENTIALS BAR -->
+  <div class="creds-bar">
+    <div class="container">
+      <div class="creds-inner">
+        <div class="cred-neca">
+          <div><div class="cred-neca-name">NECA</div><div class="cred-neca-sub">Accredited Member</div></div>
+          <div class="cred-neca-divider"></div>
+          <div class="cred-neca-full">National Electrical &amp;<br>Communications Assoc.</div>
+        </div>
+        <div class="cred-licence">
+          <span style="font-size:20px;">🛡️</span>
+          <div><div class="cred-licence-label">QLD Electrical Licence</div><div class="cred-licence-num">No. 86954</div></div>
+        </div>
+        <a href="https://g.page/r/CaWhD9kQv-elEBM/review" target="_blank" rel="noopener" class="cred-google">
+          <div class="cred-google-g">G</div>
+          <div><div class="cred-google-stars">★★★★★</div><div class="cred-google-label">5.0 · Google Reviews</div></div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">© 2026 Pip Electrics. All rights reserved. QLD Electrical Licence No. 86954 · NECA Member.</div>
+  </div>
+<!-- Google Reviews Widget -->
+<section style="background:#fff;padding:64px 0;">
+  <div style="max-width:1200px;margin:0 auto;padding:0 24px;text-align:center;">
+    <div style="display:inline-block;color:#C7A62B;font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;margin-bottom:10px;">5-Star Rated</div>
+    <h2 style="font-size:clamp(24px,4vw,40px);font-weight:800;color:#1F1F1B;line-height:1.1;margin-bottom:8px;">What Our Customers Say</h2>
+    <p style="color:#6B6B60;font-size:16px;margin-bottom:36px;">Real reviews from real Sunshine Coast locals on Google.</p>
+    <div class="elfsight-app-1b684fae-3858-41a7-8e9a-9b14d50c6dc8" data-elfsight-app-lazy></div>
+    <div style="margin-top:28px;">
+      <a href="https://share.google/Q8bNlJwdtYujTqo1S" target="_blank" rel="noopener"
+         style="display:inline-flex;align-items:center;gap:10px;background:#1F1F1B;color:#F6F0DE;font-weight:700;font-size:14px;padding:13px 26px;border-radius:100px;text-decoration:none;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+        See All Our Google Reviews
+      </a>
+    </div>
+  </div>
+</section>
+</footer>
+
+<div style="background:#1F1F1B;text-align:center;padding:10px 24px;font-size:11px;border-top:1px solid rgba(255,255,255,0.06)"><a href="privacy-policy.html" style="color:rgba(246,240,222,0.3);text-decoration:none;letter-spacing:0.06em;">Privacy Policy</a></div>
+</body>
+</html>

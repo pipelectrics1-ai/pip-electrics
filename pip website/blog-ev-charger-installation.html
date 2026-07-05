@@ -1,0 +1,625 @@
+﻿<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" href="favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png"><link rel="icon" type="image/png" sizes="192x192" href="favicon-192x192.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home EV Charger Installation Queensland | Pip Electrics Blog</title>
+<meta name="description" content="Everything Queensland homeowners need to know about installing a home EV charger — Level 1 vs Level 2, dedicated circuits, switchboard checks, smart chargers and cost factors. By Pip Electrics, Sunshine Coast.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://pipelectrics.com.au/blog-ev-charger-installation">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- Article Schema JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Home EV Charger Installation — The Complete Guide for Queensland Homeowners",
+  "description": "Everything Queensland homeowners need to know about installing a home EV charger — Level 1 vs Level 2, dedicated circuits, switchboard checks, smart chargers and cost factors.",
+  "image": "https://pipelectrics.com.au/pip-electrics-logo-transparent.png",
+  "datePublished": "2026-06-01",
+  "dateModified": "2026-06-01",
+  "author": {
+    "@type": "Organization",
+    "name": "Pip Electrics",
+    "url": "https://pipelectrics.com.au"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pip Electrics",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://pipelectrics.com.au/pip-electrics-logo-transparent.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://pipelectrics.com.au/blog-ev-charger-installation"
+  }
+}
+</script>
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --ivory: #F6F0DE;
+    --charcoal: #1F1F1B;
+    --charcoal-light: #2E2E28;
+    --charcoal-muted: #6B6B60;
+    --gold: #C7A62B;
+    --gold-light: #D4B84A;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: var(--ivory);
+    color: var(--charcoal);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection { background: var(--gold); color: var(--charcoal); }
+
+  /* ── HEADER ── */
+  header {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(31,31,27,0.94);
+    backdrop-filter: blur(12px);
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+  .header-inner {
+    max-width: 1200px; margin: 0 auto; padding: 0 24px;
+    display: flex; align-items: center; justify-content: space-between; gap: 20px;
+  }
+  .logo { height: 56px; width: auto; }
+  nav { display: flex; gap: 4px; }
+  nav a {
+    color: rgba(246,240,222,0.8); text-decoration: none;
+    font-size: 14px; font-weight: 500;
+    padding: 7px 14px; border-radius: 100px;
+    transition: color 0.2s, background 0.2s;
+  }
+  nav a:hover { color: var(--gold); }
+  nav a.active { color: var(--gold); }
+  .header-cta {
+    display: flex; align-items: center; gap: 8px;
+    background: var(--gold); color: var(--charcoal);
+    font-weight: 700; font-size: 14px;
+    padding: 10px 20px; border-radius: 100px;
+    text-decoration: none; transition: background 0.2s, transform 0.2s;
+    white-space: nowrap;
+  }
+  .header-cta:hover { background: var(--gold-light); transform: translateY(-1px); }
+
+  /* ── HAMBURGER (mobile) ── */
+  .hamburger {
+    display: none; flex-direction: column; gap: 5px; cursor: pointer;
+    background: none; border: none; padding: 4px;
+  }
+  .hamburger span {
+    display: block; width: 22px; height: 2px;
+    background: rgba(246,240,222,0.8); border-radius: 2px;
+    transition: opacity 0.2s;
+  }
+  @media(max-width: 720px) {
+    nav { display: none; }
+    .hamburger { display: flex; }
+  }
+
+  /* ── ARTICLE HERO ── */
+  .article-hero {
+    background: var(--charcoal);
+    padding: 120px 24px 64px;
+    text-align: center;
+    border-bottom: 1px solid rgba(199,166,43,0.2);
+  }
+  .article-hero .container { max-width: 760px; margin: 0 auto; }
+  .category-tag {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(199,166,43,0.18); border: 1px solid rgba(199,166,43,0.4);
+    color: var(--gold); font-size: 11px; font-weight: 700;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    padding: 7px 16px; border-radius: 100px; margin-bottom: 22px;
+  }
+  .category-tag span {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--gold);
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+  .article-hero h1 {
+    font-size: clamp(28px, 5vw, 52px); font-weight: 900;
+    color: #F6F0DE; line-height: 1.1; margin-bottom: 20px;
+    letter-spacing: -0.02em;
+  }
+  .article-hero h1 em { font-style: normal; color: var(--gold); }
+  .article-meta {
+    display: flex; align-items: center; justify-content: center; flex-wrap: wrap;
+    gap: 20px; color: rgba(246,240,222,0.5); font-size: 13px; font-weight: 500;
+  }
+  .article-meta span { display: flex; align-items: center; gap: 6px; }
+
+  /* ── ARTICLE BODY ── */
+  .article-wrap {
+    max-width: 760px; margin: 0 auto; padding: 64px 24px 80px;
+  }
+  .article-body { font-size: 17px; line-height: 1.8; color: var(--charcoal); }
+  .article-body p { margin-bottom: 22px; }
+  .article-body h2 {
+    font-size: clamp(22px, 3vw, 30px); font-weight: 800;
+    color: var(--charcoal); line-height: 1.2;
+    margin: 52px 0 16px;
+    padding-left: 16px;
+    border-left: 4px solid var(--gold);
+  }
+  .article-body h3 {
+    font-size: 19px; font-weight: 700;
+    color: var(--charcoal); line-height: 1.25;
+    margin: 36px 0 12px;
+  }
+  .article-body ul, .article-body ol {
+    padding-left: 24px; margin-bottom: 22px;
+  }
+  .article-body li { margin-bottom: 8px; }
+  .article-body strong { color: var(--charcoal); font-weight: 700; }
+
+  /* ── COMPARISON TABLE ── */
+  .table-wrap {
+    overflow-x: auto; margin: 32px 0 36px;
+    border-radius: 14px;
+    box-shadow: 0 2px 16px rgba(31,31,27,0.08);
+  }
+  table {
+    width: 100%; border-collapse: collapse; min-width: 480px;
+    font-size: 15px;
+  }
+  thead tr { background: var(--charcoal); }
+  thead th {
+    color: #F6F0DE; font-weight: 700; font-size: 13px;
+    text-align: left; padding: 14px 18px;
+    letter-spacing: 0.04em;
+  }
+  thead th:first-child { border-radius: 14px 0 0 0; }
+  thead th:last-child { border-radius: 0 14px 0 0; }
+  tbody tr { border-bottom: 1px solid rgba(31,31,27,0.07); }
+  tbody tr:nth-child(even) { background: rgba(31,31,27,0.03); }
+  tbody tr:last-child { border-bottom: none; }
+  tbody td { padding: 13px 18px; vertical-align: top; line-height: 1.5; }
+  tbody td:first-child { font-weight: 600; }
+  .tag-best {
+    display: inline-block;
+    background: rgba(199,166,43,0.18); color: var(--gold);
+    font-size: 11px; font-weight: 700; letter-spacing: 0.06em;
+    padding: 3px 10px; border-radius: 100px;
+    border: 1px solid rgba(199,166,43,0.35);
+  }
+
+  /* ── HIGHLIGHT BOX ── */
+  .highlight-box {
+    background: rgba(199,166,43,0.1);
+    border: 1.5px solid rgba(199,166,43,0.3);
+    border-radius: 14px; padding: 24px 28px; margin: 32px 0;
+  }
+  .highlight-box p { margin-bottom: 0; }
+  .highlight-box p + p { margin-top: 10px; }
+
+  /* ── CHARGER LIST ── */
+  .charger-grid {
+    display: grid; gap: 14px; margin: 24px 0 32px;
+    grid-template-columns: 1fr;
+  }
+  @media(min-width: 560px) { .charger-grid { grid-template-columns: 1fr 1fr; } }
+  .charger-card {
+    background: #fff; border-radius: 14px; padding: 20px 22px;
+    border: 1.5px solid rgba(31,31,27,0.08);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .charger-card:hover { border-color: var(--gold); transform: translateY(-2px); }
+  .charger-name { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
+  .charger-desc { font-size: 14px; line-height: 1.6; color: var(--charcoal-muted); }
+
+  /* ── CTA BOX ── */
+  .article-cta {
+    background: var(--gold); border-radius: 20px;
+    padding: 40px 36px; margin: 56px 0 40px;
+    text-align: center;
+  }
+  .article-cta h3 {
+    font-size: clamp(20px, 3vw, 26px); font-weight: 800;
+    color: var(--charcoal); margin-bottom: 10px;
+  }
+  .article-cta p {
+    font-size: 16px; color: rgba(31,31,27,0.72);
+    margin-bottom: 24px; line-height: 1.6;
+  }
+  .cta-btn {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: var(--charcoal); color: #F6F0DE;
+    font-weight: 700; font-size: 16px;
+    padding: 14px 30px; border-radius: 100px;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.2s;
+  }
+  .cta-btn:hover { background: var(--charcoal-light); transform: translateY(-1px); }
+  .cta-btn-secondary {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: rgba(31,31,27,0.12); color: var(--charcoal);
+    font-weight: 600; font-size: 15px;
+    padding: 14px 28px; border-radius: 100px;
+    text-decoration: none; margin-top: 12px;
+    transition: background 0.2s;
+  }
+  .cta-btn-secondary:hover { background: rgba(31,31,27,0.2); }
+  .cta-btn-row { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+
+  /* ── BACK LINK ── */
+  .back-link {
+    display: inline-flex; align-items: center; gap: 8px;
+    color: var(--charcoal-muted); font-size: 14px; font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .back-link:hover { color: var(--gold); }
+
+  /* ── CREDENTIALS BAR ── */
+  .creds-bar {
+    background: var(--charcoal);
+    padding: 28px 24px;
+  }
+  .creds-inner {
+    max-width: 1200px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: center;
+    flex-wrap: wrap; gap: 28px;
+  }
+  .cred-item {
+    display: flex; align-items: center; gap: 10px;
+    color: rgba(246,240,222,0.65); font-size: 13px; font-weight: 500;
+  }
+  .cred-badge {
+    background: #1B3D6B; color: #fff;
+    font-size: 11px; font-weight: 700; letter-spacing: 0.06em;
+    padding: 5px 12px; border-radius: 6px;
+  }
+  .cred-divider { color: rgba(246,240,222,0.15); font-size: 18px; }
+  .cred-stars { color: var(--gold); font-size: 15px; letter-spacing: 2px; }
+  .cred-review-link {
+    color: rgba(246,240,222,0.65); text-decoration: none;
+    font-size: 13px; font-weight: 500;
+    transition: color 0.2s;
+  }
+  .cred-review-link:hover { color: var(--gold); }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--charcoal-light);
+    padding: 40px 24px;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+  .footer-inner {
+    max-width: 1200px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: wrap; gap: 20px;
+  }
+  .footer-brand {
+    color: rgba(246,240,222,0.4); font-size: 13px; line-height: 1.6;
+  }
+  .footer-brand strong { color: rgba(246,240,222,0.8); font-weight: 600; }
+  .footer-links { display: flex; flex-wrap: wrap; gap: 8px; }
+  .footer-links a {
+    color: rgba(246,240,222,0.5); text-decoration: none;
+    font-size: 13px; font-weight: 500;
+    padding: 6px 14px; border-radius: 100px;
+    border: 1px solid rgba(246,240,222,0.1);
+    transition: color 0.2s, border-color 0.2s;
+  }
+  .footer-links a:hover { color: var(--gold); border-color: rgba(199,166,43,0.3); }
+</style>
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NSDFDK1NYD"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-NSDFDK1NYD");</script>
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://pipelectrics.com.au/og-share-image.png">
+<meta property="og:title" content="Home EV Charger Installation Queensland | Pip Electrics Blog">
+<meta property="og:description" content="Everything Queensland homeowners need to know about installing a home EV charger — Level 1 vs Level 2, dedicated circuits, switchboard checks, smart chargers and cost factors.">
+<meta property="og:url" content="https://pipelectrics.com.au/blog-ev-charger-installation.html">
+</head>
+<body>
+
+<!-- ── HEADER ── -->
+<header>
+  <div class="header-inner">
+    <a href="index.html">
+      <img src="pip-electrics-logo-transparent.png" alt="Pip Electrics Logo" class="logo">
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#services">Services</a>
+      <a href="areas-we-service.html">Areas</a>
+      <a href="blog.html" class="active">Blog</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <button class="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="tel:0433828901" class="header-cta">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.5 19.79 19.79 0 0 1 1.61 4.87C1.6 3.84 2.38 3 3.41 3h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 10.9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 17z"/></svg>
+      0433 828 901
+    </a>
+  </div>
+</header>
+
+<!-- ── ARTICLE HERO ── -->
+<div class="article-hero">
+  <div class="container">
+    <div class="category-tag">
+      <span></span>
+      EV Charging
+    </div>
+    <h1>Home EV Charger Installation —<br>The <em>Complete Guide</em> for<br>Queensland Homeowners</h1>
+    <div class="article-meta">
+      <span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        June 2026
+      </span>
+      <span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        7 min read
+      </span>
+      <span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        Pip Electrics
+      </span>
+    </div>
+  </div>
+</div>
+
+<!-- ── ARTICLE BODY ── -->
+<div class="article-wrap">
+  <div class="article-body">
+
+    <p>Queensland is one of the fastest-growing EV markets in Australia, and the Sunshine Coast is leading the way. Noosa, Buderim, Maroochydore, Kawana — we're seeing more and more homeowners asking about charging setups as they either buy their first EV or plan ahead for when they do. This guide covers everything you actually need to know, without the marketing spin.</p>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:32px 0;">
+      <figure style="margin:0;border-radius:16px;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,0.12);">
+        <img src="changeover%20switch.jpg" alt="Switchboard work required for EV charger installation" loading="lazy" style="width:100%;display:block;height:260px;object-fit:cover;">
+        <figcaption style="background:#1F1F1B;color:rgba(246,240,222,0.55);font-size:12px;font-weight:500;padding:10px 16px;">Switchboard upgrade — often required before a Level 2 EV charger can be installed</figcaption>
+      </figure>
+      <figure style="margin:0;border-radius:16px;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,0.12);">
+        <img src="finished%20meter%20box%20door%20closed.jpg" alt="Completed meter box after EV charger circuit added" loading="lazy" style="width:100%;display:block;height:260px;object-fit:cover;">
+        <figcaption style="background:#1F1F1B;color:rgba(246,240,222,0.55);font-size:12px;font-weight:500;padding:10px 16px;">Completed meter box — dedicated circuit added for EV charger</figcaption>
+      </figure>
+    </div>
+
+    <h2>Level 1, Level 2, DC Fast — What's the Difference?</h2>
+
+    <p>The "level" system describes charging speed and the type of electrical supply used. Here's how they stack up:</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Power</th>
+            <th>Range per hour</th>
+            <th>Equipment</th>
+            <th>Best for</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Level 1 (3-pin plug)</td>
+            <td>~2.4 kW</td>
+            <td>~15 km/hr</td>
+            <td>Standard power point</td>
+            <td>Emergencies only</td>
+          </tr>
+          <tr>
+            <td>Level 2 (wall charger) <span class="tag-best">Home sweet spot</span></td>
+            <td>7–22 kW</td>
+            <td>~40–120 km/hr</td>
+            <td>Dedicated circuit + wall unit</td>
+            <td>Overnight home charging</td>
+          </tr>
+          <tr>
+            <td>DC Fast Charger</td>
+            <td>50–350 kW</td>
+            <td>~200–500 km/hr</td>
+            <td>Commercial infrastructure</td>
+            <td>Service stations, shopping centres</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p><strong>Level 1</strong> — plugging into a regular 10A power point — is slow enough that you'll gain maybe 15 km of range per hour of charging. It's fine if you drive very little and charge all day, but it's not a practical long-term solution. <strong>DC Fast Chargers</strong> are commercial units that cost tens of thousands of dollars to install and draw enormous power from the grid. They have no place at a home.</p>
+
+    <p>That leaves <strong>Level 2</strong> as the obvious answer for home charging. A 7 kW wall charger will give you a full charge on most EVs overnight — and that's all you need. You plug in before bed, and you wake up to a full battery. Simple.</p>
+
+    <h2>What a Dedicated EV Charging Circuit Actually Involves</h2>
+
+    <p>This is where a lot of people get fuzzy on the details, so let's be specific.</p>
+
+    <p>A Level 2 home charger needs its own dedicated circuit running from your switchboard — not shared with anything else in the house. Here's what that means in practice:</p>
+
+    <ul>
+      <li><strong>32A dedicated circuit breaker</strong> in the switchboard, sized for the charger's draw</li>
+      <li><strong>Correct cable sizing</strong> — typically 6mm² TPS cable for a 32A run, which must be rated for the length and installation method (in-wall, surface, conduit)</li>
+      <li><strong>A weatherproof outlet or hardwired connection</strong> at the charging point — your garage wall or carport post</li>
+      <li><strong>Earth fault protection (RCD/RCBO)</strong> — mandatory under AS/NZS 3000 wiring rules</li>
+      <li><strong>Cable run from the switchboard</strong> to where your car parks — this distance is one of the biggest cost variables</li>
+    </ul>
+
+    <div class="highlight-box">
+      <p>In Queensland, all electrical work must be carried out by a licensed electrician. Installing your own EV charging circuit — even just the wiring — is illegal and voids your insurance. The charger manufacturer warranty also typically requires professional installation.</p>
+    </div>
+
+    <h2>Popular Home EV Chargers in Australia</h2>
+
+    <p>The charger itself is one decision, the electrical installation is another. Your electrician can install almost any brand — here are the units we're seeing most often on the Sunshine Coast:</p>
+
+    <div class="charger-grid">
+      <div class="charger-card">
+        <div class="charger-name">Tesla Wall Connector</div>
+        <div class="charger-desc">Up to 11.5 kW. Slick design, WiFi connected. Works on any EV via adaptor, not just Teslas. Good local support via Tesla service centres.</div>
+      </div>
+      <div class="charger-card">
+        <div class="charger-name">Wallbox Pulsar Plus</div>
+        <div class="charger-desc">7 kW, compact and popular. OCPP-compatible, app control, load balancing built in. Strong value for money and a favourite for new installs.</div>
+      </div>
+      <div class="charger-card">
+        <div class="charger-name">Zappi (myenergi)</div>
+        <div class="charger-desc">Purpose-built for solar integration. Charges exclusively from excess solar generation if you want — which means near-zero marginal cost for every kilometre.</div>
+      </div>
+      <div class="charger-card">
+        <div class="charger-name">OCPP-Compatible Units</div>
+        <div class="charger-desc">Any charger supporting the Open Charge Point Protocol can be monitored, updated and managed remotely. Worth specifying if you want future flexibility.</div>
+      </div>
+    </div>
+
+    <h2>Load Management and Solar — Why Smart Charging Matters</h2>
+
+    <p>If you have solar panels on your roof (and a huge percentage of Sunshine Coast homes do), a smart charger is worth every cent of the price premium.</p>
+
+    <p>A standard EV charger draws at full rate regardless of what your solar is producing. A <strong>smart charger</strong> — like the Zappi, or any unit with solar integration — monitors your solar export in real time and adjusts its charge rate to match your excess generation. Instead of buying power from the grid at peak rates, you're consuming what would otherwise be fed back for a small export tariff.</p>
+
+    <p>On a typical Queensland day, a household with 6.6 kW of solar can generate enough excess between 9am and 3pm to add 50–80 km of range to a parked EV. Over a year, that's thousands of kilometres charged essentially for free.</p>
+
+    <p>The integration does require the charger to be wired into your system correctly and configured to communicate with your inverter or a CT clamp measuring your total consumption. That setup is part of what a qualified EV charging installer does — it's not a plug-and-play exercise.</p>
+
+    <h2>Before We Quote: What We Check at Your Switchboard</h2>
+
+    <p>This is a step many people overlook when budgeting for an EV charger. Before any work starts, we need to assess whether your switchboard can handle the additional load.</p>
+
+    <p>We look at:</p>
+    <ul>
+      <li><strong>Main fuse/breaker rating</strong> — your home's supply limit (typically 63A or 100A for a suburban house)</li>
+      <li><strong>Current load</strong> — what your existing circuits are drawing, including air conditioning, hot water and pool equipment</li>
+      <li><strong>Available capacity</strong> — whether there's headroom to add a 32A EV circuit without overloading the supply</li>
+      <li><strong>Switchboard condition</strong> — older switchboards with ceramic fuses or no RCD protection need upgrading before we can add new circuits</li>
+      <li><strong>Metering setup</strong> — relevant if you're in a townhouse complex or have a shared supply</li>
+    </ul>
+
+    <p>Most newer homes (built in the last 15 years) have switchboards with adequate capacity and RCD protection already in place. But if you're in an older property — say, a 1970s or 80s fibro home in Nambour or Caloundra — there's a real chance the switchboard needs attention first. We'll always tell you upfront if that's the case.</p>
+
+    <h2>The Electrician vs the Charger Brand — Why This Distinction Matters</h2>
+
+    <p>When you shop for an EV charger, you're shopping for a piece of hardware. When you hire Pip Electrics, you're engaging a licensed electrician to design and install the electrical infrastructure that makes that hardware work safely and efficiently.</p>
+
+    <p>The brand sells a box. We install the circuit, cable, protection devices, and commissioning — the stuff that determines whether the system is safe, up to code, and will hold up in Queensland's climate (humidity, heat, potential flooding in low-lying areas).</p>
+
+    <p>Charger brands will not cover warranty claims arising from improper installation. Energy Queensland will not be sympathetic if an improperly wired charger causes a fault. And your home insurer will want to know the work was done by a licensed sparky with a compliance certificate. Don't DIY this.</p>
+
+    <h2>What Does It Cost?</h2>
+
+    <p>Every installation is different, but the main cost variables are:</p>
+
+    <ul>
+      <li><strong>Switchboard upgrades</strong> — if your board needs work, budget $800–$2,000 depending on scope</li>
+      <li><strong>Cable run length</strong> — a charger directly behind the switchboard is straightforward; a run to a detached garage 30 metres away is significantly more labour and materials</li>
+      <li><strong>The charger itself</strong> — basic units start around $500; smart solar-integrated units like the Zappi sit at $900–$1,200 before supply</li>
+      <li><strong>Conduit and accessories</strong> — surface mounting in a garage is simple; in-wall or underground trenching adds cost</li>
+    </ul>
+
+    <p>As a rough guide, a straightforward Level 2 installation on the Sunshine Coast — switchboard with spare capacity, charger point in an attached garage — typically lands between $1,200 and $2,200 all-in including the charger unit. We provide a fixed-price quote after assessing your property, so there are no surprises.</p>
+
+    <h2>Don't Have an EV Yet? Get Rough-In Ready</h2>
+
+    <p>This is genuinely good advice and doesn't cost much to act on: if you're building, renovating, or even just doing other electrical work, ask us to rough in a dedicated 32A circuit and conduit stub-out to your garage now.</p>
+
+    <p>Running cable while walls are open, or while a trench is already dug for other services, costs a fraction of what it costs to do later. You get a future-proof circuit with a capped outlet — no charger yet, but the infrastructure is there waiting. When you buy an EV in two or three years, the wall unit goes in for a few hundred dollars rather than a full installation job.</p>
+
+    <p>It's cheap insurance for an appliance that's increasingly inevitable.</p>
+
+    <h2>A Note on the Sunshine Coast Specifically</h2>
+
+    <p>We work across the full Sunshine Coast hinterland and coast — Noosa, Peregian, Coolum, Maroochydore, Buderim, Kawana, Caloundra and everywhere in between. The coastal areas — Noosa Heads, Sunshine Beach, Mooloolaba — are already seeing strong EV adoption, and we're fielding more EV installation enquiries every month.</p>
+
+    <p>The Sunshine Coast's high solar penetration makes this region particularly well-suited to smart EV charging. If you've got panels on the roof and an EV in the driveway, the combination is hard to beat on running costs.</p>
+
+    <p>If you're thinking about it, give us a call. We'll come out, have a look at your setup, and give you a straight answer on what's involved and what it'll cost.</p>
+
+  </div><!-- /article-body -->
+
+  <!-- ── CTA BOX ── -->
+  <div class="article-cta">
+    <h3>Thinking about an EV charger for your Sunshine Coast home?</h3>
+    <p>We install Level 2 home chargers across the Sunshine Coast and hinterland. Fixed-price quotes, no surprises. Call anytime — we pick up.</p>
+    <div class="cta-btn-row">
+      <a href="tel:0433828901" class="cta-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.5 19.79 19.79 0 0 1 1.61 4.87C1.6 3.84 2.38 3 3.41 3h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 10.9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 17z"/></svg>
+        Call 0433 828 901
+      </a>
+      <a href="mailto:pipelectrics1@gmail.com" class="cta-btn-secondary">
+        pipelectrics1@gmail.com
+      </a>
+    </div>
+  </div>
+
+  <!-- ── BACK LINK ── -->
+  <a href="blog.html" class="back-link">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+    Back to Blog
+  </a>
+
+</div><!-- /article-wrap -->
+
+<!-- ── CREDENTIALS BAR ── -->
+<div class="creds-bar">
+  <div class="creds-inner">
+    <div class="cred-item">
+      <span class="cred-badge">NECA</span>
+      <span>#1B3D6B Member</span>
+    </div>
+    <div class="cred-divider">|</div>
+    <div class="cred-item">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      QLD Electrical Licence No. 86954
+    </div>
+    <div class="cred-divider">|</div>
+    <div class="cred-item">
+      <span class="cred-stars">★★★★★</span>
+      <a href="https://g.page/r/CaWhD9kQv-elEBM/review" target="_blank" rel="noopener" class="cred-review-link">Google Reviews</a>
+    </div>
+  </div>
+</div>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <strong>Pip Electrics</strong><br>
+      Sunshine Coast Electricians &mdash; Lic. No. 86954<br>
+      0433 828 901 &nbsp;&middot;&nbsp; pipelectrics1@gmail.com
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="areas-we-service.html">Areas We Service</a>
+    </div>
+  </div>
+<!-- Google Reviews Widget -->
+<section style="background:#fff;padding:64px 0;">
+  <div style="max-width:1200px;margin:0 auto;padding:0 24px;text-align:center;">
+    <div style="display:inline-block;color:#C7A62B;font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;margin-bottom:10px;">5-Star Rated</div>
+    <h2 style="font-size:clamp(24px,4vw,40px);font-weight:800;color:#1F1F1B;line-height:1.1;margin-bottom:8px;">What Our Customers Say</h2>
+    <p style="color:#6B6B60;font-size:16px;margin-bottom:36px;">Real reviews from real Sunshine Coast locals on Google.</p>
+    <div class="elfsight-app-1b684fae-3858-41a7-8e9a-9b14d50c6dc8" data-elfsight-app-lazy></div>
+    <div style="margin-top:28px;">
+      <a href="https://share.google/Q8bNlJwdtYujTqo1S" target="_blank" rel="noopener"
+         style="display:inline-flex;align-items:center;gap:10px;background:#1F1F1B;color:#F6F0DE;font-weight:700;font-size:14px;padding:13px 26px;border-radius:100px;text-decoration:none;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+        See All Our Google Reviews
+      </a>
+    </div>
+  </div>
+</section>
+</footer>
+
+<div style="background:#1F1F1B;text-align:center;padding:10px 24px;font-size:11px;border-top:1px solid rgba(255,255,255,0.06)"><a href="privacy-policy.html" style="color:rgba(246,240,222,0.3);text-decoration:none;letter-spacing:0.06em;">Privacy Policy</a></div>
+</body>
+</html>

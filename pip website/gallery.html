@@ -1,0 +1,717 @@
+﻿<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<link rel="canonical" href="https://pipelectrics.com.au/gallery">
+<link rel="icon" href="favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png"><link rel="icon" type="image/png" sizes="192x192" href="favicon-192x192.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Work | Photo Gallery | Pip Electrics Sunshine Coast</title>
+<meta name="description" content="Browse Pip Electrics' project gallery — switchboard upgrades, LED lighting, ceiling fans, pendant lights, meter panel upgrades and more across the Sunshine Coast.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --ivory: #F6F0DE;
+    --charcoal: #1F1F1B;
+    --charcoal-light: #2E2E28;
+    --charcoal-muted: #6B6B60;
+    --gold: #C7A62B;
+    --gold-light: #D4B84A;
+  }
+
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', system-ui, sans-serif; background: var(--ivory); color: var(--charcoal); -webkit-font-smoothing: antialiased; }
+  ::selection { background: var(--gold); color: var(--charcoal); }
+
+  /* ── HEADER ── */
+  header {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(31,31,27,0.92); backdrop-filter: blur(12px);
+    padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+  .header-inner {
+    max-width: 1200px; margin: 0 auto; padding: 0 24px;
+    display: flex; align-items: center; justify-content: space-between; gap: 20px;
+  }
+  .logo { height: 56px; width: auto; }
+  nav { display: flex; gap: 4px; }
+  nav a {
+    color: rgba(246,240,222,0.8); text-decoration: none;
+    font-size: 14px; font-weight: 500;
+    padding: 7px 14px; border-radius: 100px;
+    transition: color 0.2s, background 0.2s;
+  }
+  nav a:hover { color: var(--gold); }
+  nav a.active { color: var(--gold); background: rgba(199,166,43,0.1); }
+  .header-cta {
+    display: flex; align-items: center; gap: 8px;
+    background: var(--gold); color: var(--charcoal);
+    font-weight: 700; font-size: 14px;
+    padding: 10px 20px; border-radius: 100px;
+    text-decoration: none; transition: background 0.2s, transform 0.2s;
+  }
+  .header-cta:hover { background: var(--gold-light); transform: translateY(-1px); }
+
+  /* ── HERO ── */
+  .hero {
+    position: relative; height: 55vh; min-height: 400px; max-height: 600px;
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden; text-align: center;
+  }
+  .hero video {
+    position: absolute; inset: 0; width: 100%; height: 100%;
+    object-fit: cover; z-index: 0;
+  }
+  .hero-overlay {
+    position: absolute; inset: 0; z-index: 1;
+    background: linear-gradient(to bottom, rgba(31,31,27,0.6) 0%, rgba(31,31,27,0.4) 40%, rgba(31,31,27,0.85) 100%);
+  }
+  .hero-gold-line {
+    position: absolute; bottom: 0; left: 0; right: 0; height: 2px; z-index: 2;
+    background: linear-gradient(to right, transparent, var(--gold), transparent);
+    opacity: 0.6;
+  }
+  .hero-content { position: relative; z-index: 3; padding: 0 20px; max-width: 800px; }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(199,166,43,0.18); border: 1px solid rgba(199,166,43,0.4);
+    backdrop-filter: blur(8px);
+    color: var(--gold); font-size: 11px; font-weight: 700;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    padding: 8px 18px; border-radius: 100px; margin-bottom: 20px;
+  }
+  .hero h1 {
+    font-size: clamp(34px, 6vw, 64px); font-weight: 900;
+    color: #F6F0DE; line-height: 1.05; margin-bottom: 14px;
+  }
+  .hero h1 em { font-style: normal; color: var(--gold); }
+  .hero p {
+    color: rgba(246,240,222,0.75); font-size: clamp(15px, 1.8vw, 18px);
+  }
+
+  /* ── SECTION UTILITIES ── */
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+  .section-label {
+    display: inline-block; color: var(--gold);
+    font-size: 11px; font-weight: 700; letter-spacing: 0.14em;
+    text-transform: uppercase; margin-bottom: 10px;
+  }
+  .gold-line { width: 44px; height: 3px; background: var(--gold); border-radius: 10px; margin-bottom: 16px; }
+  .section-title { font-size: clamp(26px, 4vw, 42px); font-weight: 800; color: var(--charcoal); line-height: 1.1; }
+
+  /* ── CATEGORY FILTER ── */
+  .filter-bar {
+    background: #fff; border-bottom: 1px solid rgba(31,31,27,0.08);
+    padding: 16px 0; position: sticky; top: 72px; z-index: 50;
+  }
+  .filter-inner {
+    max-width: 1200px; margin: 0 auto; padding: 0 24px;
+    display: flex; gap: 8px; overflow-x: auto; -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .filter-inner::-webkit-scrollbar { display: none; }
+  .filter-btn {
+    flex-shrink: 0; padding: 8px 18px; border-radius: 100px;
+    border: 1.5px solid rgba(31,31,27,0.14); background: none;
+    font-family: inherit; font-size: 13px; font-weight: 600; color: var(--charcoal-muted);
+    cursor: pointer; white-space: nowrap;
+    transition: background 0.15s, border-color 0.15s, color 0.15s;
+  }
+  .filter-btn:hover { border-color: var(--gold); color: var(--charcoal); }
+  .filter-btn.active {
+    background: var(--gold); border-color: var(--gold); color: var(--charcoal);
+  }
+
+  /* ── GALLERY SECTION ── */
+  .gallery-section { padding: 64px 0; }
+  .gallery-section:first-of-type { padding-top: 80px; }
+  .section-header { margin-bottom: 32px; }
+
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  @media(min-width: 600px) { .photo-grid { grid-template-columns: repeat(3, 1fr); gap: 16px; } }
+  @media(min-width: 900px) { .photo-grid { grid-template-columns: repeat(4, 1fr); gap: 20px; } }
+
+  .photo-card {
+    position: relative; border-radius: 16px; overflow: hidden;
+    cursor: pointer; aspect-ratio: 4/3;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .photo-card:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(0,0,0,0.18); }
+  .photo-card.wide { grid-column: span 2; aspect-ratio: 16/9; }
+  @media(max-width: 599px) { .photo-card.wide { grid-column: span 1; aspect-ratio: 4/3; } }
+
+  .photo-card img {
+    width: 100%; height: 100%; object-fit: cover;
+    transition: transform 0.35s;
+  }
+  .photo-card:hover img { transform: scale(1.04); }
+
+  .photo-overlay {
+    position: absolute; inset: 0; z-index: 1;
+    background: linear-gradient(to top, rgba(31,31,27,0.75) 0%, transparent 55%);
+    opacity: 0; transition: opacity 0.25s;
+    display: flex; align-items: flex-end; padding: 16px;
+  }
+  .photo-card:hover .photo-overlay { opacity: 1; }
+  .photo-caption {
+    color: #F6F0DE; font-size: 12px; font-weight: 600; line-height: 1.4;
+  }
+  .zoom-icon {
+    position: absolute; top: 12px; right: 12px; z-index: 2;
+    width: 32px; height: 32px; border-radius: 50%;
+    background: rgba(199,166,43,0.85); backdrop-filter: blur(4px);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px; opacity: 0; transition: opacity 0.25s;
+  }
+  .photo-card:hover .zoom-icon { opacity: 1; }
+
+  /* ── LIGHTBOX ── */
+  .lightbox {
+    position: fixed; inset: 0; z-index: 300;
+    background: rgba(15,15,12,0.96); backdrop-filter: blur(8px);
+    display: none; align-items: center; justify-content: center;
+    padding: 20px;
+  }
+  .lightbox.open { display: flex; }
+  .lightbox-img {
+    max-width: 90vw; max-height: 85vh;
+    border-radius: 16px; object-fit: contain;
+    box-shadow: 0 32px 80px rgba(0,0,0,0.5);
+  }
+  .lightbox-close {
+    position: absolute; top: 20px; right: 20px;
+    width: 44px; height: 44px; border-radius: 50%;
+    background: rgba(255,255,255,0.1); border: none; cursor: pointer;
+    color: #F6F0DE; font-size: 20px;
+    display: flex; align-items: center; justify-content: center;
+    transition: background 0.2s;
+  }
+  .lightbox-close:hover { background: rgba(199,166,43,0.4); }
+  .lightbox-prev, .lightbox-next {
+    position: absolute; top: 50%; transform: translateY(-50%);
+    width: 48px; height: 48px; border-radius: 50%;
+    background: rgba(255,255,255,0.1); border: none; cursor: pointer;
+    color: #F6F0DE; font-size: 20px;
+    display: flex; align-items: center; justify-content: center;
+    transition: background 0.2s;
+  }
+  .lightbox-prev:hover, .lightbox-next:hover { background: rgba(199,166,43,0.4); }
+  .lightbox-prev { left: 16px; }
+  .lightbox-next { right: 16px; }
+  .lightbox-caption {
+    position: absolute; bottom: 24px; left: 50%; transform: translateX(-50%);
+    color: rgba(246,240,222,0.75); font-size: 13px; font-weight: 500;
+    white-space: nowrap; text-align: center;
+  }
+  .lightbox-counter {
+    position: absolute; top: 24px; left: 50%; transform: translateX(-50%);
+    color: rgba(246,240,222,0.5); font-size: 12px; font-weight: 600;
+    letter-spacing: 0.08em;
+  }
+
+  /* ── CTA ── */
+  .cta-section {
+    background: var(--charcoal); padding: 72px 0; text-align: center;
+  }
+  .cta-title { color: #F6F0DE; font-size: clamp(26px,4vw,42px); font-weight: 800; margin-bottom: 12px; }
+  .cta-sub { color: rgba(246,240,222,0.5); font-size: 17px; margin-bottom: 32px; }
+  .btn-gold {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: var(--gold); color: var(--charcoal);
+    font-weight: 800; font-size: 16px;
+    padding: 16px 32px; border-radius: 100px;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.2s;
+  }
+  .btn-gold:hover { background: var(--gold-light); transform: translateY(-2px); }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--charcoal); padding: 40px 0;
+    border-top: 1px solid rgba(255,255,255,0.07);
+    text-align: center;
+    color: rgba(246,240,222,0.3); font-size: 12px;
+  }
+  footer a { color: rgba(246,240,222,0.5); text-decoration: none; }
+  footer a:hover { color: var(--gold); }
+
+  /* ── FLOAT CTA ── */
+  .float-cta {
+    position: fixed; bottom: 20px; right: 20px; z-index: 200;
+    display: flex; align-items: center; gap: 8px;
+    background: var(--gold); color: var(--charcoal);
+    font-weight: 800; font-size: 14px;
+    padding: 13px 22px; border-radius: 100px;
+    box-shadow: 0 8px 32px rgba(199,166,43,0.35);
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .float-cta:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(199,166,43,0.45); }
+  @media(min-width:700px){ .float-cta { display: none; } }
+
+  /* ── HAMBURGER ── */
+  .hamburger {
+    display: none;
+    flex-direction: column; justify-content: center; align-items: center;
+    gap: 5px; width: 40px; height: 40px;
+    background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 10px; cursor: pointer; flex-shrink: 0;
+  }
+  .hamburger span {
+    display: block; width: 20px; height: 2px;
+    background: #F6F0DE; border-radius: 2px;
+    transition: transform 0.25s, opacity 0.25s;
+  }
+  .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .hamburger.open span:nth-child(2) { opacity: 0; }
+  .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+  @media(max-width:760px){ .hamburger { display: flex; } nav { display: none; } }
+
+  /* ── MOBILE MENU ── */
+  .mobile-menu {
+    position: fixed; inset: 0; z-index: 99;
+    background: var(--charcoal);
+    transform: translateX(100%);
+    transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+    overflow-y: auto; padding-top: 72px;
+  }
+  .mobile-menu.open { transform: translateX(0); }
+  .mobile-menu-inner { padding: 24px 24px 120px; }
+  .mob-section-label {
+    font-size: 10px; font-weight: 700; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--gold);
+    padding: 0 4px; margin-bottom: 10px; margin-top: 28px;
+  }
+  .mob-section-label:first-child { margin-top: 0; }
+  .mob-nav-link {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 14px 16px; border-radius: 14px;
+    color: #F6F0DE; text-decoration: none;
+    font-size: 16px; font-weight: 600;
+    transition: background 0.15s, color 0.15s;
+  }
+  .mob-nav-link:hover { background: rgba(255,255,255,0.07); color: var(--gold); }
+  .mob-nav-link .arrow { color: rgba(246,240,222,0.3); font-size: 14px; }
+  .mob-divider { height: 1px; background: rgba(255,255,255,0.07); margin: 8px 0; }
+  .mob-location-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 4px; }
+  .mob-location-link {
+    display: flex; align-items: center; gap: 8px;
+    padding: 12px 14px; border-radius: 12px;
+    background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
+    color: rgba(246,240,222,0.8); text-decoration: none;
+    font-size: 13px; font-weight: 500;
+    transition: background 0.15s, border-color 0.15s, color 0.15s;
+  }
+  .mob-location-link:hover { background: rgba(199,166,43,0.1); border-color: rgba(199,166,43,0.35); color: var(--gold); }
+  .mob-location-link .loc-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--gold); opacity: 0.5; flex-shrink: 0; }
+  .mob-call-btn {
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    width: 100%; padding: 16px; margin-top: 24px;
+    background: var(--gold); color: var(--charcoal);
+    font-weight: 800; font-size: 16px; border-radius: 14px;
+    text-decoration: none; transition: background 0.2s;
+  }
+  .mob-call-btn:hover { background: var(--gold-light); }
+</style>
+
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NSDFDK1NYD"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-NSDFDK1NYD");</script>
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://pipelectrics.com.au/og-share-image.png">
+<meta property="og:title" content="Our Work | Photo Gallery | Pip Electrics Sunshine Coast">
+<meta property="og:description" content="Browse Pip Electrics' project gallery — switchboard upgrades, LED lighting, ceiling fans, pendant lights, meter panel upgrades and more across the Sunshine Coast.">
+<meta property="og:url" content="https://pipelectrics.com.au/gallery">
+</head>
+<body>
+
+<!-- FLOAT CTA (mobile) -->
+<a href="tel:0433828901" class="float-cta">📞 Call Now</a>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="index.html"><img src="pip-electrics-logo-transparent.png" alt="Pip Electrics" class="logo"></a>
+    <nav>
+      <a href="index.html#about">About</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#reviews">Reviews</a>
+      <a href="areas-we-service.html">Areas</a>
+      <a href="blog.html">Blog</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="index.html#social">Social</a>
+    </nav>
+    <a href="tel:0433828901" class="header-cta">📞 0433 828 901</a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-inner">
+    <div class="mob-section-label">Navigate</div>
+    <a href="index.html#about" class="mob-nav-link">About <span class="arrow">›</span></a>
+    <a href="index.html#services" class="mob-nav-link">Services <span class="arrow">›</span></a>
+    <a href="index.html#reviews" class="mob-nav-link">Reviews <span class="arrow">›</span></a>
+    <a href="blog.html" class="mob-nav-link">Blog <span class="arrow">›</span></a>
+    <a href="gallery.html" class="mob-nav-link">Gallery <span class="arrow">›</span></a>
+    <a href="index.html#faq" class="mob-nav-link">FAQ <span class="arrow">›</span></a>
+    <a href="index.html#contact" class="mob-nav-link">Contact <span class="arrow">›</span></a>
+    <a href="index.html#social" class="mob-nav-link">Social Media <span class="arrow">›</span></a>
+    <div class="mob-divider"></div>
+    <div class="mob-section-label">Areas We Service</div>
+    <div class="mob-location-grid">
+      <a href="bli-bli-electrician.html" class="mob-location-link"><span class="loc-dot"></span>Bli Bli</a>
+      <a href="bokarina-electrician.html" class="mob-location-link"><span class="loc-dot"></span>Bokarina</a>
+      <a href="buderim-electrician.html" class="mob-location-link"><span class="loc-dot"></span>Buderim</a>
+      <a href="caloundra-fire-safety.html" class="mob-location-link"><span class="loc-dot"></span>Caloundra</a>
+      <a href="doonan-eumundi-electrician.html" class="mob-location-link"><span class="loc-dot"></span>Doonan / Eumundi</a>
+      <a href="kawana-electrician.html" class="mob-location-link"><span class="loc-dot"></span>Kawana</a>
+      <a href="landsborough-electrician.html" class="mob-location-link"><span class="loc-dot"></span>Landsborough</a>
+      <a href="little-mountain-electrician.html" class="mob-location-link"><span class="loc-dot"></span>Little Mountain</a>
+      <a href="maroochydore-electrician.html" class="mob-location-link"><span class="loc-dot"></span>Maroochydore</a>
+      <a href="mooloolaba-electrician.html" class="mob-location-link"><span class="loc-dot"></span>Mooloolaba</a>
+      <a href="mudjimba-electrician.html" class="mob-location-link"><span class="loc-dot"></span>Mudjimba</a>
+      <a href="nambour-electrician.html" class="mob-location-link"><span class="loc-dot"></span>Nambour</a>
+      <a href="noosa-electrician.html" class="mob-location-link"><span class="loc-dot"></span>Noosa</a>
+      <a href="peregian-coolum-electrician.html" class="mob-location-link"><span class="loc-dot"></span>Peregian / Coolum</a>
+      <a href="wurtulla-electrician.html" class="mob-location-link"><span class="loc-dot"></span>Wurtulla</a>
+      <a href="yandina-electrician.html" class="mob-location-link"><span class="loc-dot"></span>Yandina</a>
+    </div>
+    <a href="areas-we-service.html" class="mob-nav-link" style="margin-top:10px;">View All Areas <span class="arrow">›</span></a>
+    <a href="tel:0433828901" class="mob-call-btn">📞 Call 0433 828 901</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <video autoplay muted loop playsinline>
+    <source src="hero%20banner.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay"></div>
+  <div class="hero-gold-line"></div>
+  <div class="hero-content">
+    <div class="hero-badge">⚡ Real Jobs, Real Results</div>
+    <h1>Our <em>Work</em></h1>
+    <p>Switchboards · Lighting · Fans · Meter Panels · and more</p>
+  </div>
+</section>
+
+<!-- FILTER BAR -->
+<div class="filter-bar">
+  <div class="filter-inner">
+    <button class="filter-btn active" onclick="filterGallery('all', this)">All Photos</button>
+    <button class="filter-btn" onclick="filterGallery('switchboard', this)">Switchboards &amp; Meter Panels</button>
+    <button class="filter-btn" onclick="filterGallery('lighting', this)">Lighting</button>
+    <button class="filter-btn" onclick="filterGallery('fans', this)">Ceiling Fans</button>
+    <button class="filter-btn" onclick="filterGallery('other', this)">Other Installs</button>
+    <button class="filter-btn" onclick="filterGallery('team', this)">The Team</button>
+  </div>
+</div>
+
+<!-- GALLERY -->
+<div style="background:var(--ivory); padding: 60px 0 80px;">
+  <div class="container">
+
+    <!-- Switchboards & Meter Panels -->
+    <div class="gallery-section" data-category="switchboard">
+      <div class="section-header">
+        <div class="gold-line"></div>
+        <span class="section-label">Switchboards &amp; Meter Panels</span>
+        <h2 class="section-title">Panel Upgrades &amp; Switchboard Work</h2>
+      </div>
+      <div class="photo-grid">
+        <div class="photo-card wide" onclick="openLightbox(0)">
+          <img src="before%20and%20after%20of%20downlight%20installations.jpg" alt="Before and after meter panel upgrade" loading="lazy">
+          <div class="photo-overlay"><span class="photo-caption">Meter Panel Upgrade — Before &amp; After</span></div>
+          <div class="zoom-icon">🔍</div>
+        </div>
+        <div class="photo-card" onclick="openLightbox(1)">
+          <img src="before%20of%20meter%20panel%20upgrade.jpg" alt="Meter panel before upgrade" loading="lazy">
+          <div class="photo-overlay"><span class="photo-caption">Meter Panel — Before</span></div>
+          <div class="zoom-icon">🔍</div>
+        </div>
+        <div class="photo-card" onclick="openLightbox(2)">
+          <img src="after%20photo%20of%20meter%20panel%20upgrade.jpg" alt="Meter panel after upgrade" loading="lazy">
+          <div class="photo-overlay"><span class="photo-caption">Meter Panel — After</span></div>
+          <div class="zoom-icon">🔍</div>
+        </div>
+        <div class="photo-card" onclick="openLightbox(3)">
+          <img src="meter%20panel%20upgrade%20after%20photo.jpg" alt="Completed meter panel upgrade" loading="lazy">
+          <div class="photo-overlay"><span class="photo-caption">Meter Panel Upgrade Complete</span></div>
+          <div class="zoom-icon">🔍</div>
+        </div>
+        <div class="photo-card" onclick="openLightbox(4)">
+          <img src="meter%20panel%20upgrade.jpg" alt="Meter panel upgrade in progress" loading="lazy">
+          <div class="photo-overlay"><span class="photo-caption">Meter Panel Upgrade</span></div>
+          <div class="zoom-icon">🔍</div>
+        </div>
+        <div class="photo-card" onclick="openLightbox(5)">
+          <img src="burnt%20out%20main%20switch.jpg" alt="Burnt out main switch" loading="lazy">
+          <div class="photo-overlay"><span class="photo-caption">Burnt Out Main Switch — Replaced</span></div>
+          <div class="zoom-icon">🔍</div>
+        </div>
+        <div class="photo-card" onclick="openLightbox(6)">
+          <img src="finished%20meter%20box%20door%20closed.jpg" alt="Finished meter box" loading="lazy">
+          <div class="photo-overlay"><span class="photo-caption">Finished Meter Box</span></div>
+          <div class="zoom-icon">🔍</div>
+        </div>
+        <div class="photo-card" onclick="openLightbox(7)">
+          <img src="fuse%20box%20upgrade%20before.jpg" alt="Fuse box before upgrade" loading="lazy">
+          <div class="photo-overlay"><span class="photo-caption">Fuse Box — Before</span></div>
+          <div class="zoom-icon">🔍</div>
+        </div>
+        <div class="photo-card" onclick="openLightbox(8)">
+          <img src="fuse%20box%20upgrade%20after.jpg" alt="Fuse box after upgrade" loading="lazy">
+          <div class="photo-overlay"><span class="photo-caption">Fuse Box — After</span></div>
+          <div class="zoom-icon">🔍</div>
+        </div>
+        <div class="photo-card" onclick="openLightbox(9)">
+          <img src="changeover%20switch.jpg" alt="Changeover switch installation" loading="lazy">
+          <div class="photo-overlay"><span class="photo-caption">Changeover Switch</span></div>
+          <div class="zoom-icon">🔍</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lighting -->
+    <div class="gallery-section" data-category="lighting" style="border-top:1px solid rgba(31,31,27,0.08); padding-top:64px;">
+      <div class="section-header">
+        <div class="gold-line"></div>
+        <span class="section-label">Lighting Installations</span>
+        <h2 class="section-title">LED Downlights, Pendants &amp; More</h2>
+      </div>
+      <div class="photo-grid">
+        <div class="photo-card" onclick="openLightbox(10)">
+          <img src="after%20photo%20of%20LED%20downlight%20installation.jpg" alt="LED downlight installation" loading="lazy">
+          <div class="photo-overlay"><span class="photo-caption">LED Downlight Installation</span></div>
+          <div class="zoom-icon">🔍</div>
+        </div>
+        <div class="photo-card" onclick="openLightbox(11)">
+          <img src="led%20mirror%20install.jpg" alt="LED mirror installation" loading="lazy">
+          <div class="photo-overlay"><span class="photo-caption">LED Mirror Install</span></div>
+          <div class="zoom-icon">🔍</div>
+        </div>
+        <div class="photo-card" onclick="openLightbox(12)">
+          <img src="led%20strip%20light%20in%20pantry.jpg" alt="LED strip light in pantry" loading="lazy">
+          <div class="photo-overlay"><span class="photo-caption">LED Strip Light — Pantry</span></div>
+          <div class="zoom-icon">🔍</div>
+        </div>
+        <div class="photo-card" onclick="openLightbox(13)">
+          <img src="pendant%20light%20install.jpg" alt="Pendant light installation" loading="lazy">
+          <div class="photo-overlay"><span class="photo-caption">Pendant Light Install</span></div>
+          <div class="zoom-icon">🔍</div>
+        </div>
+        <div class="photo-card" onclick="openLightbox(14)">
+          <img src="Pendant%20light%20installation.jpg" alt="Pendant light installation finished" loading="lazy">
+          <div class="photo-overlay"><span class="photo-caption">Pendant Light — Finished</span></div>
+          <div class="zoom-icon">🔍</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ceiling Fans -->
+    <div class="gallery-section" data-category="fans" style="border-top:1px solid rgba(31,31,27,0.08); padding-top:64px;">
+      <div class="section-header">
+        <div class="gold-line"></div>
+        <span class="section-label">Ceiling Fans</span>
+        <h2 class="section-title">Ceiling Fan Installations</h2>
+      </div>
+      <div class="photo-grid">
+        <div class="photo-card wide" onclick="openLightbox(15)">
+          <img src="before%20and%20after%20of%20installed%20ceiling%20fans%20on%20deck.jpg" alt="Ceiling fans installed on deck" loading="lazy">
+          <div class="photo-overlay"><span class="photo-caption">Ceiling Fans on Deck — Before &amp; After</span></div>
+          <div class="zoom-icon">🔍</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Other Installs -->
+    <div class="gallery-section" data-category="other" style="border-top:1px solid rgba(31,31,27,0.08); padding-top:64px;">
+      <div class="section-header">
+        <div class="gold-line"></div>
+        <span class="section-label">Other Installations</span>
+        <h2 class="section-title">Generators, Inverters &amp; More</h2>
+      </div>
+      <div class="photo-grid">
+        <div class="photo-card" onclick="openLightbox(16)">
+          <img src="caravan%20inverter%20installation.jpg" alt="Caravan inverter installation" loading="lazy">
+          <div class="photo-overlay"><span class="photo-caption">Caravan Inverter Installation</span></div>
+          <div class="zoom-icon">🔍</div>
+        </div>
+        <div class="photo-card" onclick="openLightbox(17)">
+          <img src="generator%20ATS%20installation.jpg" alt="Generator ATS installation" loading="lazy">
+          <div class="photo-overlay"><span class="photo-caption">Generator ATS Installation</span></div>
+          <div class="zoom-icon">🔍</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team -->
+    <div class="gallery-section" data-category="team" style="border-top:1px solid rgba(31,31,27,0.08); padding-top:64px;">
+      <div class="section-header">
+        <div class="gold-line"></div>
+        <span class="section-label">The Team</span>
+        <h2 class="section-title">The People Behind the Work</h2>
+      </div>
+      <div class="photo-grid">
+        <div class="photo-card" onclick="openLightbox(18)">
+          <img src="me%20and%20teddy.jpg" alt="Pip Electrics team" loading="lazy">
+          <div class="photo-overlay"><span class="photo-caption">The Team</span></div>
+          <div class="zoom-icon">🔍</div>
+        </div>
+        <div class="photo-card" onclick="openLightbox(19)">
+          <img src="me%20with%20my%20van.jpg" alt="Pip Electrics van" loading="lazy">
+          <div class="photo-overlay"><span class="photo-caption">Ready for the Next Job</span></div>
+          <div class="zoom-icon">🔍</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="cta-section">
+  <div class="container">
+    <h2 class="cta-title">Like What You See?</h2>
+    <p class="cta-sub">Get in touch for a free quote on your next electrical job.</p>
+    <a href="tel:0433828901" class="btn-gold">📞 Call 0433 828 901</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <p>© 2026 Pip Electrics &nbsp;·&nbsp; QLD Electrical Contractor Licence No. 86954 &nbsp;·&nbsp; <a href="mailto:pipelectrics1@gmail.com">pipelectrics1@gmail.com</a> &nbsp;·&nbsp; <a href="index.html">Back to Home</a></p>
+  </div>
+<!-- Google Reviews Widget -->
+<section style="background:#fff;padding:64px 0;">
+  <div style="max-width:1200px;margin:0 auto;padding:0 24px;text-align:center;">
+    <div style="display:inline-block;color:#C7A62B;font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;margin-bottom:10px;">5-Star Rated</div>
+    <h2 style="font-size:clamp(24px,4vw,40px);font-weight:800;color:#1F1F1B;line-height:1.1;margin-bottom:8px;">What Our Customers Say</h2>
+    <p style="color:#6B6B60;font-size:16px;margin-bottom:36px;">Real reviews from real Sunshine Coast locals on Google.</p>
+    <div class="elfsight-app-1b684fae-3858-41a7-8e9a-9b14d50c6dc8" data-elfsight-app-lazy></div>
+    <div style="margin-top:28px;">
+      <a href="https://share.google/Q8bNlJwdtYujTqo1S" target="_blank" rel="noopener"
+         style="display:inline-flex;align-items:center;gap:10px;background:#1F1F1B;color:#F6F0DE;font-weight:700;font-size:14px;padding:13px 26px;border-radius:100px;text-decoration:none;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+        See All Our Google Reviews
+      </a>
+    </div>
+  </div>
+</section>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="handleLightboxClick(event)">
+  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+  <button class="lightbox-prev" onclick="lightboxNav(-1)">‹</button>
+  <img class="lightbox-img" id="lightboxImg" src="" alt="">
+  <button class="lightbox-next" onclick="lightboxNav(1)">›</button>
+  <div class="lightbox-caption" id="lightboxCaption"></div>
+  <div class="lightbox-counter" id="lightboxCounter"></div>
+</div>
+
+
+<script>
+  // Gallery photos index (matches onclick order)
+  const photos = [
+    { src: 'before%20and%20after%20of%20downlight%20installations.jpg', caption: 'Meter Panel Upgrade — Before & After' },
+    { src: 'before%20of%20meter%20panel%20upgrade.jpg', caption: 'Meter Panel — Before' },
+    { src: 'after%20photo%20of%20meter%20panel%20upgrade.jpg', caption: 'Meter Panel — After' },
+    { src: 'meter%20panel%20upgrade%20after%20photo.jpg', caption: 'Meter Panel Upgrade Complete' },
+    { src: 'meter%20panel%20upgrade.jpg', caption: 'Meter Panel Upgrade' },
+    { src: 'burnt%20out%20main%20switch.jpg', caption: 'Burnt Out Main Switch — Replaced' },
+    { src: 'finished%20meter%20box%20door%20closed.jpg', caption: 'Finished Meter Box' },
+    { src: 'fuse%20box%20upgrade%20before.jpg', caption: 'Fuse Box — Before' },
+    { src: 'fuse%20box%20upgrade%20after.jpg', caption: 'Fuse Box — After' },
+    { src: 'changeover%20switch.jpg', caption: 'Changeover Switch' },
+    { src: 'after%20photo%20of%20LED%20downlight%20installation.jpg', caption: 'LED Downlight Installation' },
+    { src: 'led%20mirror%20install.jpg', caption: 'LED Mirror Install' },
+    { src: 'led%20strip%20light%20in%20pantry.jpg', caption: 'LED Strip Light — Pantry' },
+    { src: 'pendant%20light%20install.jpg', caption: 'Pendant Light Install' },
+    { src: 'Pendant%20light%20installation.jpg', caption: 'Pendant Light — Finished' },
+    { src: 'before%20and%20after%20of%20installed%20ceiling%20fans%20on%20deck.jpg', caption: 'Ceiling Fans on Deck — Before & After' },
+    { src: 'caravan%20inverter%20installation.jpg', caption: 'Caravan Inverter Installation' },
+    { src: 'generator%20ATS%20installation.jpg', caption: 'Generator ATS Installation' },
+    { src: 'me%20and%20teddy.jpg', caption: 'The Team' },
+    { src: 'me%20with%20my%20van.jpg', caption: 'Ready for the Next Job' },
+  ];
+
+  let currentIndex = 0;
+
+  function openLightbox(index) {
+    currentIndex = index;
+    updateLightbox();
+    document.getElementById('lightbox').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  function handleLightboxClick(e) {
+    if (e.target === document.getElementById('lightbox')) closeLightbox();
+  }
+
+  function lightboxNav(dir) {
+    currentIndex = (currentIndex + dir + photos.length) % photos.length;
+    updateLightbox();
+  }
+
+  function updateLightbox() {
+    const p = photos[currentIndex];
+    document.getElementById('lightboxImg').src = p.src;
+    document.getElementById('lightboxImg').alt = p.caption;
+    document.getElementById('lightboxCaption').textContent = p.caption;
+    document.getElementById('lightboxCounter').textContent = (currentIndex + 1) + ' / ' + photos.length;
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (!document.getElementById('lightbox').classList.contains('open')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') lightboxNav(-1);
+    if (e.key === 'ArrowRight') lightboxNav(1);
+  });
+
+  // Filter gallery
+  function filterGallery(category, btn) {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.gallery-section').forEach(section => {
+      if (category === 'all' || section.dataset.category === category) {
+        section.style.display = '';
+      } else {
+        section.style.display = 'none';
+      }
+    });
+  }
+
+  // Hamburger menu
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  hamburger.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('open');
+    hamburger.classList.toggle('open', isOpen);
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  });
+</script>
+<div style="background:#1F1F1B;text-align:center;padding:10px 24px;font-size:11px;border-top:1px solid rgba(255,255,255,0.06)"><a href="privacy-policy.html" style="color:rgba(246,240,222,0.3);text-decoration:none;letter-spacing:0.06em;">Privacy Policy</a></div>
+</body>
+</html>

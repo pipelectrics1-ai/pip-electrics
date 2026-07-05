@@ -1,0 +1,1024 @@
+﻿<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" href="favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png"><link rel="icon" type="image/png" sizes="192x192" href="favicon-192x192.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pip Electrics | Sunshine Coast Electricians</title>
+<meta name="description" content="Licensed Sunshine Coast electricians available 7 days. Switchboard upgrades, EV chargers, LED downlights, safety switches, smoke alarms and more. Call 0433 828 901.">
+<link rel="canonical" href="https://pipelectrics.com.au/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --ivory: #F6F0DE;
+    --charcoal: #1F1F1B;
+    --charcoal-light: #2E2E28;
+    --charcoal-muted: #6B6B60;
+    --gold: #C7A62B;
+    --gold-light: #D4B84A;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: var(--ivory);
+    color: var(--charcoal);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection { background: var(--gold); color: var(--charcoal); }
+
+  /* ── HEADER ── */
+  header {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(31,31,27,0.92);
+    backdrop-filter: blur(12px);
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+  .header-inner {
+    max-width: 1200px; margin: 0 auto; padding: 0 24px;
+    display: flex; align-items: center; justify-content: space-between; gap: 20px;
+  }
+  .logo { height: 56px; width: auto; }
+  nav { display: flex; gap: 4px; }
+  nav a {
+    color: rgba(246,240,222,0.8); text-decoration: none;
+    font-size: 14px; font-weight: 500;
+    padding: 7px 14px; border-radius: 100px;
+    transition: color 0.2s, background 0.2s;
+  }
+  nav a:hover { color: var(--gold); }
+  .header-cta {
+    display: flex; align-items: center; gap: 8px;
+    background: var(--gold); color: var(--charcoal);
+    font-weight: 700; font-size: 14px;
+    padding: 10px 20px; border-radius: 100px;
+    text-decoration: none; transition: background 0.2s, transform 0.2s;
+  }
+  .header-cta:hover { background: var(--gold-light); transform: translateY(-1px); }
+
+  /* ── HERO ── */
+  .hero {
+    position: relative; height: 100vh; min-height: 600px; max-height: 900px;
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden; text-align: center;
+  }
+  .hero video {
+    position: absolute; inset: 0; width: 100%; height: 100%;
+    object-fit: cover; z-index: 0;
+  }
+  .hero-overlay {
+    position: absolute; inset: 0; z-index: 1;
+    background: linear-gradient(to bottom, rgba(31,31,27,0.55) 0%, rgba(31,31,27,0.3) 40%, rgba(31,31,27,0.75) 100%);
+  }
+  .hero-gold-line {
+    position: absolute; bottom: 0; left: 0; right: 0; height: 2px; z-index: 2;
+    background: linear-gradient(to right, transparent, var(--gold), transparent);
+    opacity: 0.6;
+  }
+  .hero-content { position: relative; z-index: 3; padding: 0 20px; max-width: 900px; }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(199,166,43,0.18); border: 1px solid rgba(199,166,43,0.4);
+    backdrop-filter: blur(8px);
+    color: var(--gold); font-size: 11px; font-weight: 700;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    padding: 8px 18px; border-radius: 100px; margin-bottom: 24px;
+  }
+  .hero-badge span { width: 6px; height: 6px; border-radius: 50%; background: var(--gold); animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+  .hero h1 {
+    font-size: clamp(40px, 7vw, 80px); font-weight: 900;
+    color: #F6F0DE; line-height: 1.05;
+    margin-bottom: 20px;
+  }
+  .hero h1 em { font-style: normal; color: var(--gold); }
+  .hero p {
+    color: rgba(246,240,222,0.78); font-size: clamp(16px,2vw,20px);
+    margin-bottom: 36px;
+  }
+  .hero-buttons { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  .btn-gold {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: var(--gold); color: var(--charcoal);
+    font-weight: 800; font-size: 16px;
+    padding: 16px 32px; border-radius: 100px;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  }
+  .btn-gold:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 12px 32px rgba(199,166,43,0.3); }
+  .btn-outline-white {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: rgba(246,240,222,0.1); border: 2px solid rgba(246,240,222,0.4);
+    color: #F6F0DE; font-weight: 700; font-size: 16px;
+    padding: 16px 32px; border-radius: 100px;
+    text-decoration: none; backdrop-filter: blur(8px);
+    transition: background 0.2s, border-color 0.2s;
+  }
+  .btn-outline-white:hover { background: rgba(246,240,222,0.2); border-color: rgba(246,240,222,0.8); }
+  .hero-pills { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 32px; }
+  .hero-pill {
+    background: rgba(246,240,222,0.1); border: 1px solid rgba(246,240,222,0.2);
+    color: rgba(246,240,222,0.75); font-size: 12px; font-weight: 500;
+    padding: 7px 16px; border-radius: 100px; backdrop-filter: blur(4px);
+  }
+  .scroll-arrow {
+    position: absolute; bottom: 28px; left: 50%; transform: translateX(-50%);
+    z-index: 3; animation: bounce 2s ease-in-out infinite;
+    color: rgba(246,240,222,0.4); font-size: 22px;
+  }
+  @keyframes bounce { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(8px)} }
+
+  /* ── SECTION UTILITIES ── */
+  section { padding: 88px 0; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+  .section-label {
+    display: inline-block; color: var(--gold);
+    font-size: 11px; font-weight: 700; letter-spacing: 0.14em;
+    text-transform: uppercase; margin-bottom: 10px;
+  }
+  .gold-line { width: 44px; height: 3px; background: var(--gold); border-radius: 10px; margin-bottom: 16px; }
+  .section-title { font-size: clamp(28px,4vw,46px); font-weight: 800; color: var(--charcoal); line-height: 1.1; }
+  .section-sub { color: var(--charcoal-muted); font-size: 18px; line-height: 1.7; margin-top: 12px; }
+
+  /* ── TRUST BAR ── */
+  .trust-bar { background: var(--charcoal); padding: 56px 0; }
+  .trust-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+  @media(min-width:700px){ .trust-grid { grid-template-columns: repeat(6,1fr); } }
+  .trust-item { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 10px; }
+  .trust-icon {
+    width: 48px; height: 48px; border-radius: 14px;
+    background: rgba(199,166,43,0.15);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px;
+  }
+  .trust-label { color: #F6F0DE; font-weight: 600; font-size: 13px; line-height: 1.3; }
+  .trust-sub { color: rgba(246,240,222,0.4); font-size: 11px; }
+
+  /* ── SERVICES ── */
+  .services-bg { background: var(--ivory); }
+  .services-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 14px; margin-top: 48px; }
+  @media(min-width:640px){ .services-grid { grid-template-columns: repeat(3,1fr); } }
+  @media(min-width:960px){ .services-grid { grid-template-columns: repeat(4,1fr); } }
+  .service-card {
+    background: #fff; border-radius: 20px; padding: 22px;
+    border: 1.5px solid transparent;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    transition: box-shadow 0.2s, border-color 0.2s, transform 0.2s;
+    cursor: default;
+  }
+  .service-card:hover { box-shadow: 0 6px 24px rgba(0,0,0,0.1); border-color: var(--gold); transform: translateY(-2px); }
+  .service-icon { font-size: 22px; margin-bottom: 10px; }
+  .service-name { font-weight: 700; font-size: 14px; color: var(--charcoal); margin-bottom: 6px; }
+  .service-desc { color: var(--charcoal-muted); font-size: 12px; line-height: 1.6; }
+  .services-more { text-align: center; margin-top: 36px; }
+  .btn-outline-dark {
+    display: inline-flex; align-items: center; gap: 8px;
+    border: 2px solid var(--charcoal); color: var(--charcoal);
+    font-weight: 700; font-size: 14px; padding: 12px 28px; border-radius: 100px;
+    text-decoration: none; transition: background 0.2s, color 0.2s;
+  }
+  .btn-outline-dark:hover { background: var(--charcoal); color: #F6F0DE; }
+
+  /* ── CTA BANNER ── */
+  .cta-dark { background: var(--charcoal); }
+  .cta-gold { background: var(--gold); }
+  .cta-banner { padding: 72px 0; text-align: center; }
+  .cta-dark .cta-title { color: #F6F0DE; font-size: clamp(26px,4vw,44px); font-weight: 800; margin-bottom: 14px; }
+  .cta-dark .cta-sub { color: rgba(246,240,222,0.55); font-size: 17px; margin-bottom: 36px; }
+  .cta-gold .cta-title { color: var(--charcoal); font-size: clamp(26px,4vw,44px); font-weight: 800; margin-bottom: 14px; }
+  .cta-gold .cta-sub { color: rgba(31,31,27,0.65); font-size: 17px; margin-bottom: 36px; }
+  .cta-buttons { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  .btn-gold-lg {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--gold); color: var(--charcoal); font-weight: 800; font-size: 16px;
+    padding: 15px 32px; border-radius: 100px; text-decoration: none;
+    transition: background 0.2s, transform 0.2s;
+  }
+  .btn-gold-lg:hover { background: var(--gold-light); transform: translateY(-2px); }
+  .btn-charcoal-lg {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--charcoal); color: #F6F0DE; font-weight: 800; font-size: 16px;
+    padding: 15px 32px; border-radius: 100px; text-decoration: none;
+    transition: background 0.2s;
+  }
+  .btn-charcoal-lg:hover { background: var(--charcoal-light); }
+  .btn-outline-ivory {
+    display: inline-flex; align-items: center; gap: 8px;
+    border: 2px solid rgba(246,240,222,0.3); color: #F6F0DE; font-weight: 700; font-size: 16px;
+    padding: 15px 32px; border-radius: 100px; text-decoration: none;
+    transition: border-color 0.2s, background 0.2s;
+  }
+  .btn-outline-ivory:hover { border-color: #F6F0DE; background: rgba(246,240,222,0.08); }
+
+  /* ── ABOUT ── */
+  .about-bg { background: #fff; }
+  .about-grid { display: grid; gap: 60px; align-items: center; }
+  @media(min-width:900px){ .about-grid { grid-template-columns: 1fr 1fr; } }
+  .about-img-wrap { position: relative; }
+  .about-img {
+    width: 100%; border-radius: 28px; object-fit: cover;
+    aspect-ratio: 4/5; box-shadow: 0 24px 64px rgba(0,0,0,0.15);
+  }
+  .about-badge {
+    position: absolute; bottom: -20px; right: -20px;
+    background: var(--gold); border-radius: 20px;
+    padding: 14px 22px; box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  }
+  .about-badge-num { color: var(--charcoal); font-weight: 900; font-size: 28px; line-height: 1; }
+  .about-badge-sub { color: rgba(31,31,27,0.7); font-size: 11px; font-weight: 600; margin-top: 4px; }
+  .about-ring {
+    position: absolute; top: -22px; left: -22px;
+    width: 80px; height: 80px;
+    border: 4px solid rgba(199,166,43,0.3); border-radius: 50%;
+  }
+  .checkpoints { list-style: none; margin: 24px 0 32px; }
+  .checkpoints li {
+    display: flex; align-items: flex-start; gap: 12px;
+    margin-bottom: 12px; font-size: 15px; color: var(--charcoal);
+  }
+  .checkpoints li::before { content: "✓"; color: var(--gold); font-weight: 900; flex-shrink: 0; margin-top: 1px; }
+
+  /* ── REVIEWS ── */
+  .reviews-bg { background: var(--ivory); }
+  .reviews-header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 48px; }
+  .rating-badge {
+    background: var(--gold); border-radius: 18px;
+    padding: 14px 22px; text-align: center; flex-shrink: 0;
+  }
+  .rating-num { color: var(--charcoal); font-weight: 900; font-size: 32px; line-height: 1; }
+  .stars { color: var(--charcoal); font-size: 12px; margin: 4px 0 2px; letter-spacing: 2px; }
+  .rating-label { color: rgba(31,31,27,0.65); font-size: 11px; font-weight: 600; }
+  .reviews-grid { display: grid; gap: 16px; }
+  @media(min-width:600px){ .reviews-grid { grid-template-columns: repeat(2,1fr); } }
+  @media(min-width:900px){ .reviews-grid { grid-template-columns: repeat(3,1fr); } }
+  .review-card {
+    background: #fff; border-radius: 20px; padding: 22px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    display: flex; flex-direction: column; gap: 14px; position: relative;
+  }
+  .review-stars { color: var(--gold); font-size: 14px; letter-spacing: 2px; }
+  .review-text { color: var(--charcoal); font-size: 13px; line-height: 1.7; flex: 1; }
+  .review-footer { border-top: 1px solid rgba(31,31,27,0.08); padding-top: 14px; display: flex; justify-content: space-between; align-items: center; }
+  .review-name { font-weight: 700; font-size: 13px; color: var(--charcoal); }
+  .review-loc { color: var(--charcoal-muted); font-size: 11px; }
+  .review-tag { background: rgba(199,166,43,0.12); color: var(--gold); font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 100px; }
+
+  /* ── AREAS ── */
+  .areas-bg { background: var(--charcoal); overflow: hidden; }
+  .areas-bg .section-title { color: #F6F0DE; }
+  .areas-bg .section-sub { color: rgba(246,240,222,0.5); }
+  .marquee-wrap { overflow: hidden; margin-top: 40px; }
+  .marquee-track {
+    display: flex; width: max-content;
+    animation: marquee 22s linear infinite;
+  }
+  .marquee-track:hover { animation-play-state: paused; }
+  @keyframes marquee { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+  .marquee-item {
+    display: flex; align-items: center; gap: 8px;
+    margin: 0 16px; flex-shrink: 0;
+    color: rgba(246,240,222,0.75); font-size: 14px; font-weight: 500;
+    white-space: nowrap;
+  }
+  .marquee-dot { color: rgba(199,166,43,0.35); margin-left: 16px; }
+
+  /* ── FAQ ── */
+  .faq-bg { background: #fff; }
+  .faq-list { max-width: 780px; margin: 40px auto 0; }
+  .faq-item { border: 1.5px solid rgba(31,31,27,0.1); border-radius: 16px; margin-bottom: 10px; overflow: hidden; transition: border-color 0.2s; }
+  .faq-item:hover { border-color: rgba(199,166,43,0.4); }
+  .faq-q {
+    width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    padding: 18px 22px; background: none; border: none; cursor: pointer; text-align: left;
+    font-family: inherit; font-weight: 600; font-size: 15px; color: var(--charcoal);
+  }
+  .faq-icon {
+    width: 28px; height: 28px; border-radius: 50%;
+    background: rgba(199,166,43,0.12);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px; color: var(--gold); flex-shrink: 0;
+    transition: transform 0.2s;
+  }
+  .faq-item.open .faq-icon { transform: rotate(45deg); }
+  .faq-a { display: none; padding: 0 22px 18px; color: var(--charcoal-muted); font-size: 14px; line-height: 1.75; border-top: 1px solid rgba(31,31,27,0.06); padding-top: 14px; }
+  .faq-item.open .faq-a { display: block; }
+
+  /* ── CONTACT ── */
+  .contact-bg { background: var(--ivory); }
+  .contact-grid { display: grid; gap: 48px; }
+  @media(min-width:900px){ .contact-grid { grid-template-columns: 2fr 3fr; } }
+  .contact-info-item { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 24px; }
+  .contact-icon { width: 44px; height: 44px; border-radius: 14px; background: rgba(199,166,43,0.12); display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0; }
+  .contact-label { font-size: 11px; color: var(--charcoal-muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 2px; }
+  .contact-val { font-weight: 700; font-size: 15px; color: var(--charcoal); text-decoration: none; }
+  .contact-val:hover { color: var(--gold); }
+  .hours-card { background: #fff; border-radius: 20px; padding: 22px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); margin-top: 6px; }
+  .hours-row { display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 8px; }
+  .hours-day { color: var(--charcoal-muted); }
+  .hours-time { font-weight: 600; color: var(--charcoal); }
+  .available-dot { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; color: var(--charcoal-muted); margin-top: 12px; padding-top: 12px; border-top: 1px solid rgba(31,31,27,0.08); }
+  .available-dot::before { content: ''; display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #22c55e; animation: pulse 2s infinite; }
+  /* Form */
+  .form-card { background: #fff; border-radius: 24px; padding: 32px; box-shadow: 0 4px 24px rgba(0,0,0,0.07); }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .form-group { margin-bottom: 16px; }
+  .form-label { display: block; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--charcoal-muted); margin-bottom: 6px; }
+  .form-input {
+    width: 100%; padding: 12px 16px;
+    border: 1.5px solid rgba(31,31,27,0.14); border-radius: 12px;
+    background: var(--ivory); font-family: inherit; font-size: 14px; color: var(--charcoal);
+    transition: border-color 0.2s; outline: none;
+  }
+  .form-input:focus { border-color: var(--gold); }
+  textarea.form-input { resize: none; height: 110px; }
+  .form-submit {
+    width: 100%; padding: 15px; background: var(--gold); color: var(--charcoal);
+    font-family: inherit; font-weight: 800; font-size: 16px;
+    border: none; border-radius: 14px; cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+  }
+  .form-submit:hover { background: var(--gold-light); transform: translateY(-1px); }
+
+  /* ── FOOTER ── */
+  footer { background: var(--charcoal); padding: 64px 0 0; }
+  .footer-grid { display: grid; gap: 40px; }
+  @media(min-width:640px){ .footer-grid { grid-template-columns: repeat(2,1fr); } }
+  @media(min-width:900px){ .footer-grid { grid-template-columns: 2fr 1.5fr 1.5fr 1.5fr; } }
+  .footer-logo { height: 52px; width: auto; border-radius: 10px; margin-bottom: 14px; }
+  .footer-desc { color: rgba(246,240,222,0.45); font-size: 13px; line-height: 1.7; margin-bottom: 18px; }
+  .footer-socials { display: flex; gap: 10px; }
+  .social-btn {
+    width: 34px; height: 34px; border-radius: 50%;
+    background: rgba(255,255,255,0.08);
+    display: flex; align-items: center; justify-content: center;
+    color: rgba(246,240,222,0.7); font-size: 14px; text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+  }
+  .social-btn:hover { background: var(--gold); color: var(--charcoal); }
+  .footer-heading { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: var(--gold); margin-bottom: 18px; }
+  .footer-links { list-style: none; }
+  .footer-links li { margin-bottom: 8px; }
+  .footer-links a { color: rgba(246,240,222,0.5); font-size: 13px; text-decoration: none; transition: color 0.2s; }
+  .footer-links a:hover { color: var(--gold); }
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.07); margin-top: 48px;
+    padding: 20px 0; text-align: center;
+    color: rgba(246,240,222,0.3); font-size: 12px;
+  }
+
+  /* ── FLOAT CTA ── */
+  .float-cta {
+    position: fixed; bottom: 20px; right: 20px; z-index: 200;
+    display: flex; align-items: center; gap: 8px;
+    background: var(--gold); color: var(--charcoal);
+    font-weight: 800; font-size: 14px;
+    padding: 13px 22px; border-radius: 100px;
+    box-shadow: 0 8px 32px rgba(199,166,43,0.35);
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .float-cta:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(199,166,43,0.45); }
+
+  @media(min-width:700px){ .float-cta { display: none; } }
+
+  /* Responsive nav */
+  @media(max-width:760px){
+    nav { display: none; }
+  }
+  @media(max-width:600px){
+    .area-guides-grid { grid-template-columns: 1fr !important; }
+  }
+
+  /* ── HAMBURGER BUTTON ── */
+  .hamburger {
+    display: none;
+    flex-direction: column; justify-content: center; align-items: center;
+    gap: 5px; width: 40px; height: 40px;
+    background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 10px; cursor: pointer; flex-shrink: 0;
+  }
+  .hamburger span {
+    display: block; width: 20px; height: 2px;
+    background: #F6F0DE; border-radius: 2px;
+    transition: transform 0.25s, opacity 0.25s;
+  }
+  .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .hamburger.open span:nth-child(2) { opacity: 0; }
+  .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+  @media(max-width:760px){ .hamburger { display: flex; } }
+
+  /* ── MOBILE MENU ── */
+  .mobile-menu {
+    position: fixed; inset: 0; z-index: 99;
+    background: var(--charcoal);
+    transform: translateX(100%);
+    transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+    overflow-y: auto;
+    padding-top: 72px;
+  }
+  .mobile-menu.open { transform: translateX(0); }
+  .mobile-menu-inner { padding: 24px 24px 120px; }
+
+  .mob-section-label {
+    font-size: 10px; font-weight: 700; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--gold);
+    padding: 0 4px; margin-bottom: 10px; margin-top: 28px;
+  }
+  .mob-section-label:first-child { margin-top: 0; }
+
+  .mob-nav-link {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 14px 16px; border-radius: 14px;
+    color: #F6F0DE; text-decoration: none;
+    font-size: 16px; font-weight: 600;
+    transition: background 0.15s, color 0.15s;
+  }
+  .mob-nav-link:hover, .mob-nav-link:active { background: rgba(255,255,255,0.07); color: var(--gold); }
+  .mob-nav-link .arrow { color: rgba(246,240,222,0.3); font-size: 14px; }
+
+  .mob-divider { height: 1px; background: rgba(255,255,255,0.07); margin: 8px 0; }
+
+  .mob-location-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 4px;
+  }
+  .mob-location-link {
+    display: flex; align-items: center; gap: 8px;
+    padding: 12px 14px; border-radius: 12px;
+    background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
+    color: rgba(246,240,222,0.8); text-decoration: none;
+    font-size: 13px; font-weight: 500;
+    transition: background 0.15s, border-color 0.15s, color 0.15s;
+  }
+  .mob-location-link:hover, .mob-location-link:active {
+    background: rgba(199,166,43,0.1); border-color: rgba(199,166,43,0.35); color: var(--gold);
+  }
+  .mob-location-link .loc-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--gold); opacity: 0.5; flex-shrink: 0; }
+
+  .mob-call-btn {
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    width: 100%; padding: 16px; margin-top: 24px;
+    background: var(--gold); color: var(--charcoal);
+    font-weight: 800; font-size: 16px; border-radius: 14px;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+  .mob-call-btn:hover { background: var(--gold-light); }
+</style>
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NSDFDK1NYD"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-NSDFDK1NYD");</script>
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://pipelectrics.com.au/og-share-image.png">
+<meta property="og:title" content="Pip Electrics | Sunshine Coast Electricians">
+<meta property="og:description" content="Licensed Sunshine Coast electricians available 7 days. Switchboard upgrades, EV chargers, LED downlights, safety switches, smoke alarms and more. Call 0433 828 901.">
+<meta property="og:url" content="https://pipelectrics.com.au/">
+</head>
+<body>
+
+<!-- FLOAT CTA (mobile) -->
+<a href="tel:0433828901" class="float-cta">📞 Call Now</a>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <img src="pip-electrics-logo-transparent.png" alt="Pip Electrics" class="logo">
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#reviews">Reviews</a>
+      <a href="areas-we-service.html">Areas</a>
+      <a href="blog.html">Blog</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+      <a href="#social">Social</a>
+    </nav>
+    <a href="tel:0433828901" class="header-cta">📞 0433 828 901</a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-inner">
+
+    <div class="mob-section-label">Navigate</div>
+    <a href="#about" class="mob-nav-link" onclick="closeMobileMenu()">About <span class="arrow">›</span></a>
+    <a href="#services" class="mob-nav-link" onclick="closeMobileMenu()">Services <span class="arrow">›</span></a>
+    <a href="#reviews" class="mob-nav-link" onclick="closeMobileMenu()">Reviews <span class="arrow">›</span></a>
+    <a href="blog.html" class="mob-nav-link">Blog <span class="arrow">›</span></a>
+    <a href="gallery.html" class="mob-nav-link">Gallery <span class="arrow">›</span></a>
+    <a href="#faq" class="mob-nav-link" onclick="closeMobileMenu()">FAQ <span class="arrow">›</span></a>
+    <a href="#contact" class="mob-nav-link" onclick="closeMobileMenu()">Contact <span class="arrow">›</span></a>
+    <a href="#social" class="mob-nav-link" onclick="closeMobileMenu()">Social Media <span class="arrow">›</span></a>
+
+    <div class="mob-divider"></div>
+
+    <div class="mob-section-label">Areas We Service</div>
+    <div class="mob-location-grid">
+      <a href="bli-bli-electrician.html" class="mob-location-link"><span class="loc-dot"></span>Bli Bli</a>
+      <a href="bokarina-electrician.html" class="mob-location-link"><span class="loc-dot"></span>Bokarina</a>
+      <a href="buderim-electrician.html" class="mob-location-link"><span class="loc-dot"></span>Buderim</a>
+      <a href="caloundra-fire-safety.html" class="mob-location-link"><span class="loc-dot"></span>Caloundra</a>
+      <a href="doonan-eumundi-electrician.html" class="mob-location-link"><span class="loc-dot"></span>Doonan / Eumundi</a>
+      <a href="kawana-electrician.html" class="mob-location-link"><span class="loc-dot"></span>Kawana</a>
+      <a href="landsborough-electrician.html" class="mob-location-link"><span class="loc-dot"></span>Landsborough</a>
+      <a href="little-mountain-electrician.html" class="mob-location-link"><span class="loc-dot"></span>Little Mountain</a>
+      <a href="maroochydore-electrician.html" class="mob-location-link"><span class="loc-dot"></span>Maroochydore</a>
+      <a href="mooloolaba-electrician.html" class="mob-location-link"><span class="loc-dot"></span>Mooloolaba</a>
+      <a href="mudjimba-electrician.html" class="mob-location-link"><span class="loc-dot"></span>Mudjimba</a>
+      <a href="nambour-electrician.html" class="mob-location-link"><span class="loc-dot"></span>Nambour</a>
+      <a href="noosa-electrician.html" class="mob-location-link"><span class="loc-dot"></span>Noosa</a>
+      <a href="peregian-coolum-electrician.html" class="mob-location-link"><span class="loc-dot"></span>Peregian / Coolum</a>
+      <a href="wurtulla-electrician.html" class="mob-location-link"><span class="loc-dot"></span>Wurtulla</a>
+      <a href="yandina-electrician.html" class="mob-location-link"><span class="loc-dot"></span>Yandina</a>
+    </div>
+    <a href="areas-we-service.html" class="mob-nav-link" style="margin-top:10px;">View All Areas <span class="arrow">›</span></a>
+
+    <a href="tel:0433828901" class="mob-call-btn">📞 Call 0433 828 901</a>
+
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <video autoplay muted loop playsinline>
+    <source src="hero%20banner.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay"></div>
+  <div class="hero-gold-line"></div>
+  <div class="hero-content">
+    <div class="hero-badge"><span></span> Sunshine Coast's Trusted Electrician</div>
+    <h1>Reliable Sunshine<br><em>Coast Electricians</em></h1>
+    <p>Residential &nbsp;·&nbsp; Commercial &nbsp;·&nbsp; Air Conditioning &nbsp;·&nbsp; Fast Local Service</p>
+    <div class="hero-buttons">
+      <a href="tel:0433828901" class="btn-gold">📞 Call 0433 828 901</a>
+      <a href="#contact" class="btn-outline-white">Request a Quote →</a>
+    </div>
+    <div class="hero-pills">
+      <span class="hero-pill">Licensed &amp; Insured</span>
+      <span class="hero-pill">Local Sunshine Coast</span>
+      <span class="hero-pill">Fast Response</span>
+      <span class="hero-pill">5-Star Rated</span>
+    </div>
+  </div>
+  <div class="scroll-arrow">↓</div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="container">
+    <div class="trust-grid">
+      <div class="trust-item"><div class="trust-icon">🛡️</div><div class="trust-label">Licensed &amp; Fully Insured</div><div class="trust-sub">QLD Licence No. 86954</div></div>
+      <a href="https://g.page/r/CaWhD9kQv-elEBM/review" target="_blank" rel="noopener" class="trust-item" style="text-decoration:none;"><div class="trust-icon">⭐</div><div class="trust-label">5-Star Google Rating</div><div class="trust-sub">Read our reviews →</div></a>
+      <div class="trust-item"><div class="trust-icon">⚡</div><div class="trust-label">24/7 Emergency Service</div><div class="trust-sub">Available when you need us</div></div>
+      <div class="trust-item"><div class="trust-icon">🕐</div><div class="trust-label">Same-Day Service</div><div class="trust-sub">Fast, local response times</div></div>
+      <div class="trust-item"><div class="trust-icon">🏆</div><div class="trust-label">Quality Guaranteed</div><div class="trust-sub">Workmanship warranty</div></div>
+      <div class="trust-item"><div class="trust-icon">🔧</div><div class="trust-label">All Electrical Work</div><div class="trust-sub">Residential, commercial &amp; A/C</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services" class="services-bg">
+  <div class="container">
+    <span class="section-label">What We Do</span>
+    <div class="gold-line"></div>
+    <h2 class="section-title">Electrical Services Across<br>the Sunshine Coast</h2>
+    <p class="section-sub" style="max-width:560px">From emergency repairs to new home builds, air conditioning to smoke alarms — we handle every electrical job.</p>
+    <div class="services-grid">
+      <div class="service-card"><div class="service-icon">🔧</div><div class="service-name">Electrical Repairs</div><div class="service-desc">Fast, reliable repairs for all electrical faults.</div></div>
+      <div class="service-card"><div class="service-icon">🏠</div><div class="service-name">New Homes</div><div class="service-desc">Complete fit-outs for new residential builds.</div></div>
+      <div class="service-card"><div class="service-icon">🔨</div><div class="service-name">Renovations</div><div class="service-desc">Upgrade your electrical during your renovation.</div></div>
+      <div class="service-card"><div class="service-icon">⚡</div><div class="service-name">Switchboards</div><div class="service-desc">Safety switch installs &amp; switchboard upgrades.</div></div>
+      <div class="service-card"><div class="service-icon">🔔</div><div class="service-name">Smoke Alarms</div><div class="service-desc">Queensland-compliant photoelectric alarms.</div></div>
+      <div class="service-card"><div class="service-icon">🔌</div><div class="service-name">Power Points</div><div class="service-desc">Add, move or upgrade power points &amp; USB outlets.</div></div>
+      <div class="service-card"><div class="service-icon">💡</div><div class="service-name">Lighting</div><div class="service-desc">LED downlights, feature &amp; sensor lighting.</div></div>
+      <div class="service-card"><div class="service-icon">🌀</div><div class="service-name">Ceiling Fans</div><div class="service-desc">Installation &amp; replacement — a Sunshine Coast must.</div></div>
+      <div class="service-card"><div class="service-icon">🛡️</div><div class="service-name">Safety Inspections</div><div class="service-desc">Thorough electrical audits for homes &amp; rentals.</div></div>
+      <div class="service-card"><div class="service-icon">🏢</div><div class="service-name">Commercial Electrical</div><div class="service-desc">Fit-outs, maintenance &amp; compliance work.</div></div>
+      <div class="service-card"><div class="service-icon">🚨</div><div class="service-name">Emergency Electrical</div><div class="service-desc">24/7 emergency call-outs across Sunshine Coast.</div></div>
+      <div class="service-card"><div class="service-icon">❄️</div><div class="service-name">Split System A/C</div><div class="service-desc">Supply &amp; install all major A/C brands.</div></div>
+      <div class="service-card"><div class="service-icon">🌡️</div><div class="service-name">A/C Installation</div><div class="service-desc">Professional installation — done right, first time.</div></div>
+      <div class="service-card"><div class="service-icon">⚙️</div><div class="service-name">A/C Servicing</div><div class="service-desc">Annual servicing to keep your system efficient.</div></div>
+      <div class="service-card"><div class="service-icon">📋</div><div class="service-name">Maintenance</div><div class="service-desc">Scheduled maintenance for homes &amp; businesses.</div></div>
+    </div>
+    <div class="services-more">
+      <a href="#contact" class="btn-outline-dark">Request a Quote →</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA DARK -->
+<div class="cta-dark cta-banner">
+  <div class="container">
+    <div class="cta-title">Ready to Get Started?</div>
+    <div class="cta-sub">Free quotes, fast response times, and quality work guaranteed.</div>
+    <div class="cta-buttons">
+      <a href="tel:0433828901" class="btn-gold-lg">📞 Call 0433 828 901</a>
+      <a href="#contact" class="btn-outline-ivory">Request a Quote →</a>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about" class="about-bg">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-wrap">
+        <div class="about-ring"></div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+          <img src="me%20with%20my%20van.jpg" alt="Pip Electrics van at Sunshine Coast" style="width:100%;aspect-ratio:2/3;object-fit:cover;border-radius:20px;box-shadow:0 24px 64px rgba(0,0,0,0.15);">
+          <div style="display:flex;flex-direction:column;gap:10px;">
+            <img src="me%20and%20teddy.jpg" alt="Pip Electrics team" style="width:100%;flex:1;object-fit:cover;border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,0.12);aspect-ratio:1;">
+            <div style="width:100%;flex:1;border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,0.12);aspect-ratio:1;background:#F6F0DE;display:flex;align-items:center;justify-content:center;padding:16px;"><img src="pip-electrics-logo-transparent.png" alt="Pip Electrics" style="width:100%;height:auto;max-width:140px;display:block;"></div>
+          </div>
+        </div>
+        <div class="about-badge">
+          <div class="about-badge-num">5★</div>
+          <div class="about-badge-sub">Google Reviews</div>
+        </div>
+      </div>
+      <div>
+        <span class="section-label">About Us</span>
+        <div class="gold-line"></div>
+        <h2 class="section-title">Your Local Sunshine<br>Coast Electrician</h2>
+        <p style="color:var(--charcoal-muted);font-size:17px;line-height:1.75;margin-top:16px">Pip Electrics is a locally owned electrical business on the Sunshine Coast. We take pride in delivering premium electrical solutions with honest pricing, a clean finish, and genuine care for every customer.</p>
+        <p style="color:var(--charcoal-muted);font-size:17px;line-height:1.75;margin-top:12px">Whether it's an emergency repair at 2am or a brand new split system before summer — we show up on time, do the job right, and leave your home spotless.</p>
+        <ul class="checkpoints">
+          <li>Locally owned and operated on the Sunshine Coast</li>
+          <li>Fully licensed electrical contractor — Queensland</li>
+          <li>Residential, commercial &amp; air conditioning specialist</li>
+          <li>Clean workmanship and professional service every time</li>
+          <li>Transparent pricing — no hidden fees</li>
+          <li>Fast response times across the entire Sunshine Coast</li>
+        </ul>
+        <a href="tel:0433828901" class="btn-gold" style="font-size:15px;padding:14px 28px">📞 Call 0433 828 901</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" class="reviews-bg">
+  <div class="container">
+    <div class="reviews-header">
+      <div>
+        <span class="section-label">Customer Reviews</span>
+        <div class="gold-line"></div>
+        <h2 class="section-title">What Our Customers Say</h2>
+      </div>
+      <div style="display:flex;align-items:center;gap:20px">
+        <div class="rating-badge">
+          <div class="rating-num">5.0</div>
+          <div class="stars">★★★★★</div>
+          <div class="rating-label">Google Rating</div>
+        </div>
+        <div>
+          <div style="font-weight:800;font-size:28px;color:var(--charcoal)">100+</div>
+          <div style="color:var(--charcoal-muted);font-size:13px">Verified reviews</div>
+        </div>
+      </div>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Pip Electrics were fantastic — called in the morning and they were at my place by lunch. Fixed our switchboard issue quickly and the pricing was very fair. Couldn't recommend more highly!"</p><div class="review-footer"><div><div class="review-name">Sarah M.</div><div class="review-loc">Buderim · 2 weeks ago</div></div><span class="review-tag">Switchboard</span></div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Best electrician on the Sunshine Coast. Installed 3 split systems and a complete lighting upgrade in our new home. Arrived on time, kept the place clean, the finish was immaculate."</p><div class="review-footer"><div><div class="review-name">James T.</div><div class="review-loc">Caloundra · 1 month ago</div></div><span class="review-tag">A/C &amp; Lighting</span></div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Had an electrical emergency at 10pm and Pip Electrics answered straight away. Problem diagnosed and fixed within the hour. Absolute legends — this is how a trade business should operate."</p><div class="review-footer"><div><div class="review-name">Kylie R.</div><div class="review-loc">Mooloolaba · 3 weeks ago</div></div><span class="review-tag">Emergency</span></div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Extremely professional and knowledgeable. Rewired our entire renovation on budget and ahead of schedule. The quote was detailed and there were zero surprises. Will use again."</p><div class="review-footer"><div><div class="review-name">Mark &amp; Lisa B.</div><div class="review-loc">Noosa · 2 months ago</div></div><span class="review-tag">Renovation</span></div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Smoke alarms needed updating to Queensland compliance standards. Pip Electrics came out same day, explained everything clearly and had it all done in an hour. Great communication."</p><div class="review-footer"><div><div class="review-name">Amanda F.</div><div class="review-loc">Sippy Downs · 1 week ago</div></div><span class="review-tag">Smoke Alarms</span></div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Used Pip Electrics for our commercial fitout. Highly professional, great communication and the quality of work is outstanding. Our go-to electrician for all our properties."</p><div class="review-footer"><div><div class="review-name">Craig W.</div><div class="review-loc">Maroochydore · 6 weeks ago</div></div><span class="review-tag">Commercial</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- AREAS -->
+<section id="areas" class="areas-bg">
+  <div class="container" style="text-align:center">
+    <span class="section-label">Where We Work</span>
+    <div class="gold-line" style="margin:0 auto 16px"></div>
+    <h2 class="section-title" style="color:#F6F0DE">Servicing the Entire Sunshine Coast</h2>
+    <p class="section-sub" style="max-width:500px;margin:0 auto">From Caloundra to Noosa and everywhere in between.</p>
+  </div>
+  <div class="marquee-wrap">
+    <div class="marquee-track" id="marqueeTrack"></div>
+  </div>
+  <div class="container" style="margin-top:40px;text-align:center;">
+    <a href="areas-we-service.html" style="display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:var(--charcoal);font-weight:800;font-size:15px;padding:14px 30px;border-radius:100px;text-decoration:none;transition:background 0.2s,transform 0.2s;" onmouseover="this.style.background='#D4B84A';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='var(--gold)';this.style.transform='translateY(0)'">View All Areas We Service →</a>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="faq-bg">
+  <div class="container" style="text-align:center">
+    <span class="section-label">Got Questions?</span>
+    <div class="gold-line" style="margin:0 auto 16px"></div>
+    <h2 class="section-title">Frequently Asked Questions</h2>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Are you a licensed electrician in Queensland?<span class="faq-icon">+</span></button><div class="faq-a">Yes — Pip Electrics holds a Queensland Electrical Contractor licence. All electricians are individually licensed and we carry full public liability and professional indemnity insurance.</div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How quickly can you respond to an emergency?<span class="faq-icon">+</span></button><div class="faq-a">We aim to respond to genuine electrical emergencies across the Sunshine Coast within 1–2 hours. We're available 24 hours a day, 7 days a week for urgent situations.</div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Do you install all brands of air conditioners?<span class="faq-icon">+</span></button><div class="faq-a">Yes — we install Daikin, Mitsubishi Electric, Fujitsu, Panasonic, LG, Samsung and more. We can supply the unit and handle everything in one appointment.</div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Are smoke alarms mandatory in Queensland?<span class="faq-icon">+</span></button><div class="faq-a">Yes. Queensland law requires interconnected photoelectric smoke alarms in all bedrooms, hallways and on every level of the home. Properties being sold, leased or renovated must comply since 1 January 2022.</div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How do I know if my switchboard needs upgrading?<span class="faq-icon">+</span></button><div class="faq-a">Signs include old ceramic fuses (not circuit breakers), no safety switches (RCDs) present, circuits that trip frequently, or burning smells near the board. We provide free safety assessments.</div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What areas do you service?<span class="faq-icon">+</span></button><div class="faq-a">We service the entire Sunshine Coast including Caloundra, Aura, Maroochydore, Buderim, Mooloolaba, Birtinya, Sippy Downs, Kawana, Noosa, Mountain Creek and all surrounding suburbs.</div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Do you charge for quotes?<span class="faq-icon">+</span></button><div class="faq-a">For most jobs we provide free, no-obligation quotes. We'll assess the work and give you an upfront price before any work begins — no surprises on the invoice.</div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Can I do my own electrical work in Queensland?<span class="faq-icon">+</span></button><div class="faq-a">No. All electrical wiring work must be performed by a licensed electrician in Queensland. DIY electrical work is illegal and can void your home insurance.</div></div>
+  </div>
+</section>
+
+<!-- CTA GOLD -->
+<div class="cta-gold cta-banner">
+  <div class="container">
+    <div class="cta-title">Need an Electrician on the Sunshine Coast?</div>
+    <div class="cta-sub">Call now for a free quote. Available 7 days — emergency call-outs 24/7.</div>
+    <div class="cta-buttons">
+      <a href="tel:0433828901" class="btn-charcoal-lg">📞 Call 0433 828 901</a>
+      <a href="#contact" class="btn-outline-dark">Request a Quote →</a>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-bg">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:56px">
+      <span class="section-label">Get In Touch</span>
+      <div class="gold-line" style="margin:0 auto 16px"></div>
+      <h2 class="section-title">Contact Pip Electrics</h2>
+      <p class="section-sub" style="max-width:500px;margin:0 auto">Call us, email us, or fill in the form and we'll be in touch within one business hour.</p>
+    </div>
+    <div class="contact-grid">
+      <div>
+        <div class="contact-info-item">
+          <div class="contact-icon">📞</div>
+          <div><div class="contact-label">Call Us</div><a href="tel:0433828901" class="contact-val">0433 828 901</a><div style="color:var(--charcoal-muted);font-size:12px;margin-top:2px">24/7 for emergencies</div></div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-icon">✉️</div>
+          <div><div class="contact-label">Email Us</div><a href="mailto:pipelectrics1@gmail.com" class="contact-val">pipelectrics1@gmail.com</a><div style="color:var(--charcoal-muted);font-size:12px;margin-top:2px">Reply within one business day</div></div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-icon">📍</div>
+          <div><div class="contact-label">Service Area</div><div class="contact-val">Sunshine Coast, QLD</div><div style="color:var(--charcoal-muted);font-size:12px;margin-top:2px">Caloundra to Noosa and beyond</div></div>
+        </div>
+        <div class="hours-card">
+          <div style="font-weight:700;color:var(--charcoal);margin-bottom:14px;font-size:14px">🕐 Business Hours</div>
+          <div class="hours-row"><span class="hours-day">Mon – Fri</span><span class="hours-time">7:00am – 5:00pm</span></div>
+          <div class="hours-row"><span class="hours-day">Saturday</span><span class="hours-time">7:00am – 12:00pm</span></div>
+          <div class="hours-row"><span class="hours-day">Sunday</span><span class="hours-time">Emergencies only</span></div>
+          <div class="available-dot">24/7 emergency call-outs available</div>
+        </div>
+      </div>
+      <div>
+        <div class="form-card">
+          <h3 style="font-size:18px;font-weight:800;color:var(--charcoal);margin-bottom:20px">Request a Free Quote</h3>
+          <form action="https://formspree.io/f/mkolkkov" method="POST" onsubmit="handleForm(event)">
+            <div class="form-row">
+              <div class="form-group"><label class="form-label">First Name *</label><input class="form-input" name="first-name" required placeholder="John"></div>
+              <div class="form-group"><label class="form-label">Last Name *</label><input class="form-input" name="last-name" required placeholder="Smith"></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group"><label class="form-label">Phone *</label><input class="form-input" name="phone" required type="tel" placeholder="04XX XXX XXX"></div>
+              <div class="form-group"><label class="form-label">Email</label><input class="form-input" name="email" type="email" placeholder="john@email.com"></div>
+            </div>
+            <div class="form-group"><label class="form-label">Suburb *</label><input class="form-input" name="suburb" required placeholder="Buderim"></div>
+            <div class="form-group">
+              <label class="form-label">Service Needed *</label>
+              <select class="form-input" name="service" required>
+                <option value="">Select a service...</option>
+                <option>Electrical Repairs</option><option>New Home Electrical</option><option>Renovation Electrical</option>
+                <option>Switchboard Upgrade</option><option>Smoke Alarms</option><option>Power Points</option>
+                <option>Lighting</option><option>Ceiling Fans</option><option>Safety Inspection</option>
+                <option>Commercial Electrical</option><option>Emergency Electrical</option>
+                <option>Split System A/C</option><option>A/C Installation</option><option>A/C Servicing</option>
+                <option>Maintenance</option><option>Other</option>
+              </select>
+            </div>
+            <div class="form-group"><label class="form-label">Message *</label><textarea class="form-input" name="message" required placeholder="Tell us about your electrical project or issue..."></textarea></div>
+                        <div style="background:rgba(199,166,43,0.1);border:1px solid rgba(199,166,43,0.3);border-radius:10px;padding:12px 16px;text-align:center;margin-bottom:12px;font-size:13px;color:var(--charcoal);">⚡ <strong>Same-day quotes</strong> — we aim to call you back within one business day.</div>
+            <input type="hidden" name="_subject" value="New Quote Request — Pip Electrics"><button type="submit" class="form-submit">Send Request →</button>
+            <p style="text-align:center;margin-top:12px;font-size:12px;color:var(--charcoal-muted)">Or call us: <a href="tel:0433828901" style="color:var(--gold);font-weight:700">0433 828 901</a> — we answer 7 days.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL MEDIA -->
+<section id="social" style="background:var(--ivory);padding:88px 0;">
+  <div class="container" style="text-align:center;">
+    <div class="gold-line" style="margin:0 auto 16px;"></div>
+    <span class="section-label">Find Me Online</span>
+    <h2 class="section-title" style="margin-top:8px;margin-bottom:14px;">Follow Along on Social</h2>
+    <p class="section-sub" style="max-width:520px;margin:0 auto 52px;">Stay up to date with recent jobs, tips, and local electrical news. Follow Pip Electrics on social media.</p>
+    <div style="display:flex;gap:24px;justify-content:center;flex-wrap:wrap;">
+
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/profile.php?id=100083146931280" target="_blank" rel="noopener"
+         style="display:flex;flex-direction:column;align-items:center;gap:18px;background:#fff;border-radius:28px;padding:40px 48px;box-shadow:0 4px 32px rgba(0,0,0,0.07);border:1.5px solid transparent;text-decoration:none;width:260px;transition:transform 0.2s,box-shadow 0.2s,border-color 0.2s;"
+         onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 12px 40px rgba(0,0,0,0.12)';this.style.borderColor='var(--gold)'"
+         onmouseout="this.style.transform='';this.style.boxShadow='0 4px 32px rgba(0,0,0,0.07)';this.style.borderColor='transparent'">
+        <div style="width:64px;height:64px;border-radius:50%;background:#1877F2;display:flex;align-items:center;justify-content:center;">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="white"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </div>
+        <div>
+          <div style="font-weight:800;font-size:17px;color:var(--charcoal);margin-bottom:4px;">Facebook</div>
+          <div style="font-size:13px;color:var(--charcoal-muted);">Pip Electrics</div>
+        </div>
+        <div style="display:inline-flex;align-items:center;gap:6px;background:rgba(199,166,43,0.1);color:var(--gold);font-size:12px;font-weight:700;padding:6px 14px;border-radius:100px;">Visit Page →</div>
+      </a>
+
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/pipelectricssunshinecoast" target="_blank" rel="noopener"
+         style="display:flex;flex-direction:column;align-items:center;gap:18px;background:#fff;border-radius:28px;padding:40px 48px;box-shadow:0 4px 32px rgba(0,0,0,0.07);border:1.5px solid transparent;text-decoration:none;width:260px;transition:transform 0.2s,box-shadow 0.2s,border-color 0.2s;"
+         onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 12px 40px rgba(0,0,0,0.12)';this.style.borderColor='var(--gold)'"
+         onmouseout="this.style.transform='';this.style.boxShadow='0 4px 32px rgba(0,0,0,0.07)';this.style.borderColor='transparent'">
+        <div style="width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);display:flex;align-items:center;justify-content:center;">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </div>
+        <div>
+          <div style="font-weight:800;font-size:17px;color:var(--charcoal);margin-bottom:4px;">Instagram</div>
+          <div style="font-size:13px;color:var(--charcoal-muted);">@pipelectricssunshinecoast</div>
+        </div>
+        <div style="display:inline-flex;align-items:center;gap:6px;background:rgba(199,166,43,0.1);color:var(--gold);font-size:12px;font-weight:700;padding:6px 14px;border-radius:100px;">Follow →</div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <img src="pip-electrics-logo-transparent.png" alt="Pip Electrics" class="footer-logo">
+        <p class="footer-desc">Sunshine Coast's trusted local electricians. Residential, commercial and air conditioning services — done right.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/profile.php?id=100083146931280" target="_blank" rel="noopener" class="social-btn">f</a>
+          <a href="https://www.instagram.com/pipelectricssunshinecoast" target="_blank" rel="noopener" class="social-btn">📷</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-heading">Services</div>
+        <ul class="footer-links">
+          <li><a href="#services">Electrical Repairs</a></li><li><a href="#services">New Homes</a></li>
+          <li><a href="#services">Renovations</a></li><li><a href="#services">Switchboards</a></li>
+          <li><a href="#services">Smoke Alarms</a></li><li><a href="#services">Lighting</a></li>
+          <li><a href="#services">Ceiling Fans</a></li><li><a href="#services">Split System A/C</a></li>
+          <li><a href="#services">Emergency Electrical</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Areas We Service</div>
+        <ul class="footer-links">
+          <li><a href="caloundra-fire-safety.html">Caloundra</a></li>
+          <li><a href="nambour-electrician.html">Nambour</a></li>
+          <li><a href="maroochydore-electrician.html">Maroochydore</a></li>
+          <li><a href="buderim-electrician.html">Buderim</a></li>
+          <li><a href="mooloolaba-electrician.html">Mooloolaba</a></li>
+          <li><a href="noosa-electrician.html">Noosa</a></li>
+          <li><a href="areas-we-service.html" style="color:var(--gold);font-weight:700;">View All Areas →</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Contact</div>
+        <ul class="footer-links">
+          <li><a href="tel:0433828901">📞 0433 828 901</a></li>
+          <li><a href="mailto:pipelectrics1@gmail.com">✉️ pipelectrics1@gmail.com</a></li>
+          <li><a href="areas-we-service.html">📍 Sunshine Coast, QLD</a></li>
+          <li><a href="blog.html">📝 Electrical Blog</a></li>
+        </ul>
+        <div style="margin-top:20px">
+          <a href="tel:0433828901" class="btn-gold" style="font-size:13px;padding:11px 20px">📞 Call Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- CREDENTIALS BAR -->
+  <div style="border-top:1px solid rgba(255,255,255,0.08);padding:28px 0;">
+    <div class="container" style="display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:center;">
+      <div style="display:flex;align-items:center;gap:10px;background:#1B3D6B;border-radius:12px;padding:12px 18px;border:1px solid #2a5298;">
+        <div>
+          <div style="color:#fff;font-weight:900;font-size:18px;letter-spacing:0.08em;line-height:1;">NECA</div>
+          <div style="color:rgba(255,255,255,0.6);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;margin-top:2px;">Accredited Member</div>
+        </div>
+        <div style="width:1px;height:32px;background:rgba(255,255,255,0.15);"></div>
+        <div style="color:rgba(255,255,255,0.65);font-size:10px;line-height:1.45;">National Electrical &amp;<br>Communications Assoc.</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:12px 18px;">
+        <span style="font-size:20px;">🛡️</span>
+        <div>
+          <div style="color:rgba(246,240,222,0.4);font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;">QLD Electrical Licence</div>
+          <div style="color:#F6F0DE;font-weight:800;font-size:15px;">No. 86954</div>
+        </div>
+      </div>
+      <a href="https://g.page/r/CaWhD9kQv-elEBM/review" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:12px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:12px 18px;text-decoration:none;transition:background 0.2s,border-color 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.1)';this.style.borderColor='rgba(199,166,43,0.4)'" onmouseout="this.style.background='rgba(255,255,255,0.05)';this.style.borderColor='rgba(255,255,255,0.1)'">
+        <div style="width:32px;height:32px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:16px;color:#4285F4;flex-shrink:0;">G</div>
+        <div>
+          <div style="color:#C7A62B;font-size:16px;letter-spacing:3px;line-height:1;">★★★★★</div>
+          <div style="color:rgba(246,240,222,0.45);font-size:10px;font-weight:600;margin-top:2px;">5.0 · Google Reviews</div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">© 2026 Pip Electrics. All rights reserved. QLD Electrical Licence No. 86954 · NECA Member.</div>
+  </div>
+<!-- Google Reviews Widget -->
+<section style="background:#fff;padding:64px 0;">
+  <div style="max-width:1200px;margin:0 auto;padding:0 24px;text-align:center;">
+    <div style="display:inline-block;color:#C7A62B;font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;margin-bottom:10px;">5-Star Rated</div>
+    <h2 style="font-size:clamp(24px,4vw,40px);font-weight:800;color:#1F1F1B;line-height:1.1;margin-bottom:8px;">What Our Customers Say</h2>
+    <p style="color:#6B6B60;font-size:16px;margin-bottom:36px;">Real reviews from real Sunshine Coast locals on Google.</p>
+    <div class="elfsight-app-1b684fae-3858-41a7-8e9a-9b14d50c6dc8" data-elfsight-app-lazy></div>
+    <div style="margin-top:28px;">
+      <a href="https://share.google/Q8bNlJwdtYujTqo1S" target="_blank" rel="noopener"
+         style="display:inline-flex;align-items:center;gap:10px;background:#1F1F1B;color:#F6F0DE;font-weight:700;font-size:14px;padding:13px 26px;border-radius:100px;text-decoration:none;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+        See All Our Google Reviews
+      </a>
+    </div>
+  </div>
+</section>
+</footer>
+
+<script>
+  // FAQ accordion
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    item.classList.toggle('open');
+  }
+
+  // Areas marquee
+  const areas = ["Caloundra","Aura","Maroochydore","Buderim","Mooloolaba","Birtinya","Bells Creek","Little Mountain","Sippy Downs","Palmview","Mountain Creek","Noosa","Coolum Beach","Kawana Waters","Nambour","Woombye","Forest Glen","Eudlo","Landsborough","Bokarina","Wurtulla","Currimundi","Dicky Beach","Peregian Beach","Bli Bli"];
+  const doubled = [...areas, ...areas];
+  const track = document.getElementById('marqueeTrack');
+  doubled.forEach(a => {
+    const el = document.createElement('div');
+    el.className = 'marquee-item';
+    el.innerHTML = `<span style="color:var(--gold)">📍</span> ${a} <span class="marquee-dot">·</span>`;
+    track.appendChild(el);
+  });
+
+  // Contact form
+    if (msg && input.files.length > 0) {
+      msg.textContent = '✓ ' + input.files.length + ' photo' + (input.files.length > 1 ? 's' : '') + ' selected.';
+      msg.style.color = '#22c55e';
+    }
+  }
+  function handleForm(e) {
+    e.preventDefault();
+    var form = e.target, btn = form.querySelector('.form-submit');
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
+    fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } })
+      .then(function(r) {
+        if (r.ok) {
+          btn.textContent = "✓ Sent — we'll be in touch within one business day.";
+          btn.style.background = '#22c55e';
+          form.reset();
+        } else {
+          btn.textContent = 'Error — please call 0433 828 901';
+          btn.style.background = '#ef4444';
+          btn.disabled = false;
+        }
+      }).catch(function() {
+        btn.textContent = 'Error — please call 0433 828 901';
+        btn.style.background = '#ef4444';
+        btn.disabled = false;
+      });
+  }
+</script>
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  hamburger.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('open');
+    hamburger.classList.toggle('open', isOpen);
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  });
+
+  function closeMobileMenu() {
+    mobileMenu.classList.remove('open');
+    hamburger.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  // Close when tapping outside the menu panel
+  mobileMenu.addEventListener('click', (e) => {
+    if (e.target === mobileMenu) closeMobileMenu();
+  });
+</script>
+<div style="background:#1F1F1B;text-align:center;padding:10px 24px;font-size:11px;border-top:1px solid rgba(255,255,255,0.06)"><a href="privacy-policy.html" style="color:rgba(246,240,222,0.3);text-decoration:none;letter-spacing:0.06em;">Privacy Policy</a></div>
+</body>
+</html>
