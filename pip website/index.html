@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <link rel="icon" href="favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png"><link rel="icon" type="image/png" sizes="192x192" href="favicon-192x192.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pip Electrics | Sunshine Coast Electricians</title>
-<meta name="description" content="Licensed Sunshine Coast electricians available 7 days. Switchboard upgrades, EV chargers, LED downlights, safety switches, smoke alarms and more. Call 0433 828 901.">
+<title>Sunshine Coast Electrician | Licensed & Local | Pip Electrics — Call 0433 828 901</title>
+<meta name="description" content="Pip Electrics — your local licensed electrician on the Sunshine Coast. Residential & commercial electrical services including smoke alarms, switchboard upgrades, EV chargers, LED lighting, ceiling fans and more. Serving Caloundra, Kawana, Buderim, Maroochydore, Noosa and all surrounding suburbs. Free quotes. Call Matt on 0433 828 901.">
 <link rel="canonical" href="https://pipelectrics.com.au/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -45,7 +45,7 @@
     display: flex; align-items: center; justify-content: space-between; gap: 20px;
   }
   .logo { height: 56px; width: auto; }
-  nav { display: flex; gap: 4px; }
+  nav { display: flex; gap: 4px; align-items: center; }
   nav a {
     color: rgba(246,240,222,0.8); text-decoration: none;
     font-size: 14px; font-weight: 500;
@@ -53,6 +53,45 @@
     transition: color 0.2s, background 0.2s;
   }
   nav a:hover { color: var(--gold); }
+  /* Dropdown */
+  .nav-dropdown { position: relative; }
+  .nav-dropdown-trigger {
+    display: flex; align-items: center; gap: 4px;
+    color: rgba(246,240,222,0.8); text-decoration: none;
+    font-size: 14px; font-weight: 500;
+    padding: 7px 14px; border-radius: 100px;
+    transition: color 0.2s; cursor: pointer; background: none; border: none; font-family: inherit;
+  }
+  .nav-dropdown-trigger:hover, .nav-dropdown:hover .nav-dropdown-trigger { color: var(--gold); }
+  .nav-dropdown-chevron { width: 12px; height: 12px; transition: transform 0.2s; display: block; }
+  .nav-dropdown:hover .nav-dropdown-chevron { transform: rotate(180deg); }
+  .nav-dropdown-panel {
+    position: absolute; top: 100%; left: 50%;
+    transform: translateX(-50%) translateY(-4px);
+    background: rgba(25,25,21,0.98); border: 1px solid rgba(199,166,43,0.28);
+    border-radius: 14px; padding: 18px 8px 8px; min-width: 260px;
+    opacity: 0; visibility: hidden; pointer-events: none;
+    transition: opacity 0.18s, transform 0.18s;
+    backdrop-filter: blur(16px); z-index: 200;
+    box-shadow: 0 16px 48px rgba(0,0,0,0.45);
+    margin-top: 0;
+  }
+  .nav-dropdown:hover .nav-dropdown-panel {
+    opacity: 1; visibility: visible; pointer-events: auto;
+    transform: translateX(-50%) translateY(0);
+  }
+  .nav-dropdown-item {
+    display: flex; align-items: flex-start; gap: 12px;
+    padding: 10px 12px; border-radius: 8px; text-decoration: none;
+    transition: background 0.15s;
+  }
+  .nav-dropdown-item:hover { background: rgba(199,166,43,0.1); }
+  .nav-dropdown-item-icon { font-size: 22px; flex-shrink: 0; margin-top: 1px; }
+  .nav-dropdown-item-title { color: #F6F0DE; font-size: 13px; font-weight: 600; line-height: 1.3; }
+  .nav-dropdown-item-desc { color: rgba(246,240,222,0.4); font-size: 11px; margin-top: 3px; }
+  .nav-dropdown-divider { height: 1px; background: rgba(199,166,43,0.15); margin: 6px 8px; }
+  .nav-dropdown-all { display: block; text-align: center; padding: 9px; border-radius: 8px; color: var(--gold); font-size: 12px; font-weight: 600; text-decoration: none; transition: background 0.15s; }
+  .nav-dropdown-all:hover { background: rgba(199,166,43,0.1); }
   .header-cta {
     display: flex; align-items: center; gap: 8px;
     background: var(--gold); color: var(--charcoal);
@@ -157,6 +196,8 @@
     display: flex; align-items: center; justify-content: center;
     font-size: 22px;
   }
+  .trust-icon.is-img { background: #fff; overflow: hidden; padding: 5px; }
+  .trust-icon.is-img img { width: 100%; height: 100%; object-fit: contain; display: block; }
   .trust-label { color: #F6F0DE; font-weight: 600; font-size: 13px; line-height: 1.3; }
   .trust-sub { color: rgba(246,240,222,0.4); font-size: 11px; }
 
@@ -474,9 +515,65 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NSDFDK1NYD"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-NSDFDK1NYD");</script>
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://pipelectrics.com.au/og-share-image.png">
-<meta property="og:title" content="Pip Electrics | Sunshine Coast Electricians">
-<meta property="og:description" content="Licensed Sunshine Coast electricians available 7 days. Switchboard upgrades, EV chargers, LED downlights, safety switches, smoke alarms and more. Call 0433 828 901.">
+<meta property="og:title" content="Sunshine Coast Electrician | Licensed & Local | Pip Electrics">
+<meta property="og:description" content="Local licensed electrician on the Sunshine Coast. Smoke alarms, switchboard upgrades, EV chargers, ceiling fans, LED lighting and more. Free quotes. Call Matt on 0433 828 901.">
 <meta property="og:url" content="https://pipelectrics.com.au/">
+<meta property="og:locale" content="en_AU">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ElectricalContractor",
+  "@id": "https://pipelectrics.com.au/#business",
+  "name": "Pip Electrics",
+  "url": "https://pipelectrics.com.au",
+  "telephone": "0433828901",
+  "email": "pipelectrics1@gmail.com",
+  "image": "https://pipelectrics.com.au/pip-electrics-logo-transparent.png",
+  "description": "Pip Electrics is a local, family-owned licensed electrical contractor on the Sunshine Coast, QLD. Residential and commercial electrical services including smoke alarm installation, switchboard upgrades, EV charger installation, split system AC, ceiling fans, LED lighting, power points and more.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "QLD",
+    "addressCountry": "AU"
+  },
+  "areaServed": [
+    "Caloundra", "Currimundi", "Battery Hill", "Wurtulla", "Kawana Waters", "Buddina", "Bokarina",
+    "Mooloolaba", "Maroochydore", "Buderim", "Mountain Creek", "Sippy Downs", "Palmview",
+    "Bli Bli", "Landsborough", "Nambour", "Noosa", "Coolum Beach", "Peregian Beach",
+    "Mudjimba", "Birtinya", "Little Mountain", "Doonan", "Eumundi", "Yandina", "Sunshine Coast, QLD"
+  ],
+  "priceRange": "$$",
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "07:00", "closes": "17:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "07:00", "closes": "12:00" }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "reviewCount": "33",
+    "bestRating": "5"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Electrical Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Smoke Alarm Installation" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Switchboard Upgrades", "url": "https://pipelectrics.com.au/switchboard-upgrades" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "EV Charger Installation", "url": "https://pipelectrics.com.au/ev-charger-installation" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Split System AC Installation", "url": "https://pipelectrics.com.au/split-system-ac-installation" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ceiling Fan Installation" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "LED Lighting Installation" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Power Point Installation" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Renovation Electrical Work" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Commercial Electrical Services" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Emergency Electrical Repairs" } }
+    ]
+  },
+  "sameAs": [
+    "https://www.facebook.com/profile.php?id=100083146931280",
+    "https://www.instagram.com/pipelectricssunshinecoast"
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -489,7 +586,33 @@
     <img src="pip-electrics-logo-transparent.png" alt="Pip Electrics" class="logo">
     <nav>
       <a href="#about">About</a>
-      <a href="#services">Services</a>
+      <div class="nav-dropdown">
+        <a href="#services" class="nav-dropdown-trigger">Services <svg class="nav-dropdown-chevron" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <div class="nav-dropdown-panel">
+          <a href="ev-charger-installation.html" class="nav-dropdown-item">
+            <div class="nav-dropdown-item-icon">🔌</div>
+            <div><div class="nav-dropdown-item-title">EV Charger Installation</div><div class="nav-dropdown-item-desc">Supply &amp; install from $1,750 + GST</div></div>
+          </a>
+          <a href="split-system-ac-installation.html" class="nav-dropdown-item">
+            <div class="nav-dropdown-item-icon">❄️</div>
+            <div><div class="nav-dropdown-item-title">Split System AC Installation</div><div class="nav-dropdown-item-desc">Supply &amp; install from $1,700 + GST</div></div>
+          </a>
+          <a href="switchboard-upgrades.html" class="nav-dropdown-item">
+            <div class="nav-dropdown-item-icon">⚡</div>
+            <div><div class="nav-dropdown-item-title">Switchboard Upgrades</div><div class="nav-dropdown-item-desc">Get solar &amp; battery ready</div></div>
+          </a>
+          <a href="smoke-alarm-installation.html" class="nav-dropdown-item">
+            <div class="nav-dropdown-item-icon">🚨</div>
+            <div><div class="nav-dropdown-item-title">Smoke Alarm Installation</div><div class="nav-dropdown-item-desc">QLD 2027 compliant &amp; interconnected</div></div>
+          </a>
+          <a href="emergency-electrician.html" class="nav-dropdown-item">
+            <div class="nav-dropdown-item-icon">⚠️</div>
+            <div><div class="nav-dropdown-item-title">Emergency Electrician</div><div class="nav-dropdown-item-desc">Power out, faults &amp; urgent repairs</div></div>
+          </a>
+          <div class="nav-dropdown-divider"></div>
+          <a href="#services" class="nav-dropdown-all">View all services →</a>
+        </div>
+      </div>
       <a href="#reviews">Reviews</a>
       <a href="areas-we-service.html">Areas</a>
       <a href="blog.html">Blog</a>
@@ -512,6 +635,11 @@
     <div class="mob-section-label">Navigate</div>
     <a href="#about" class="mob-nav-link" onclick="closeMobileMenu()">About <span class="arrow">›</span></a>
     <a href="#services" class="mob-nav-link" onclick="closeMobileMenu()">Services <span class="arrow">›</span></a>
+    <a href="ev-charger-installation.html" class="mob-nav-link" style="padding-left:32px;font-size:13px;opacity:0.8;">🔌 EV Charger Installation <span class="arrow">›</span></a>
+    <a href="split-system-ac-installation.html" class="mob-nav-link" style="padding-left:32px;font-size:13px;opacity:0.8;">❄️ Split System AC <span class="arrow">›</span></a>
+    <a href="switchboard-upgrades.html" class="mob-nav-link" style="padding-left:32px;font-size:13px;opacity:0.8;">⚡ Switchboard Upgrades <span class="arrow">›</span></a>
+    <a href="smoke-alarm-installation.html" class="mob-nav-link" style="padding-left:32px;font-size:13px;opacity:0.8;">🚨 Smoke Alarm Installation <span class="arrow">›</span></a>
+    <a href="emergency-electrician.html" class="mob-nav-link" style="padding-left:32px;font-size:13px;opacity:0.8;">⚠️ Emergency Electrician <span class="arrow">›</span></a>
     <a href="#reviews" class="mob-nav-link" onclick="closeMobileMenu()">Reviews <span class="arrow">›</span></a>
     <a href="blog.html" class="mob-nav-link">Blog <span class="arrow">›</span></a>
     <a href="gallery.html" class="mob-nav-link">Gallery <span class="arrow">›</span></a>
@@ -549,23 +677,26 @@
 
 <!-- HERO -->
 <section class="hero">
-  <video autoplay muted loop playsinline>
-    <source src="hero%20banner.mp4" type="video/mp4">
+  <video autoplay muted loop playsinline preload="none" poster="hero-banner-poster.jpg">
+    <source src="hero-banner-optimized.mp4" type="video/mp4">
   </video>
   <div class="hero-overlay"></div>
   <div class="hero-gold-line"></div>
   <div class="hero-content">
-    <div class="hero-badge"><span></span> Sunshine Coast's Trusted Electrician</div>
-    <h1>Reliable Sunshine<br><em>Coast Electricians</em></h1>
-    <p>Residential &nbsp;·&nbsp; Commercial &nbsp;·&nbsp; Air Conditioning &nbsp;·&nbsp; Fast Local Service</p>
+    <div class="hero-badge"><span></span> Sunshine Coast's Trusted Local Electrician</div>
+    <h1>Licensed Sunshine<br><em>Coast Electrician</em></h1>
+    <p style="font-size:clamp(15px,2vw,18px);line-height:1.7;margin-bottom:28px;max-width:520px;">Residential &amp; commercial electrical services across Caloundra, Kawana, Maroochydore, Buderim, Noosa and all surrounding Sunshine Coast suburbs. Run by Matt — local, licensed and reliable.</p>
     <div class="hero-buttons">
-      <a href="tel:0433828901" class="btn-gold">📞 Call 0433 828 901</a>
-      <a href="#contact" class="btn-outline-white">Request a Quote →</a>
+      <a href="tel:0433828901" class="btn-gold">📞 Call Matt Today</a>
+      <a href="#contact" class="btn-outline-white">Request a Free Quote →</a>
     </div>
-    <div class="hero-pills">
+    <div style="margin-top:16px;">
+      <a href="#contact" class="btn-outline-white" style="font-size:13px;padding:10px 22px;opacity:0.85;">📅 Book an Electrician →</a>
+    </div>
+    <div class="hero-pills" style="margin-top:24px;">
       <span class="hero-pill">Licensed &amp; Insured</span>
-      <span class="hero-pill">Local Sunshine Coast</span>
-      <span class="hero-pill">Fast Response</span>
+      <span class="hero-pill">Family-Owned Local Business</span>
+      <span class="hero-pill">Free Quotes</span>
       <span class="hero-pill">5-Star Rated</span>
     </div>
   </div>
@@ -577,11 +708,11 @@
   <div class="container">
     <div class="trust-grid">
       <div class="trust-item"><div class="trust-icon">🛡️</div><div class="trust-label">Licensed &amp; Fully Insured</div><div class="trust-sub">QLD Licence No. 89654</div></div>
-      <a href="https://g.page/r/CaWhD9kQv-elEBM/review" target="_blank" rel="noopener" class="trust-item" style="text-decoration:none;"><div class="trust-icon">⭐</div><div class="trust-label">5-Star Google Rating</div><div class="trust-sub">Read our reviews →</div></a>
+      <a href="https://g.page/r/CaWhD9kQv-elEBM/review" target="_blank" rel="noopener" class="trust-item" style="text-decoration:none;"><div class="trust-icon">⭐</div><div class="trust-label">5-Star Google Rating</div><div class="trust-sub">Read our Google reviews →</div></a>
       <div class="trust-item"><div class="trust-icon">⚡</div><div class="trust-label">24/7 Emergency Service</div><div class="trust-sub">Available when you need us</div></div>
-      <div class="trust-item"><div class="trust-icon">🕐</div><div class="trust-label">Same-Day Service</div><div class="trust-sub">Fast, local response times</div></div>
-      <div class="trust-item"><div class="trust-icon">🏆</div><div class="trust-label">Quality Guaranteed</div><div class="trust-sub">Workmanship warranty</div></div>
-      <div class="trust-item"><div class="trust-icon">🔧</div><div class="trust-label">All Electrical Work</div><div class="trust-sub">Residential, commercial &amp; A/C</div></div>
+      <div class="trust-item"><div class="trust-icon">💬</div><div class="trust-label">Free Quotes Available</div><div class="trust-sub">No obligation — call today</div></div>
+      <div class="trust-item"><div class="trust-icon">🏆</div><div class="trust-label">Local Family-Owned</div><div class="trust-sub">Sunshine Coast based &amp; proud</div></div>
+      <div class="trust-item"><div class="trust-icon is-img"><img src="arctick-certified.jpg" alt="ARCtick Certified refrigerant handling licence" width="48" height="48"></div><div class="trust-label">ARCtick Certified</div><div class="trust-sub">Refrigerant Lic. L226788</div></div>
     </div>
   </div>
 </div>
@@ -591,27 +722,55 @@
   <div class="container">
     <span class="section-label">What We Do</span>
     <div class="gold-line"></div>
-    <h2 class="section-title">Electrical Services Across<br>the Sunshine Coast</h2>
-    <p class="section-sub" style="max-width:560px">From emergency repairs to new home builds, air conditioning to smoke alarms — we handle every electrical job.</p>
-    <div class="services-grid">
-      <div class="service-card"><div class="service-icon">🔧</div><div class="service-name">Electrical Repairs</div><div class="service-desc">Fast, reliable repairs for all electrical faults.</div></div>
-      <div class="service-card"><div class="service-icon">🏠</div><div class="service-name">New Homes</div><div class="service-desc">Complete fit-outs for new residential builds.</div></div>
-      <div class="service-card"><div class="service-icon">🔨</div><div class="service-name">Renovations</div><div class="service-desc">Upgrade your electrical during your renovation.</div></div>
-      <div class="service-card"><div class="service-icon">⚡</div><div class="service-name">Switchboards</div><div class="service-desc">Safety switch installs &amp; switchboard upgrades.</div></div>
-      <div class="service-card"><div class="service-icon">🔔</div><div class="service-name">Smoke Alarms</div><div class="service-desc">Queensland-compliant photoelectric alarms.</div></div>
-      <div class="service-card"><div class="service-icon">🔌</div><div class="service-name">Power Points</div><div class="service-desc">Add, move or upgrade power points &amp; USB outlets.</div></div>
-      <div class="service-card"><div class="service-icon">💡</div><div class="service-name">Lighting</div><div class="service-desc">LED downlights, feature &amp; sensor lighting.</div></div>
-      <div class="service-card"><div class="service-icon">🌀</div><div class="service-name">Ceiling Fans</div><div class="service-desc">Installation &amp; replacement — a Sunshine Coast must.</div></div>
-      <div class="service-card"><div class="service-icon">🛡️</div><div class="service-name">Safety Inspections</div><div class="service-desc">Thorough electrical audits for homes &amp; rentals.</div></div>
-      <div class="service-card"><div class="service-icon">🏢</div><div class="service-name">Commercial Electrical</div><div class="service-desc">Fit-outs, maintenance &amp; compliance work.</div></div>
-      <div class="service-card"><div class="service-icon">🚨</div><div class="service-name">Emergency Electrical</div><div class="service-desc">24/7 emergency call-outs across Sunshine Coast.</div></div>
-      <div class="service-card"><div class="service-icon">❄️</div><div class="service-name">Split System A/C</div><div class="service-desc">Supply &amp; install all major A/C brands.</div></div>
-      <div class="service-card"><div class="service-icon">🌡️</div><div class="service-name">A/C Installation</div><div class="service-desc">Professional installation — done right, first time.</div></div>
-      <div class="service-card"><div class="service-icon">⚙️</div><div class="service-name">A/C Servicing</div><div class="service-desc">Annual servicing to keep your system efficient.</div></div>
-      <div class="service-card"><div class="service-icon">📋</div><div class="service-name">Maintenance</div><div class="service-desc">Scheduled maintenance for homes &amp; businesses.</div></div>
+    <h2 class="section-title">Residential &amp; Commercial Electrical<br>Services — Sunshine Coast</h2>
+    <p class="section-sub" style="max-width:600px">From smoke alarm compliance and ceiling fan installation to full renovation electrical work, switchboard upgrades and EV chargers — Matt handles every electrical job across the Sunshine Coast. Licensed, insured, and local.</p>
+
+    <!-- FEATURED SERVICE CARDS (with landing pages) -->
+    <div style="display:grid;gap:16px;margin:40px 0 28px;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));">
+      <a href="ev-charger-installation.html" style="display:block;background:var(--charcoal);border-radius:20px;padding:28px 24px;text-decoration:none;border:1px solid rgba(199,166,43,0.25);transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 12px 40px rgba(0,0,0,0.2)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        <div style="font-size:32px;margin-bottom:14px;">🔌</div>
+        <div style="font-weight:800;font-size:17px;color:#F6F0DE;margin-bottom:6px;">EV Charger Installation</div>
+        <div style="color:rgba(246,240,222,0.55);font-size:13px;line-height:1.6;margin-bottom:16px;">Supply &amp; installation of home EV chargers from $1,750 + GST. Dedicated circuit, all brands.</div>
+        <div style="display:inline-flex;align-items:center;gap:6px;color:var(--gold);font-size:13px;font-weight:700;">View details →</div>
+      </a>
+      <a href="split-system-ac-installation.html" style="display:block;background:var(--charcoal);border-radius:20px;padding:28px 24px;text-decoration:none;border:1px solid rgba(199,166,43,0.25);transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 12px 40px rgba(0,0,0,0.2)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        <div style="font-size:32px;margin-bottom:14px;">❄️</div>
+        <div style="font-weight:800;font-size:17px;color:#F6F0DE;margin-bottom:6px;">Split System AC Installation</div>
+        <div style="color:rgba(246,240,222,0.55);font-size:13px;line-height:1.6;margin-bottom:16px;">Supply &amp; installation from $1,700 + GST. Daikin, Mitsubishi, LG and more — fully commissioned.</div>
+        <div style="display:inline-flex;align-items:center;gap:6px;color:var(--gold);font-size:13px;font-weight:700;">View details →</div>
+      </a>
+      <a href="switchboard-upgrades.html" style="display:block;background:var(--charcoal);border-radius:20px;padding:28px 24px;text-decoration:none;border:1px solid rgba(199,166,43,0.25);transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 12px 40px rgba(0,0,0,0.2)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        <div style="font-size:32px;margin-bottom:14px;">⚡</div>
+        <div style="font-weight:800;font-size:17px;color:#F6F0DE;margin-bottom:6px;">Switchboard Upgrades</div>
+        <div style="color:rgba(246,240,222,0.55);font-size:13px;line-height:1.6;margin-bottom:16px;">Get solar &amp; battery ready. Replace ceramic fuses, add safety switches, expand capacity.</div>
+        <div style="display:inline-flex;align-items:center;gap:6px;color:var(--gold);font-size:13px;font-weight:700;">View details →</div>
+      </a>
+      <a href="smoke-alarm-installation.html" style="display:block;background:var(--charcoal);border-radius:20px;padding:28px 24px;text-decoration:none;border:1px solid rgba(199,166,43,0.25);transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 12px 40px rgba(0,0,0,0.2)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        <div style="font-size:32px;margin-bottom:14px;">🚨</div>
+        <div style="font-weight:800;font-size:17px;color:#F6F0DE;margin-bottom:6px;">Smoke Alarm Installation</div>
+        <div style="color:rgba(246,240,222,0.55);font-size:13px;line-height:1.6;margin-bottom:16px;">Photoelectric, interconnected alarms to meet Queensland's 2027 smoke alarm laws. Free on-site quote.</div>
+        <div style="display:inline-flex;align-items:center;gap:6px;color:var(--gold);font-size:13px;font-weight:700;">View details →</div>
+      </a>
     </div>
-    <div class="services-more">
-      <a href="#contact" class="btn-outline-dark">Request a Quote →</a>
+
+    <!-- FULL SERVICE GRID -->
+    <div class="services-grid">
+      <a href="smoke-alarm-installation.html" class="service-card" style="text-decoration:none;color:inherit;display:block;"><div class="service-icon">🔔</div><div class="service-name">Smoke Alarm Installation</div><div class="service-desc">Queensland-compliant interconnected photoelectric smoke alarms for homes, rentals and investment properties.</div></a>
+      <div class="service-card"><div class="service-icon">🌀</div><div class="service-name">Ceiling Fan Installation</div><div class="service-desc">Supply &amp; install ceiling fans across all rooms. Customer-supplied fans installed too.</div></div>
+      <div class="service-card"><div class="service-icon">🔌</div><div class="service-name">Power Point Installation</div><div class="service-desc">Add, move or upgrade power points, USB outlets and double GPOs anywhere in your home.</div></div>
+      <div class="service-card"><div class="service-icon">💡</div><div class="service-name">LED Lighting</div><div class="service-desc">LED downlight installation, feature lighting, sensor lights and outdoor lighting upgrades.</div></div>
+      <div class="service-card"><div class="service-icon">🌟</div><div class="service-name">Outdoor Lighting</div><div class="service-desc">Security lights, garden lighting, entertaining area and driveway lighting on the Sunshine Coast.</div></div>
+      <div class="service-card"><div class="service-icon">🛡️</div><div class="service-name">Safety Inspections</div><div class="service-desc">Thorough electrical safety audits for homes, rental properties and strata — with written reports.</div></div>
+      <div class="service-card"><div class="service-icon">🔨</div><div class="service-name">Renovation Electrical</div><div class="service-desc">Electrical work for kitchen, bathroom and full home renovations. On budget, on schedule.</div></div>
+      <div class="service-card"><div class="service-icon">🏢</div><div class="service-name">Commercial Electrical</div><div class="service-desc">Fit-outs, maintenance, test &amp; tag and electrical compliance for Sunshine Coast businesses.</div></div>
+      <div class="service-card"><div class="service-icon">🚨</div><div class="service-name">Emergency Electrical Repairs</div><div class="service-desc">24/7 emergency call-outs across the Sunshine Coast. We answer and we show up.</div></div>
+      <div class="service-card"><div class="service-icon">🔧</div><div class="service-name">General Electrical Repairs</div><div class="service-desc">Fault finding, circuit repairs, flickering lights, tripping breakers — fast &amp; affordable fixes.</div></div>
+      <div class="service-card"><div class="service-icon">🏠</div><div class="service-name">New Home Electrical</div><div class="service-desc">Complete electrical fit-outs for new residential builds on the Sunshine Coast.</div></div>
+      <div class="service-card"><div class="service-icon">📋</div><div class="service-name">Electrical Maintenance</div><div class="service-desc">Scheduled maintenance plans for homes, rentals, body corporate and commercial clients.</div></div>
+    </div>
+    <div class="services-more" style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:36px;">
+      <a href="tel:0433828901" class="btn-gold" style="font-size:15px;padding:14px 28px;">📞 Call Matt Today</a>
+      <a href="#contact" class="btn-outline-dark">Request a Free Quote →</a>
     </div>
   </div>
 </section>
@@ -628,6 +787,64 @@
   </div>
 </div>
 
+<!-- WHY CHOOSE PIP ELECTRICS -->
+<section style="background:#fff;padding:88px 0;">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:52px;">
+      <span class="section-label">Why Choose Us</span>
+      <div class="gold-line" style="margin:10px auto 16px;"></div>
+      <h2 class="section-title">Why Sunshine Coast Homeowners<br>Choose Pip Electrics</h2>
+      <p class="section-sub" style="max-width:560px;margin:0 auto;">We're a local, family-owned electrical business — not a franchise or a big call centre. When you call Pip Electrics, you speak to Matt directly.</p>
+    </div>
+    <div style="display:grid;gap:20px;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));">
+      <div style="background:var(--ivory);border-radius:18px;padding:28px 24px;border:1px solid rgba(31,31,27,0.08);">
+        <div style="width:44px;height:44px;border-radius:12px;background:rgba(199,166,43,0.12);display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:16px;">🛡️</div>
+        <div style="font-weight:700;font-size:16px;color:var(--charcoal);margin-bottom:8px;">Fully Licensed &amp; Insured</div>
+        <div style="color:var(--charcoal-muted);font-size:14px;line-height:1.65;">QLD Electrical Contractor Licence No. 89654. Full public liability and professional indemnity insurance on every job.</div>
+      </div>
+      <div style="background:var(--ivory);border-radius:18px;padding:28px 24px;border:1px solid rgba(31,31,27,0.08);">
+        <div style="width:44px;height:44px;border-radius:12px;background:rgba(199,166,43,0.12);display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:16px;">😊</div>
+        <div style="font-weight:700;font-size:16px;color:var(--charcoal);margin-bottom:8px;">Friendly Local Electrician</div>
+        <div style="color:var(--charcoal-muted);font-size:14px;line-height:1.65;">Matt is a Sunshine Coast local who takes genuine pride in every job. No attitude, no jargon — just helpful, friendly service.</div>
+      </div>
+      <div style="background:var(--ivory);border-radius:18px;padding:28px 24px;border:1px solid rgba(31,31,27,0.08);">
+        <div style="width:44px;height:44px;border-radius:12px;background:rgba(199,166,43,0.12);display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:16px;">🕐</div>
+        <div style="font-weight:700;font-size:16px;color:var(--charcoal);margin-bottom:8px;">Reliable &amp; On Time</div>
+        <div style="color:var(--charcoal-muted);font-size:14px;line-height:1.65;">We respect your time. We show up when we say we will — and if anything changes, we'll call you ahead of time.</div>
+      </div>
+      <div style="background:var(--ivory);border-radius:18px;padding:28px 24px;border:1px solid rgba(31,31,27,0.08);">
+        <div style="width:44px;height:44px;border-radius:12px;background:rgba(199,166,43,0.12);display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:16px;">✨</div>
+        <div style="font-weight:700;font-size:16px;color:var(--charcoal);margin-bottom:8px;">Clean &amp; Respectful Workmanship</div>
+        <div style="color:var(--charcoal-muted);font-size:14px;line-height:1.65;">We treat your home like our own. Cables are routed neatly, rubbish is removed, and we leave every job site cleaner than we found it.</div>
+      </div>
+      <div style="background:var(--ivory);border-radius:18px;padding:28px 24px;border:1px solid rgba(31,31,27,0.08);">
+        <div style="width:44px;height:44px;border-radius:12px;background:rgba(199,166,43,0.12);display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:16px;">⭐</div>
+        <div style="font-weight:700;font-size:16px;color:var(--charcoal);margin-bottom:8px;">Quality Electrical Work</div>
+        <div style="color:var(--charcoal-muted);font-size:14px;line-height:1.65;">Every job is completed to a high standard. We don't cut corners — the finish matters as much as the function.</div>
+      </div>
+      <div style="background:var(--ivory);border-radius:18px;padding:28px 24px;border:1px solid rgba(31,31,27,0.08);">
+        <div style="width:44px;height:44px;border-radius:12px;background:rgba(199,166,43,0.12);display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:16px;">💬</div>
+        <div style="font-weight:700;font-size:16px;color:var(--charcoal);margin-bottom:8px;">Honest Communication</div>
+        <div style="color:var(--charcoal-muted);font-size:14px;line-height:1.65;">You'll get a straight answer and a clear price before work starts. No hidden costs, no surprises on the invoice.</div>
+      </div>
+      <div style="background:var(--ivory);border-radius:18px;padding:28px 24px;border:1px solid rgba(31,31,27,0.08);">
+        <div style="width:44px;height:44px;border-radius:12px;background:rgba(199,166,43,0.12);display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:16px;">💰</div>
+        <div style="font-weight:700;font-size:16px;color:var(--charcoal);margin-bottom:8px;">Free Quotes Available</div>
+        <div style="color:var(--charcoal-muted);font-size:14px;line-height:1.65;">Most jobs include a free, no-obligation quote. Call Matt or fill in our online form and we'll be in touch fast.</div>
+      </div>
+      <div style="background:var(--ivory);border-radius:18px;padding:28px 24px;border:1px solid rgba(31,31,27,0.08);">
+        <div style="width:44px;height:44px;border-radius:12px;background:rgba(199,166,43,0.12);display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:16px;">📍</div>
+        <div style="font-weight:700;font-size:16px;color:var(--charcoal);margin-bottom:8px;">Sunshine Coast Local</div>
+        <div style="color:var(--charcoal-muted);font-size:14px;line-height:1.65;">We live and work here. Caloundra, Kawana, Buderim, Maroochydore, Noosa — we know the area and we're never far away.</div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:44px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+      <a href="tel:0433828901" class="btn-gold" style="font-size:15px;padding:14px 28px;">📞 Call Matt Today</a>
+      <a href="#contact" class="btn-outline-dark">Book an Electrician →</a>
+    </div>
+  </div>
+</section>
+
 <!-- ABOUT -->
 <section id="about" class="about-bg">
   <div class="container">
@@ -635,9 +852,15 @@
       <div class="about-img-wrap">
         <div class="about-ring"></div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
-          <img src="me%20with%20my%20van.jpg" alt="Pip Electrics van at Sunshine Coast" style="width:100%;aspect-ratio:2/3;object-fit:cover;border-radius:20px;box-shadow:0 24px 64px rgba(0,0,0,0.15);">
+          <picture style="display:contents">
+  <source srcset="me%20with%20my%20van.webp" type="image/webp">
+  <img src="me%20with%20my%20van.jpg" alt="Pip Electrics van at Sunshine Coast" style="width:100%;aspect-ratio:2/3;object-fit:cover;border-radius:20px;box-shadow:0 24px 64px rgba(0,0,0,0.15);" loading="lazy">
+</picture>
           <div style="display:flex;flex-direction:column;gap:10px;">
-            <img src="me%20and%20teddy.jpg" alt="Pip Electrics team" style="width:100%;flex:1;object-fit:cover;border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,0.12);aspect-ratio:1;">
+            <picture style="display:contents">
+  <source srcset="me%20and%20teddy.webp" type="image/webp">
+  <img src="me%20and%20teddy.jpg" alt="Pip Electrics team" style="width:100%;flex:1;object-fit:cover;border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,0.12);aspect-ratio:1;" loading="lazy">
+</picture>
             <div style="width:100%;flex:1;border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,0.12);aspect-ratio:1;background:#F6F0DE;display:flex;align-items:center;justify-content:center;padding:16px;"><img src="pip-electrics-logo-transparent.png" alt="Pip Electrics" style="width:100%;height:auto;max-width:140px;display:block;"></div>
           </div>
         </div>
@@ -647,20 +870,23 @@
         </div>
       </div>
       <div>
-        <span class="section-label">About Us</span>
+        <span class="section-label">About Pip Electrics</span>
         <div class="gold-line"></div>
-        <h2 class="section-title">Your Local Sunshine<br>Coast Electrician</h2>
-        <p style="color:var(--charcoal-muted);font-size:17px;line-height:1.75;margin-top:16px">Pip Electrics is a locally owned electrical business on the Sunshine Coast. We take pride in delivering premium electrical solutions with honest pricing, a clean finish, and genuine care for every customer.</p>
-        <p style="color:var(--charcoal-muted);font-size:17px;line-height:1.75;margin-top:12px">Whether it's an emergency repair at 2am or a brand new split system before summer — we show up on time, do the job right, and leave your home spotless.</p>
+        <h2 class="section-title">Meet Matt — Your Local<br>Sunshine Coast Electrician</h2>
+        <p style="color:var(--charcoal-muted);font-size:17px;line-height:1.75;margin-top:16px">Pip Electrics is a local, family-owned electrical business on the Sunshine Coast, run by Matt. With a focus on quality workmanship, honest communication and reliable service, Matt has built a reputation as one of the most trusted licensed electricians across the Sunshine Coast — from Caloundra and Kawana through to Buderim, Maroochydore and Noosa.</p>
+        <p style="color:var(--charcoal-muted);font-size:17px;line-height:1.75;margin-top:12px">Whether it's a smoke alarm installation in Currimundi, a switchboard upgrade in Sippy Downs, ceiling fans in Buddina, or an EV charger in Buderim — Matt shows up on time, does the job right, and leaves your home spotless.</p>
         <ul class="checkpoints">
-          <li>Locally owned and operated on the Sunshine Coast</li>
-          <li>Fully licensed electrical contractor — Queensland</li>
-          <li>Residential, commercial &amp; air conditioning specialist</li>
-          <li>Clean workmanship and professional service every time</li>
-          <li>Transparent pricing — no hidden fees</li>
-          <li>Fast response times across the entire Sunshine Coast</li>
+          <li>Local Sunshine Coast electrician — family-owned business</li>
+          <li>Fully licensed electrical contractor — QLD Licence No. 89654</li>
+          <li>Residential &amp; commercial electrical services</li>
+          <li>Friendly, honest communication — speak to Matt directly</li>
+          <li>Transparent pricing — free quotes, no hidden fees</li>
+          <li>Servicing Caloundra, Kawana, Buderim, Maroochydore, Noosa &amp; all surrounding suburbs</li>
         </ul>
-        <a href="tel:0433828901" class="btn-gold" style="font-size:15px;padding:14px 28px">📞 Call 0433 828 901</a>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:8px;">
+          <a href="tel:0433828901" class="btn-gold" style="font-size:15px;padding:14px 28px">📞 Call Matt Today</a>
+          <a href="#contact" class="btn-outline-dark">Request a Free Quote →</a>
+        </div>
       </div>
     </div>
   </div>
@@ -681,19 +907,23 @@
           <div class="stars">★★★★★</div>
           <div class="rating-label">Google Rating</div>
         </div>
-        <div>
-          <div style="font-weight:800;font-size:28px;color:var(--charcoal)">100+</div>
-          <div style="color:var(--charcoal-muted);font-size:13px">Verified reviews</div>
-        </div>
+        <a href="https://g.page/r/CaWhD9kQv-elEBM/review" target="_blank" rel="noopener" style="text-decoration:none;">
+          <div style="font-weight:800;font-size:18px;color:var(--charcoal)">⭐ 5-Star Rated</div>
+          <div style="color:var(--gold);font-size:13px;font-weight:600;margin-top:4px;">Leave us a review →</div>
+        </a>
       </div>
     </div>
     <div class="reviews-grid">
-      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Pip Electrics were fantastic — called in the morning and they were at my place by lunch. Fixed our switchboard issue quickly and the pricing was very fair. Couldn't recommend more highly!"</p><div class="review-footer"><div><div class="review-name">Sarah M.</div><div class="review-loc">Buderim · 2 weeks ago</div></div><span class="review-tag">Switchboard</span></div></div>
-      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Best electrician on the Sunshine Coast. Installed 3 split systems and a complete lighting upgrade in our new home. Arrived on time, kept the place clean, the finish was immaculate."</p><div class="review-footer"><div><div class="review-name">James T.</div><div class="review-loc">Caloundra · 1 month ago</div></div><span class="review-tag">A/C &amp; Lighting</span></div></div>
-      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Had an electrical emergency at 10pm and Pip Electrics answered straight away. Problem diagnosed and fixed within the hour. Absolute legends — this is how a trade business should operate."</p><div class="review-footer"><div><div class="review-name">Kylie R.</div><div class="review-loc">Mooloolaba · 3 weeks ago</div></div><span class="review-tag">Emergency</span></div></div>
-      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Extremely professional and knowledgeable. Rewired our entire renovation on budget and ahead of schedule. The quote was detailed and there were zero surprises. Will use again."</p><div class="review-footer"><div><div class="review-name">Mark &amp; Lisa B.</div><div class="review-loc">Noosa · 2 months ago</div></div><span class="review-tag">Renovation</span></div></div>
-      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Smoke alarms needed updating to Queensland compliance standards. Pip Electrics came out same day, explained everything clearly and had it all done in an hour. Great communication."</p><div class="review-footer"><div><div class="review-name">Amanda F.</div><div class="review-loc">Sippy Downs · 1 week ago</div></div><span class="review-tag">Smoke Alarms</span></div></div>
-      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Used Pip Electrics for our commercial fitout. Highly professional, great communication and the quality of work is outstanding. Our go-to electrician for all our properties."</p><div class="review-footer"><div><div class="review-name">Craig W.</div><div class="review-loc">Maroochydore · 6 weeks ago</div></div><span class="review-tag">Commercial</span></div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Mathew was amazing, I had an emergency call out and he was here within an hour. Would highly recommend their team, highly professional, friendly and reasonable price. Thanks Matthew"</p><div class="review-footer"><div><div class="review-name">Sheryn Taylor</div><div class="review-loc">Sunshine Coast · Google review</div></div><span class="review-tag">Emergency</span></div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Had Matt from Pip come out to my house in Nambour and install a new switchboard ready for solar. They done a great job."</p><div class="review-footer"><div><div class="review-name">Susan Taylor</div><div class="review-loc">Nambour · Google review</div></div><span class="review-tag">Switchboard</span></div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Matt was a pleasure to deal with, on time, transparent with pricing, friendly and cleans up after himself. He keeps you updated and completes the work to a very high standard and takes pride in his work… If you are looking for a honest electrician look no further."</p><div class="review-footer"><div><div class="review-name">Darrel Heal</div><div class="review-loc">Sunshine Coast · Google review</div></div><span class="review-tag">New Home</span></div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Matt is our go to electrician for all our Motorisation/ electrical work… Matt is extremely efficient &amp; really expresses a high level of craftsmanship. If your after a honest, reliable &amp; efficient electrician that has a competitive price, Pip Electrics should be your 1st choice."</p><div class="review-footer"><div><div class="review-name">Mick Mraz — MM Blinds</div><div class="review-loc">Sunshine Coast · Google review</div></div><span class="review-tag">Commercial</span></div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Outstanding customer service. We've used Matt a few times now and he's always fast to respond and turns up on time, every time. Very competitive pricing and great attention to detail. Can highly recommend and will continue to use Pip Electrics for all electrical work going forward."</p><div class="review-footer"><div><div class="review-name">Will H</div><div class="review-loc">Caloundra · Google review</div></div><span class="review-tag">Repeat Customer</span></div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Matt had the exact product I needed available in 48 hours notice, and installed some beautiful feature strips of lighting in my home which will change my home and how I use it forever… I can't recommend Matt highly enough, especially as a tradesperson on the coast."</p><div class="review-footer"><div><div class="review-name">Samuel Harrington</div><div class="review-loc">Sunshine Coast · Google review</div></div><span class="review-tag">Lighting</span></div></div>
+    </div>
+    <div style="text-align:center;margin-top:44px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+      <a href="https://share.google/Q8bNlJwdtYujTqo1S" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:2px solid rgba(31,31,27,0.1);color:var(--charcoal);font-weight:700;font-size:14px;padding:13px 24px;border-radius:100px;text-decoration:none;transition:border-color 0.2s,box-shadow 0.2s;" onmouseover="this.style.borderColor='var(--gold)';this.style.boxShadow='0 4px 16px rgba(199,166,43,0.2)'" onmouseout="this.style.borderColor='rgba(31,31,27,0.1)';this.style.boxShadow=''">See All Google Reviews →</a>
+      <a href="#contact" class="btn-gold" style="font-size:14px;padding:13px 24px;">Request a Free Quote →</a>
     </div>
   </div>
 </section>
@@ -703,8 +933,8 @@
   <div class="container" style="text-align:center">
     <span class="section-label">Where We Work</span>
     <div class="gold-line" style="margin:0 auto 16px"></div>
-    <h2 class="section-title" style="color:#F6F0DE">Servicing the Entire Sunshine Coast</h2>
-    <p class="section-sub" style="max-width:500px;margin:0 auto">From Caloundra to Noosa and everywhere in between.</p>
+    <h2 class="section-title" style="color:#F6F0DE">Serving Caloundra to Noosa &amp; Everywhere In Between</h2>
+    <p class="section-sub" style="max-width:600px;margin:0 auto">Caloundra · Currimundi · Battery Hill · Wurtulla · Kawana · Buddina · Mooloolaba · Maroochydore · Buderim · Sippy Downs · Mountain Creek · Bli Bli · Landsborough · Palmview · Noosa and all surrounding Sunshine Coast areas.</p>
   </div>
   <div class="marquee-wrap">
     <div class="marquee-track" id="marqueeTrack"></div>
@@ -720,30 +950,105 @@
     <span class="section-label">Got Questions?</span>
     <div class="gold-line" style="margin:0 auto 16px"></div>
     <h2 class="section-title">Frequently Asked Questions</h2>
+    <p class="section-sub" style="max-width:520px;margin:0 auto 8px;">Common questions about hiring a licensed electrician on the Sunshine Coast.</p>
   </div>
   <div class="faq-list">
-    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Are you a licensed electrician in Queensland?<span class="faq-icon">+</span></button><div class="faq-a">Yes — Pip Electrics holds a Queensland Electrical Contractor licence. All electricians are individually licensed and we carry full public liability and professional indemnity insurance.</div></div>
-    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How quickly can you respond to an emergency?<span class="faq-icon">+</span></button><div class="faq-a">We aim to respond to genuine electrical emergencies across the Sunshine Coast within 1–2 hours. We're available 24 hours a day, 7 days a week for urgent situations.</div></div>
-    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Do you install all brands of air conditioners?<span class="faq-icon">+</span></button><div class="faq-a">Yes — we install Daikin, Mitsubishi Electric, Fujitsu, Panasonic, LG, Samsung and more. We can supply the unit and handle everything in one appointment.</div></div>
-    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Are smoke alarms mandatory in Queensland?<span class="faq-icon">+</span></button><div class="faq-a">Yes. Queensland law requires interconnected photoelectric smoke alarms in all bedrooms, hallways and on every level of the home. Properties being sold, leased or renovated must comply since 1 January 2022.</div></div>
-    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How do I know if my switchboard needs upgrading?<span class="faq-icon">+</span></button><div class="faq-a">Signs include old ceramic fuses (not circuit breakers), no safety switches (RCDs) present, circuits that trip frequently, or burning smells near the board. We provide free safety assessments.</div></div>
-    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What areas do you service?<span class="faq-icon">+</span></button><div class="faq-a">We service the entire Sunshine Coast including Caloundra, Aura, Maroochydore, Buderim, Mooloolaba, Birtinya, Sippy Downs, Kawana, Noosa, Mountain Creek and all surrounding suburbs.</div></div>
-    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Do you charge for quotes?<span class="faq-icon">+</span></button><div class="faq-a">For most jobs we provide free, no-obligation quotes. We'll assess the work and give you an upfront price before any work begins — no surprises on the invoice.</div></div>
-    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Can I do my own electrical work in Queensland?<span class="faq-icon">+</span></button><div class="faq-a">No. All electrical wiring work must be performed by a licensed electrician in Queensland. DIY electrical work is illegal and can void your home insurance.</div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How much does an electrician cost on the Sunshine Coast?<span class="faq-icon">+</span></button><div class="faq-a">Pricing depends on the job, but here are some real-world examples to give you an idea:<br><br>
+      • <strong>Ceiling fan installation</strong> — from $160 per fan (supply &amp; install available)<br>
+      • <strong>Power point installation</strong> — from around $120–$200 per point depending on location<br>
+      • <strong>Smoke alarm installation</strong> — from $80–$120 per alarm, or a whole-home compliance package<br>
+      • <strong>LED downlight installation</strong> — from $80–$150 per light depending on access<br>
+      • <strong>Switchboard upgrade</strong> — from $1,200+ depending on size and scope (free assessment available)<br>
+      • <strong>EV charger supply &amp; install</strong> — from $1,750 + GST<br>
+      • <strong>Split system AC supply &amp; install</strong> — from $1,700 + GST<br><br>
+      All prices include GST and are quoted upfront — no surprises. Call Matt on <a href="tel:0433828901" style="color:var(--gold);font-weight:600;">0433 828 901</a> for a free quote.
+    </div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Are you licensed and insured?<span class="faq-icon">+</span></button><div class="faq-a">Yes, absolutely. Pip Electrics holds a Queensland Electrical Contractor licence (No. 89654) issued by the Electrical Safety Office. We carry full public liability insurance and professional indemnity insurance on every job. All electrical work is completed by a licensed electrician, and a Certificate of Compliance is issued on completion. You can ask to see our licence details at any time — we're happy to provide them.</div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Do you offer free quotes?<span class="faq-icon">+</span></button><div class="faq-a">Yes — for the vast majority of jobs, we offer free, no-obligation quotes. Call Matt directly on <a href="tel:0433828901" style="color:var(--gold);font-weight:600;">0433 828 901</a> and we can often give a ballpark figure over the phone. For larger or more complex jobs (switchboard upgrades, full renovations, commercial work), we'll arrange a site visit at no charge to give you an accurate fixed price. We aim to respond same day.</div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Do you install smoke alarms?<span class="faq-icon">+</span></button><div class="faq-a">Yes — smoke alarm installation and compliance is one of the most common jobs we do on the Sunshine Coast. Queensland law now requires interconnected photoelectric smoke alarms in every bedroom, hallway connecting bedrooms, and on every level of the home. All alarms must be hardwired or powered by a 10-year non-removable battery.<br><br>This applies to all properties being sold, leased or substantially renovated. We'll assess your existing alarms, advise what's needed, and install compliant alarms across your whole home in a single visit. Call Matt to book.</div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Can you install customer-supplied lights, fans and fixtures?<span class="faq-icon">+</span></button><div class="faq-a">Absolutely — this is something we do all the time. If you've already bought a light fitting, ceiling fan, chandelier or other fixture from a retailer, we're happy to install it for you. Just let us know the make and model when you book so we can bring the right tools. The only exception is if a product doesn't meet Australian electrical standards — in that case we'll let you know before we start.</div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Do you do electrical work for renovations?<span class="faq-icon">+</span></button><div class="faq-a">Yes — renovation electrical work is a core part of what we do. Whether it's a kitchen renovation, bathroom upgrade, granny flat, or full home renovation, we work with both homeowners and builders across the Sunshine Coast. We can handle the full electrical scope from planning and rough-in through to fit-off and final certification. We're known for being easy to work with on site — reliable, tidy, and we communicate well with other trades.</div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What areas do you service?<span class="faq-icon">+</span></button><div class="faq-a">We service the entire Sunshine Coast region, including:<br><br>
+      <strong>South Coast:</strong> Caloundra, Currimundi, Battery Hill, Kings Beach, Dicky Beach, Little Mountain, Landsborough<br>
+      <strong>Kawana area:</strong> Wurtulla, Bokarina, Buddina, Kawana Waters, Birtinya, Sippy Downs, Palmview<br>
+      <strong>Central Coast:</strong> Mooloolaba, Alexandra Headland, Maroochydore, Mountain Creek, Buderim, Forest Glen<br>
+      <strong>Hinterland:</strong> Nambour, Bli Bli, Yandina, Woombye, Eudlo, Doonan, Eumundi<br>
+      <strong>North Coast:</strong> Coolum Beach, Peregian Beach, Mudjimba, Marcoola, Twin Waters, Noosa, Noosaville<br><br>
+      If your suburb isn't listed, give Matt a call on <a href="tel:0433828901" style="color:var(--gold);font-weight:600;">0433 828 901</a> — we're flexible and happy to help where we can.
+    </div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How do I know if my switchboard needs upgrading?<span class="faq-icon">+</span></button><div class="faq-a">Your switchboard likely needs upgrading if any of the following apply:<br><br>
+      • You still have <strong>old ceramic fuses</strong> instead of modern circuit breakers<br>
+      • There are <strong>no safety switches (RCDs)</strong> on all circuits — or none at all<br>
+      • <strong>Breakers trip frequently</strong>, especially when running multiple appliances<br>
+      • You're <strong>planning to add solar panels or a home battery</strong><br>
+      • You want to install an <strong>EV charger or air conditioner</strong> but there's no spare capacity<br>
+      • You've noticed a <strong>burning smell</strong> or discolouration near the board<br><br>
+      We offer free switchboard assessments — call us or <a href="switchboard-upgrades.html" style="color:var(--gold);">read more on our switchboard upgrades page</a>.
+    </div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How quickly can you respond to an emergency?<span class="faq-icon">+</span></button><div class="faq-a">For genuine electrical emergencies — total loss of power, sparking outlets, burning smells, tripped safety switches that won't reset, or any situation that feels unsafe — call Matt directly on <a href="tel:0433828901" style="color:var(--gold);font-weight:600;">0433 828 901</a>. We aim to respond within 1–2 hours across the Sunshine Coast. We're available 24 hours a day, 7 days a week for urgent situations. If it's after hours and non-urgent, leave a message or send an email and we'll call you first thing in the morning.</div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Can I do my own electrical work in Queensland?<span class="faq-icon">+</span></button><div class="faq-a">No — and this is worth understanding clearly. In Queensland, all electrical wiring work must be carried out by a licensed electrician. This includes installing power points, changing light fittings that require wiring, adding circuits, and any work inside your switchboard. DIY electrical work is illegal under the Electrical Safety Act 2002, carries heavy fines, and — more importantly — can be fatal. It can also void your home insurance and cause issues when you sell your property. If you're unsure whether something needs a licensed electrician, just call us and ask — we're happy to advise.</div></div>
   </div>
 </section>
 
 <!-- CTA GOLD -->
 <div class="cta-gold cta-banner">
   <div class="container">
-    <div class="cta-title">Need an Electrician on the Sunshine Coast?</div>
-    <div class="cta-sub">Call now for a free quote. Available 7 days — emergency call-outs 24/7.</div>
+    <div class="cta-title">Need a Licensed Electrician on the Sunshine Coast?</div>
+    <div class="cta-sub">Call Matt today for a free quote. Available 7 days — emergency call-outs 24/7.</div>
     <div class="cta-buttons">
-      <a href="tel:0433828901" class="btn-charcoal-lg">📞 Call 0433 828 901</a>
-      <a href="#contact" class="btn-outline-dark">Request a Quote →</a>
+      <a href="tel:0433828901" class="btn-charcoal-lg">📞 Call Matt — 0433 828 901</a>
+      <a href="#contact" class="btn-outline-dark">Book an Electrician →</a>
     </div>
   </div>
 </div>
+
+<!-- BLOG PREVIEW -->
+<section style="background:var(--ivory);padding:88px 0;">
+  <div class="container">
+    <span class="section-label">Electrical Tips &amp; Guides</span>
+    <div class="gold-line"></div>
+    <h2 class="section-title">From the Pip Electrics Blog</h2>
+    <p class="section-sub" style="max-width:540px;margin-bottom:44px;">Helpful guides and tips for Sunshine Coast homeowners — from electrical safety to LED upgrades and switchboard advice.</p>
+    <div style="display:grid;gap:20px;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));">
+      <a href="blog-ceramic-fuse-switchboard.html" style="display:block;background:#fff;border-radius:18px;padding:28px 24px;text-decoration:none;border:1px solid rgba(31,31,27,0.07);box-shadow:0 2px 8px rgba(0,0,0,0.05);transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 8px 28px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.05)'">
+        <div style="font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;">Switchboards</div>
+        <div style="font-weight:700;font-size:16px;color:var(--charcoal);margin-bottom:8px;line-height:1.3;">When Should You Upgrade Your Switchboard?</div>
+        <div style="color:var(--charcoal-muted);font-size:13px;line-height:1.65;">Old fuses, tripping breakers, planning solar? Here's how to know if your switchboard needs upgrading on the Sunshine Coast.</div>
+        <div style="margin-top:16px;color:var(--gold);font-size:13px;font-weight:700;">Read more →</div>
+      </a>
+      <a href="blog-smoke-alarm-compliance.html" style="display:block;background:#fff;border-radius:18px;padding:28px 24px;text-decoration:none;border:1px solid rgba(31,31,27,0.07);box-shadow:0 2px 8px rgba(0,0,0,0.05);transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 8px 28px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.05)'">
+        <div style="font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;">Smoke Alarms</div>
+        <div style="font-weight:700;font-size:16px;color:var(--charcoal);margin-bottom:8px;line-height:1.3;">Why Your Smoke Alarms May Not Be Compliant</div>
+        <div style="color:var(--charcoal-muted);font-size:13px;line-height:1.65;">Queensland's smoke alarm laws changed in 2022. Find out if your home or rental property is still compliant — and what to do if it's not.</div>
+        <div style="margin-top:16px;color:var(--gold);font-size:13px;font-weight:700;">Read more →</div>
+      </a>
+      <a href="blog-split-system-ac.html" style="display:block;background:#fff;border-radius:18px;padding:28px 24px;text-decoration:none;border:1px solid rgba(31,31,27,0.07);box-shadow:0 2px 8px rgba(0,0,0,0.05);transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 8px 28px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.05)'">
+        <div style="font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;">Air Conditioning</div>
+        <div style="font-weight:700;font-size:16px;color:var(--charcoal);margin-bottom:8px;line-height:1.3;">Split System AC: What Size Do You Need?</div>
+        <div style="color:var(--charcoal-muted);font-size:13px;line-height:1.65;">Sunshine Coast homes need the right kW for each room. Get the size wrong and you'll be hot in summer and paying too much in running costs.</div>
+        <div style="margin-top:16px;color:var(--gold);font-size:13px;font-weight:700;">Read more →</div>
+      </a>
+      <a href="blog-led-downlight-upgrade.html" style="display:block;background:#fff;border-radius:18px;padding:28px 24px;text-decoration:none;border:1px solid rgba(31,31,27,0.07);box-shadow:0 2px 8px rgba(0,0,0,0.05);transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 8px 28px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.05)'">
+        <div style="font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;">LED Lighting</div>
+        <div style="font-weight:700;font-size:16px;color:var(--charcoal);margin-bottom:8px;line-height:1.3;">LED Lighting Ideas for Sunshine Coast Homes</div>
+        <div style="color:var(--charcoal-muted);font-size:13px;line-height:1.65;">From LED downlights and sensor lights to outdoor entertaining areas — simple upgrades that transform your home and slash your power bill.</div>
+        <div style="margin-top:16px;color:var(--gold);font-size:13px;font-weight:700;">Read more →</div>
+      </a>
+      <a href="emergency-electrician.html" style="display:block;background:#fff;border-radius:18px;padding:28px 24px;text-decoration:none;border:1px solid rgba(31,31,27,0.07);box-shadow:0 2px 8px rgba(0,0,0,0.05);transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 8px 28px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.05)'">
+        <div style="font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;">Safety</div>
+        <div style="font-weight:700;font-size:16px;color:var(--charcoal);margin-bottom:8px;line-height:1.3;">Signs You Need to Call an Electrician</div>
+        <div style="color:var(--charcoal-muted);font-size:13px;line-height:1.65;">Flickering lights, tripping breakers, burning smells — don't ignore these warning signs. A licensed Sunshine Coast electrician should inspect your home.</div>
+        <div style="margin-top:16px;color:var(--gold);font-size:13px;font-weight:700;">Get help now →</div>
+      </a>
+      <a href="blog.html" style="display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--charcoal);border-radius:18px;padding:28px 24px;text-decoration:none;border:1px solid rgba(199,166,43,0.2);">
+        <div style="font-size:32px;margin-bottom:12px;">📝</div>
+        <div style="font-weight:700;font-size:16px;color:#F6F0DE;margin-bottom:8px;text-align:center;">View All Blog Posts</div>
+        <div style="color:rgba(246,240,222,0.45);font-size:13px;text-align:center;line-height:1.6;">Tips, guides and electrical news for Sunshine Coast homeowners.</div>
+        <div style="margin-top:16px;color:var(--gold);font-size:13px;font-weight:700;">Visit the blog →</div>
+      </a>
+    </div>
+  </div>
+</section>
 
 <!-- CONTACT -->
 <section id="contact" class="contact-bg">
@@ -751,8 +1056,8 @@
     <div style="text-align:center;margin-bottom:56px">
       <span class="section-label">Get In Touch</span>
       <div class="gold-line" style="margin:0 auto 16px"></div>
-      <h2 class="section-title">Contact Pip Electrics</h2>
-      <p class="section-sub" style="max-width:500px;margin:0 auto">Call us, email us, or fill in the form and we'll be in touch within one business hour.</p>
+      <h2 class="section-title">Book a Licensed Sunshine Coast Electrician</h2>
+      <p class="section-sub" style="max-width:500px;margin:0 auto">Call Matt, email us, or fill in the form below. We aim to respond within one business hour — free quotes available.</p>
     </div>
     <div class="contact-grid">
       <div>
@@ -793,19 +1098,37 @@
               <label class="form-label">Service Needed *</label>
               <select class="form-input" name="service" required>
                 <option value="">Select a service...</option>
-                <option>Electrical Repairs</option><option>New Home Electrical</option><option>Renovation Electrical</option>
-                <option>Switchboard Upgrade</option><option>Smoke Alarms</option><option>Power Points</option>
-                <option>Lighting</option><option>Ceiling Fans</option><option>Safety Inspection</option>
-                <option>Commercial Electrical</option><option>Emergency Electrical</option>
-                <option>Split System A/C</option><option>A/C Installation</option><option>A/C Servicing</option>
-                <option>Maintenance</option><option>Other</option>
+                <option>Smoke Alarm Installation</option>
+                <option>Ceiling Fan Installation</option>
+                <option>Power Point Installation</option>
+                <option>LED Lighting / Downlights</option>
+                <option>Outdoor Lighting</option>
+                <option>Switchboard Upgrade</option>
+                <option>EV Charger Installation</option>
+                <option>Split System AC Installation</option>
+                <option>Safety Inspection</option>
+                <option>Renovation Electrical</option>
+                <option>Commercial Electrical</option>
+                <option>Emergency Electrical</option>
+                <option>New Home Electrical</option>
+                <option>General Electrical Repairs</option>
+                <option>Maintenance</option>
+                <option>Other</option>
               </select>
             </div>
             <div class="form-group"><label class="form-label">Message *</label><textarea class="form-input" name="message" required placeholder="Tell us about your electrical project or issue..."></textarea></div>
                         <div style="background:rgba(199,166,43,0.1);border:1px solid rgba(199,166,43,0.3);border-radius:10px;padding:12px 16px;text-align:center;margin-bottom:12px;font-size:13px;color:var(--charcoal);">⚡ <strong>Same-day quotes</strong> — we aim to call you back within one business day.</div>
-            <input type="hidden" name="_subject" value="New Quote Request — Pip Electrics"><button type="submit" class="form-submit">Send Request →</button>
+            <input type="hidden" name="_subject" value="New Quote Request — Pip Electrics"><button type="submit" class="form-submit">Request a Free Quote →</button>
             <p style="text-align:center;margin-top:12px;font-size:12px;color:var(--charcoal-muted)">Or call us: <a href="tel:0433828901" style="color:var(--gold);font-weight:700">0433 828 901</a> — we answer 7 days.</p>
           </form>
+          <div data-photo-cta style="margin-top:18px;padding:18px;border-radius:14px;background:var(--charcoal,#1F1F1B);text-align:center">
+            <div style="font-size:15px;font-weight:800;color:var(--gold,#C7A62B);margin-bottom:6px">📸 Got a photo of the problem?</div>
+            <p style="font-size:13px;line-height:1.6;color:rgba(246,240,222,0.7);margin:0 0 14px">Text us a pic and we'll quote faster — no forms, no fuss.</p>
+            <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
+              <a href="sms:0433828901?&body=Hi%20Matt%2C%20here's%20a%20photo%20of%20the%20job%3A" style="display:inline-flex;align-items:center;gap:7px;background:var(--gold,#C7A62B);color:var(--charcoal,#1F1F1B);font-weight:800;font-size:14px;padding:12px 22px;border-radius:100px;text-decoration:none">💬 Text a photo</a>
+            </div>
+            <p style="font-size:11.5px;color:rgba(246,240,222,0.45);margin:12px 0 0">Straight to Matt's phone · 0433 828 901</p>
+          </div>
         </div>
       </div>
     </div>
@@ -870,10 +1193,15 @@
       <div>
         <div class="footer-heading">Services</div>
         <ul class="footer-links">
-          <li><a href="#services">Electrical Repairs</a></li><li><a href="#services">New Homes</a></li>
-          <li><a href="#services">Renovations</a></li><li><a href="#services">Switchboards</a></li>
-          <li><a href="#services">Smoke Alarms</a></li><li><a href="#services">Lighting</a></li>
-          <li><a href="#services">Ceiling Fans</a></li><li><a href="#services">Split System A/C</a></li>
+          <li><a href="switchboard-upgrades.html">Switchboard Upgrades</a></li>
+          <li><a href="smoke-alarm-installation.html">Smoke Alarm Installation</a>
+        <a href="emergency-electrician.html">Emergency Electrician</a></li>
+          <li><a href="ev-charger-installation.html">EV Charger Installation</a></li>
+          <li><a href="split-system-ac-installation.html">Split System AC</a></li>
+          <li><a href="#services">Smoke Alarm Installation</a></li>
+          <li><a href="#services">Ceiling Fan Installation</a></li>
+          <li><a href="#services">LED Lighting</a></li>
+          <li><a href="#services">Renovation Electrical</a></li>
           <li><a href="#services">Emergency Electrical</a></li>
         </ul>
       </div>
@@ -931,7 +1259,7 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <div class="container">© 2026 Pip Electrics. All rights reserved. QLD Electrical Licence No. 89654 · NECA Member.</div>
+    <div class="container">© 2026 Pip Electrics. All rights reserved. QLD Electrical Licence No. 89654 · ARCtick Lic. L226788 · NECA Member.</div>
   </div>
 <!-- Google Reviews Widget -->
 <section style="background:#fff;padding:64px 0;">
@@ -959,7 +1287,7 @@
   }
 
   // Areas marquee
-  const areas = ["Caloundra","Aura","Maroochydore","Buderim","Mooloolaba","Birtinya","Bells Creek","Little Mountain","Sippy Downs","Palmview","Mountain Creek","Noosa","Coolum Beach","Kawana Waters","Nambour","Woombye","Forest Glen","Eudlo","Landsborough","Bokarina","Wurtulla","Currimundi","Dicky Beach","Peregian Beach","Bli Bli"];
+  const areas = ["Caloundra","Currimundi","Battery Hill","Wurtulla","Kawana Waters","Buddina","Bokarina","Mooloolaba","Alexandra Headland","Maroochydore","Buderim","Mountain Creek","Sippy Downs","Palmview","Birtinya","Aura","Bli Bli","Landsborough","Little Mountain","Nambour","Noosa Heads","Noosaville","Cooroy","Pomona","Coolum Beach","Peregian Beach","Doonan","Eumundi","Yandina","Woombye","Forest Glen","Mudjimba","Marcoola","Twin Waters"];
   const doubled = [...areas, ...areas];
   const track = document.getElementById('marqueeTrack');
   doubled.forEach(a => {
@@ -969,12 +1297,6 @@
     track.appendChild(el);
   });
 
-  // Contact form
-    if (msg && input.files.length > 0) {
-      msg.textContent = '✓ ' + input.files.length + ' photo' + (input.files.length > 1 ? 's' : '') + ' selected.';
-      msg.style.color = '#22c55e';
-    }
-  }
   function handleForm(e) {
     e.preventDefault();
     var form = e.target, btn = form.querySelector('.form-submit');
