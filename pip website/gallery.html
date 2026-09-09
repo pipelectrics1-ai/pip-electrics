@@ -2,7 +2,7 @@
 <html lang="en-AU">
 <head>
 <meta charset="UTF-8">
-<link rel="canonical" href="https://pipelectrics.com.au/gallery.html">
+<link rel="canonical" href="https://pipelectrics.com.au/gallery">
 <link rel="icon" href="favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png"><link rel="icon" type="image/png" sizes="192x192" href="favicon-192x192.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Our Work | Photo Gallery | Pip Electrics Sunshine Coast</title>
@@ -11,6 +11,20 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://pipelectrics.com.au/#business",
+  "name": "Pip Electrics",
+  "url": "https://pipelectrics.com.au",
+  "telephone": "0433828901",
+  "email": "pipelectrics1@gmail.com",
+  "image": "https://pipelectrics.com.au/pip-electrics-logo-transparent.png",
+  "description": "Pip Electrics is a local, family-owned licensed electrical contractor servicing the entire Sunshine Coast, QLD."
+}
+</script>
 
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -330,7 +344,7 @@
 <meta property="og:image" content="https://pipelectrics.com.au/og-share-image.png">
 <meta property="og:title" content="Our Work | Photo Gallery | Pip Electrics Sunshine Coast">
 <meta property="og:description" content="Browse Pip Electrics' project gallery — switchboard upgrades, LED lighting, ceiling fans, pendant lights, meter panel upgrades and more across the Sunshine Coast.">
-<meta property="og:url" content="https://pipelectrics.com.au/gallery.html">
+<meta property="og:url" content="https://pipelectrics.com.au/gallery">
 </head>
 <body>
 
@@ -398,8 +412,8 @@
 
 <!-- HERO -->
 <section class="hero">
-  <video autoplay muted loop playsinline>
-    <source src="hero%20banner.mp4" type="video/mp4">
+  <video autoplay muted loop playsinline preload="none" poster="hero-banner-poster.jpg">
+    <source src="hero-banner-optimized.mp4" type="video/mp4">
   </video>
   <div class="hero-overlay"></div>
   <div class="hero-gold-line"></div>
@@ -435,17 +449,26 @@
       </div>
       <div class="photo-grid">
         <div class="photo-card wide" onclick="openLightbox(0)">
-          <img src="before%20and%20after%20of%20downlight%20installations.jpg" alt="Before and after meter panel upgrade" loading="lazy">
+          <picture style="display:contents">
+  <source srcset="before%20and%20after%20of%20downlight%20installations.webp" type="image/webp">
+  <img src="before%20and%20after%20of%20downlight%20installations.jpg" alt="Before and after meter panel upgrade" loading="lazy">
+</picture>
           <div class="photo-overlay"><span class="photo-caption">Meter Panel Upgrade — Before &amp; After</span></div>
           <div class="zoom-icon">🔍</div>
         </div>
         <div class="photo-card" onclick="openLightbox(1)">
-          <img src="before%20of%20meter%20panel%20upgrade.jpg" alt="Meter panel before upgrade" loading="lazy">
+          <picture style="display:contents">
+  <source srcset="before%20of%20meter%20panel%20upgrade.webp" type="image/webp">
+  <img src="before%20of%20meter%20panel%20upgrade.jpg" alt="Meter panel before upgrade" loading="lazy">
+</picture>
           <div class="photo-overlay"><span class="photo-caption">Meter Panel — Before</span></div>
           <div class="zoom-icon">🔍</div>
         </div>
         <div class="photo-card" onclick="openLightbox(2)">
-          <img src="after%20photo%20of%20meter%20panel%20upgrade.jpg" alt="Meter panel after upgrade" loading="lazy">
+          <picture style="display:contents">
+  <source srcset="after%20photo%20of%20meter%20panel%20upgrade.webp" type="image/webp">
+  <img src="after%20photo%20of%20meter%20panel%20upgrade.jpg" alt="Meter panel after upgrade" loading="lazy">
+</picture>
           <div class="photo-overlay"><span class="photo-caption">Meter Panel — After</span></div>
           <div class="zoom-icon">🔍</div>
         </div>
@@ -455,12 +478,18 @@
           <div class="zoom-icon">🔍</div>
         </div>
         <div class="photo-card" onclick="openLightbox(4)">
-          <img src="meter%20panel%20upgrade.jpg" alt="Meter panel upgrade in progress" loading="lazy">
+          <picture style="display:contents">
+  <source srcset="meter%20panel%20upgrade.webp" type="image/webp">
+  <img src="meter%20panel%20upgrade.jpg" alt="Meter panel upgrade in progress" loading="lazy">
+</picture>
           <div class="photo-overlay"><span class="photo-caption">Meter Panel Upgrade</span></div>
           <div class="zoom-icon">🔍</div>
         </div>
         <div class="photo-card" onclick="openLightbox(5)">
-          <img src="burnt%20out%20main%20switch.jpg" alt="Burnt out main switch" loading="lazy">
+          <picture style="display:contents">
+  <source srcset="burnt%20out%20main%20switch.webp" type="image/webp">
+  <img src="burnt%20out%20main%20switch.jpg" alt="Burnt out main switch" loading="lazy">
+</picture>
           <div class="photo-overlay"><span class="photo-caption">Burnt Out Main Switch — Replaced</span></div>
           <div class="zoom-icon">🔍</div>
         </div>
@@ -470,7 +499,10 @@
           <div class="zoom-icon">🔍</div>
         </div>
         <div class="photo-card" onclick="openLightbox(7)">
-          <img src="fuse%20box%20upgrade%20before.jpg" alt="Fuse box before upgrade" loading="lazy">
+          <picture style="display:contents">
+  <source srcset="fuse%20box%20upgrade%20before.webp" type="image/webp">
+  <img src="fuse%20box%20upgrade%20before.jpg" alt="Fuse box before upgrade" loading="lazy">
+</picture>
           <div class="photo-overlay"><span class="photo-caption">Fuse Box — Before</span></div>
           <div class="zoom-icon">🔍</div>
         </div>
@@ -480,7 +512,10 @@
           <div class="zoom-icon">🔍</div>
         </div>
         <div class="photo-card" onclick="openLightbox(9)">
-          <img src="changeover%20switch.jpg" alt="Changeover switch installation" loading="lazy">
+          <picture style="display:contents">
+  <source srcset="changeover%20switch.webp" type="image/webp">
+  <img src="changeover%20switch.jpg" alt="Changeover switch installation" loading="lazy">
+</picture>
           <div class="photo-overlay"><span class="photo-caption">Changeover Switch</span></div>
           <div class="zoom-icon">🔍</div>
         </div>
@@ -496,27 +531,42 @@
       </div>
       <div class="photo-grid">
         <div class="photo-card" onclick="openLightbox(10)">
-          <img src="after%20photo%20of%20LED%20downlight%20installation.jpg" alt="LED downlight installation" loading="lazy">
+          <picture style="display:contents">
+  <source srcset="after%20photo%20of%20LED%20downlight%20installation.webp" type="image/webp">
+  <img src="after%20photo%20of%20LED%20downlight%20installation.jpg" alt="LED downlight installation" loading="lazy">
+</picture>
           <div class="photo-overlay"><span class="photo-caption">LED Downlight Installation</span></div>
           <div class="zoom-icon">🔍</div>
         </div>
         <div class="photo-card" onclick="openLightbox(11)">
-          <img src="led%20mirror%20install.jpg" alt="LED mirror installation" loading="lazy">
+          <picture style="display:contents">
+  <source srcset="led%20mirror%20install.webp" type="image/webp">
+  <img src="led%20mirror%20install.jpg" alt="LED mirror installation" loading="lazy">
+</picture>
           <div class="photo-overlay"><span class="photo-caption">LED Mirror Install</span></div>
           <div class="zoom-icon">🔍</div>
         </div>
         <div class="photo-card" onclick="openLightbox(12)">
-          <img src="led%20strip%20light%20in%20pantry.jpg" alt="LED strip light in pantry" loading="lazy">
+          <picture style="display:contents">
+  <source srcset="led%20strip%20light%20in%20pantry.webp" type="image/webp">
+  <img src="led%20strip%20light%20in%20pantry.jpg" alt="LED strip light in pantry" loading="lazy">
+</picture>
           <div class="photo-overlay"><span class="photo-caption">LED Strip Light — Pantry</span></div>
           <div class="zoom-icon">🔍</div>
         </div>
         <div class="photo-card" onclick="openLightbox(13)">
-          <img src="pendant%20light%20install.jpg" alt="Pendant light installation" loading="lazy">
+          <picture style="display:contents">
+  <source srcset="pendant%20light%20install.webp" type="image/webp">
+  <img src="pendant%20light%20install.jpg" alt="Pendant light installation" loading="lazy">
+</picture>
           <div class="photo-overlay"><span class="photo-caption">Pendant Light Install</span></div>
           <div class="zoom-icon">🔍</div>
         </div>
         <div class="photo-card" onclick="openLightbox(14)">
-          <img src="Pendant%20light%20installation.jpg" alt="Pendant light installation finished" loading="lazy">
+          <picture style="display:contents">
+  <source srcset="Pendant%20light%20installation.webp" type="image/webp">
+  <img src="Pendant%20light%20installation.jpg" alt="Pendant light installation finished" loading="lazy">
+</picture>
           <div class="photo-overlay"><span class="photo-caption">Pendant Light — Finished</span></div>
           <div class="zoom-icon">🔍</div>
         </div>
@@ -532,7 +582,10 @@
       </div>
       <div class="photo-grid">
         <div class="photo-card wide" onclick="openLightbox(15)">
-          <img src="before%20and%20after%20of%20installed%20ceiling%20fans%20on%20deck.jpg" alt="Ceiling fans installed on deck" loading="lazy">
+          <picture style="display:contents">
+  <source srcset="before%20and%20after%20of%20installed%20ceiling%20fans%20on%20deck.webp" type="image/webp">
+  <img src="before%20and%20after%20of%20installed%20ceiling%20fans%20on%20deck.jpg" alt="Ceiling fans installed on deck" loading="lazy">
+</picture>
           <div class="photo-overlay"><span class="photo-caption">Ceiling Fans on Deck — Before &amp; After</span></div>
           <div class="zoom-icon">🔍</div>
         </div>
@@ -548,12 +601,18 @@
       </div>
       <div class="photo-grid">
         <div class="photo-card" onclick="openLightbox(16)">
-          <img src="caravan%20inverter%20installation.jpg" alt="Caravan inverter installation" loading="lazy">
+          <picture style="display:contents">
+  <source srcset="caravan%20inverter%20installation.webp" type="image/webp">
+  <img src="caravan%20inverter%20installation.jpg" alt="Caravan inverter installation" loading="lazy">
+</picture>
           <div class="photo-overlay"><span class="photo-caption">Caravan Inverter Installation</span></div>
           <div class="zoom-icon">🔍</div>
         </div>
         <div class="photo-card" onclick="openLightbox(17)">
-          <img src="generator%20ATS%20installation.jpg" alt="Generator ATS installation" loading="lazy">
+          <picture style="display:contents">
+  <source srcset="generator%20ATS%20installation.webp" type="image/webp">
+  <img src="generator%20ATS%20installation.jpg" alt="Generator ATS installation" loading="lazy">
+</picture>
           <div class="photo-overlay"><span class="photo-caption">Generator ATS Installation</span></div>
           <div class="zoom-icon">🔍</div>
         </div>
@@ -569,12 +628,18 @@
       </div>
       <div class="photo-grid">
         <div class="photo-card" onclick="openLightbox(18)">
-          <img src="me%20and%20teddy.jpg" alt="Pip Electrics team" loading="lazy">
+          <picture style="display:contents">
+  <source srcset="me%20and%20teddy.webp" type="image/webp">
+  <img src="me%20and%20teddy.jpg" alt="Pip Electrics team" loading="lazy">
+</picture>
           <div class="photo-overlay"><span class="photo-caption">The Team</span></div>
           <div class="zoom-icon">🔍</div>
         </div>
         <div class="photo-card" onclick="openLightbox(19)">
-          <img src="me%20with%20my%20van.jpg" alt="Pip Electrics van" loading="lazy">
+          <picture style="display:contents">
+  <source srcset="me%20with%20my%20van.webp" type="image/webp">
+  <img src="me%20with%20my%20van.jpg" alt="Pip Electrics van" loading="lazy">
+</picture>
           <div class="photo-overlay"><span class="photo-caption">Ready for the Next Job</span></div>
           <div class="zoom-icon">🔍</div>
         </div>
@@ -596,7 +661,7 @@
 <!-- FOOTER -->
 <footer>
   <div class="container">
-    <p>© 2026 Pip Electrics &nbsp;·&nbsp; QLD Electrical Contractor Licence No. 89654 &nbsp;·&nbsp; <a href="mailto:pipelectrics1@gmail.com">pipelectrics1@gmail.com</a> &nbsp;·&nbsp; <a href="index.html">Back to Home</a></p>
+    <p>© 2026 Pip Electrics &nbsp;·&nbsp; QLD Electrical Contractor Licence No. 89654 · ARCtick Lic. L226788 &nbsp;·&nbsp; <a href="mailto:pipelectrics1@gmail.com">pipelectrics1@gmail.com</a> &nbsp;·&nbsp; <a href="index.html">Back to Home</a></p>
   </div>
 <!-- Google Reviews Widget -->
 <section style="background:#fff;padding:64px 0;">
